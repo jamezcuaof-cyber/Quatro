@@ -3,395 +3,195 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quatro | Real Estate Development</title>
-  <meta name="description" content="Quatro Real Estate Development — Hotels, Offices, Retail & Residential. Fundada en 2021 por cuatro socios con 25+ años de experiencia en los mercados más dinámicos de México." />
+  <title>Quatro Real Estate Development</title>
+  <meta name="description" content="Desarrolladora inmobiliaria en Hotels, Offices, Retail y Residential. Ciudad de México · Los Cabos · Bacalar." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div class="progress-bar"></div>
 
-  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="logo">QUA<span>+</span>RO</a>
+      <a href="index.html" class="nav-logo">QUA<span>+</span>RO</a>
       <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html" class="active">Inicio</a></li>
         <li><a href="proyectos.html">Proyectos</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="contacto.html" class="btn btn-primary nav-cta">Contáctanos</a></li>
+        <li><a href="contacto.html" class="nav-cta">Contáctanos</a></li>
       </ul>
-      <button class="hamburger" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-tag">Real Estate Development</div>
-        <h1>Visión, ejecución<br>e <em>inteligencia</em> de mercado</h1>
-        <p class="hero-desc">
-          Desarrollamos proyectos excepcionales en Hotels, Offices, Retail y Residential — una plataforma de espectro completo con décadas de entrega comprobada en los mercados más dinámicos de México.
-        </p>
-        <div class="hero-actions">
-          <a href="proyectos.html" class="btn btn-primary">Ver proyectos</a>
-          <a href="nosotros.html" class="btn btn-outline">Conoce Quatro</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat-item">
-            <div class="number" data-target="1500000" data-suffix=" m²">0 m²</div>
-            <div class="label">Espacio entregado</div>
-          </div>
-          <div class="stat-item">
-            <div class="number" data-target="3000" data-suffix="+">0+</div>
-            <div class="label">Hotel keys desarrollados</div>
-          </div>
-          <div class="stat-item">
-            <div class="number" data-target="25" data-suffix="+ años">0+ años</div>
-            <div class="label">Experiencia combinada</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="hero-card">
-          <div class="hero-card-img">
-            <div class="hero-building">
-              <svg viewBox="0 0 200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="60" y="20" width="80" height="230" fill="#1e1a10" stroke="#C9A84C" stroke-width="1"/>
-                <rect x="70" y="30" width="14" height="14" fill="#C9A84C" opacity="0.6"/>
-                <rect x="90" y="30" width="14" height="14" fill="#C9A84C" opacity="0.4"/>
-                <rect x="110" y="30" width="14" height="14" fill="#C9A84C" opacity="0.6"/>
-                <rect x="70" y="52" width="14" height="14" fill="#C9A84C" opacity="0.3"/>
-                <rect x="90" y="52" width="14" height="14" fill="#C9A84C" opacity="0.7"/>
-                <rect x="110" y="52" width="14" height="14" fill="#C9A84C" opacity="0.4"/>
-                <rect x="70" y="74" width="14" height="14" fill="#C9A84C" opacity="0.5"/>
-                <rect x="90" y="74" width="14" height="14" fill="#C9A84C" opacity="0.3"/>
-                <rect x="110" y="74" width="14" height="14" fill="#C9A84C" opacity="0.6"/>
-                <rect x="70" y="96" width="14" height="14" fill="#C9A84C" opacity="0.4"/>
-                <rect x="90" y="96" width="14" height="14" fill="#C9A84C" opacity="0.6"/>
-                <rect x="110" y="96" width="14" height="14" fill="#C9A84C" opacity="0.3"/>
-                <rect x="70" y="118" width="14" height="14" fill="#C9A84C" opacity="0.6"/>
-                <rect x="90" y="118" width="14" height="14" fill="#C9A84C" opacity="0.4"/>
-                <rect x="110" y="118" width="14" height="14" fill="#C9A84C" opacity="0.5"/>
-                <rect x="70" y="140" width="14" height="14" fill="#C9A84C" opacity="0.3"/>
-                <rect x="90" y="140" width="14" height="14" fill="#C9A84C" opacity="0.6"/>
-                <rect x="110" y="140" width="14" height="14" fill="#C9A84C" opacity="0.4"/>
-                <rect x="80" y="200" width="40" height="50" fill="#2a2210" stroke="#C9A84C" stroke-width="0.5"/>
-                <rect x="20" y="80" width="40" height="170" fill="#161410" stroke="#C9A84C" stroke-width="0.5" opacity="0.7"/>
-                <rect x="140" y="100" width="40" height="150" fill="#161410" stroke="#C9A84C" stroke-width="0.5" opacity="0.7"/>
-                <line x1="0" y1="250" x2="200" y2="250" stroke="#C9A84C" stroke-width="0.5" opacity="0.4"/>
-              </svg>
-            </div>
-          </div>
-          <div class="hero-card-info">
-            <div>
-              <h4>Tortuga Bay Los Cabos</h4>
-              <p>San José del Cabo · En construcción</p>
-            </div>
-            <div class="hero-card-badge">2026</div>
-          </div>
-        </div>
-        <div class="hero-float-card">
-          <div class="hero-float-icon">
-            <svg width="22" height="22" fill="none" stroke="#0F0F0F" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
-            </svg>
-          </div>
-          <div>
-            <h5>4 Pilares</h5>
-            <span>Hotels · Offices · Retail · Residential</span>
-          </div>
-        </div>
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1800&q=80&auto=format&fit=crop" alt="Quatro Development" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-label reveal">Desarrolladora · 2021</div>
+      <h1 class="hero-title reveal reveal-delay-1">Desarrollamos<br><em>espacios que</em><br>perduran.</h1>
+      <p class="hero-sub reveal reveal-delay-2">Hotels · Offices · Retail · Residential<br>Ciudad de México · Los Cabos · Bacalar</p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="proyectos.html" class="btn btn-primary">Ver proyectos</a>
+        <a href="contacto.html" class="btn btn-ghost">Contáctanos</a>
       </div>
     </div>
-    <div class="scroll-indicator">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
-    </div>
+    <div class="hero-scroll-hint"><div class="scroll-line"></div><span>Scroll</span></div>
   </section>
 
-  <!-- STRIP -->
-  <div class="strip">
-    <div class="strip-inner">
-      <div class="strip-item"><span class="strip-dot"></span>Hotels</div>
-      <div class="strip-item"><span class="strip-dot"></span>Offices</div>
-      <div class="strip-item"><span class="strip-dot"></span>Retail</div>
-      <div class="strip-item"><span class="strip-dot"></span>Residential</div>
-      <div class="strip-item"><span class="strip-dot"></span>Los Cabos</div>
-      <div class="strip-item"><span class="strip-dot"></span>Ciudad de México</div>
-      <div class="strip-item"><span class="strip-dot"></span>Bacalar</div>
-      <div class="strip-item"><span class="strip-dot"></span>1.5M+ m² entregados</div>
-      <!-- duplicate for seamless loop -->
-      <div class="strip-item"><span class="strip-dot"></span>Hotels</div>
-      <div class="strip-item"><span class="strip-dot"></span>Offices</div>
-      <div class="strip-item"><span class="strip-dot"></span>Retail</div>
-      <div class="strip-item"><span class="strip-dot"></span>Residential</div>
-      <div class="strip-item"><span class="strip-dot"></span>Los Cabos</div>
-      <div class="strip-item"><span class="strip-dot"></span>Ciudad de México</div>
-      <div class="strip-item"><span class="strip-dot"></span>Bacalar</div>
-      <div class="strip-item"><span class="strip-dot"></span>1.5M+ m² entregados</div>
+  <div class="stats-strip">
+    <div class="container stats-grid">
+      <div class="stat-block reveal">
+        <div class="stat-num" data-target="5" data-suffix="+">0+</div>
+        <div class="stat-label">Proyectos activos</div>
+      </div>
+      <div class="stat-block reveal reveal-delay-1">
+        <div class="stat-num" data-target="4">0</div>
+        <div class="stat-label">Verticales</div>
+      </div>
+      <div class="stat-block reveal reveal-delay-2">
+        <div class="stat-num" data-target="25" data-suffix="+">0+</div>
+        <div class="stat-label">Años de experiencia combinada</div>
+      </div>
+      <div class="stat-block reveal reveal-delay-3">
+        <div class="stat-num" data-target="4">0</div>
+        <div class="stat-label">Destinos clave</div>
+      </div>
     </div>
   </div>
 
-  <!-- ABOUT HOME -->
-  <section class="about-home">
+  <section class="section-pad">
     <div class="container">
-      <div class="about-visual">
-        <div class="about-main-img">
-          <svg viewBox="0 0 300 320" fill="none" xmlns="http://www.w3.org/2000/svg" width="260">
-            <rect x="50" y="30" width="200" height="280" fill="#1e1a10" stroke="#C9A84C" stroke-width="1"/>
-            <rect x="70" y="50" width="30" height="30" fill="#C9A84C" opacity="0.5"/>
-            <rect x="110" y="50" width="30" height="30" fill="#C9A84C" opacity="0.3"/>
-            <rect x="150" y="50" width="30" height="30" fill="#C9A84C" opacity="0.5"/>
-            <rect x="190" y="50" width="30" height="30" fill="#C9A84C" opacity="0.3"/>
-            <rect x="70" y="95" width="30" height="30" fill="#C9A84C" opacity="0.3"/>
-            <rect x="110" y="95" width="30" height="30" fill="#C9A84C" opacity="0.6"/>
-            <rect x="150" y="95" width="30" height="30" fill="#C9A84C" opacity="0.3"/>
-            <rect x="190" y="95" width="30" height="30" fill="#C9A84C" opacity="0.5"/>
-            <rect x="70" y="140" width="30" height="30" fill="#C9A84C" opacity="0.5"/>
-            <rect x="110" y="140" width="30" height="30" fill="#C9A84C" opacity="0.3"/>
-            <rect x="150" y="140" width="30" height="30" fill="#C9A84C" opacity="0.5"/>
-            <rect x="190" y="140" width="30" height="30" fill="#C9A84C" opacity="0.3"/>
-            <rect x="100" y="230" width="100" height="80" fill="#2a2210" stroke="#C9A84C" stroke-width="0.5"/>
-          </svg>
-          <div class="about-accent"></div>
+      <div class="section-header reveal">
+        <span class="section-label">Proyectos destacados</span>
+        <h2>Donde la visión<br>se hace realidad</h2>
+      </div>
+      <div class="project-featured reveal">
+        <div class="project-featured-img">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80&auto=format&fit=crop" alt="Hyatt Centric Bacalar" />
         </div>
-        <div class="about-years-badge">
-          <div class="num">2021</div>
-          <div class="txt">Año de<br>fundación</div>
+        <div class="project-featured-info">
+          <span class="proj-tag">Hotels</span>
+          <h3>Hyatt Centric Bacalar</h3>
+          <p>Resort boutique en el Lago de Bacalar. Arquitectura que dialoga con el entorno natural del Caribe mexicano.</p>
+          <div class="proj-meta"><span>Bacalar, QR</span><span>·</span><span>En desarrollo</span></div>
+          <a href="proyectos.html" class="btn btn-primary" style="margin-top:2rem;">Explorar proyecto</a>
         </div>
       </div>
-
-      <div class="about-content">
-        <span class="section-label">Sobre Quatro</span>
-        <h2>Construidos en la intersección de visión, ejecución e inteligencia</h2>
-        <p>Quatro fue fundada en 2021 por cuatro socios — Álvaro Amezcua, Alejandro Alamillo, Juan Carlos Rodero y Galo Roselló — convencidos de que el desarrollo inmobiliario excepcional nace de combinar visión, ejecución precisa e inteligencia de mercado.</p>
-        <p>El nombre refleja tanto a los cuatro socios fundadores como los cuatro pilares que unen: Hotels, Offices, Retail y Residential.</p>
-        <div class="about-features">
-          <div class="feature-item">
-            <div class="feature-icon">
-              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            </div>
-            <div>
-              <strong>Legado comprobado</strong>
-              <p style="color:var(--gray-light);font-size:0.9rem">+1.5M m² entregados y 3,000+ hotel keys desarrollados antes de Quatro.</p>
-            </div>
+      <div class="project-grid">
+        <div class="project-card reveal" data-category="residential">
+          <div class="project-card-img">
+            <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80&auto=format&fit=crop" alt="East Cape" />
           </div>
-          <div class="feature-item">
-            <div class="feature-icon">
-              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            </div>
-            <div>
-              <strong>Plataforma de espectro completo</strong>
-              <p style="color:var(--gray-light);font-size:0.9rem">Hotels, Offices, Retail y Residential en un solo equipo de alto desempeño.</p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-icon">
-              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            </div>
-            <div>
-              <strong>Destinos premium</strong>
-              <p style="color:var(--gray-light);font-size:0.9rem">Los Cabos, CDMX, Bacalar — los mercados más dinámicos y de mayor plusvalía en México.</p>
-            </div>
+          <div class="project-card-info">
+            <span class="proj-tag">Residential</span>
+            <h4>Casa East Cape</h4>
+            <p>Residencias frente al mar en East Cape, Los Cabos.</p>
           </div>
         </div>
-        <a href="nosotros.html" class="btn btn-outline-gold">Conoce nuestra historia</a>
+        <div class="project-card reveal reveal-delay-1" data-category="offices">
+          <div class="project-card-img">
+            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80&auto=format&fit=crop" alt="Offices" />
+          </div>
+          <div class="project-card-info">
+            <span class="proj-tag">Offices</span>
+            <h4>Torre Corporativa CDMX</h4>
+            <p>Espacios de trabajo de nueva generación en la capital.</p>
+          </div>
+        </div>
+        <div class="project-card reveal reveal-delay-2" data-category="retail">
+          <div class="project-card-img">
+            <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800&q=80&auto=format&fit=crop" alt="Retail" />
+          </div>
+          <div class="project-card-info">
+            <span class="proj-tag">Retail</span>
+            <h4>Centro Comercial Los Cabos</h4>
+            <p>Retail experiencial en el destino más dinámico de México.</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:3rem;" class="reveal">
+        <a href="proyectos.html" class="btn btn-outline">Ver todos los proyectos</a>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS PREVIEW -->
-  <section class="projects-preview">
+  <section class="section-dark section-pad">
     <div class="container">
-      <div class="section-header flex">
-        <div>
-          <span class="section-label">Portafolio activo</span>
-          <h2>Proyectos destacados</h2>
-        </div>
-        <a href="proyectos.html" class="btn btn-outline-gold">Ver todos</a>
+      <div class="section-header reveal">
+        <span class="section-label" style="color:var(--gold)">Nuestros verticales</span>
+        <h2 style="color:#fff">Cuatro líneas.<br>Un solo estándar.</h2>
       </div>
-      <div class="projects-grid">
-
-        <div class="project-card">
-          <div class="project-img">
-            <svg viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg" width="130" style="position:relative;z-index:1">
-              <rect x="40" y="10" width="200" height="180" fill="#1e1a10" stroke="#C9A84C" stroke-width="1"/>
-              <rect x="60" y="30" width="25" height="25" fill="#C9A84C" opacity="0.5"/>
-              <rect x="97" y="30" width="25" height="25" fill="#C9A84C" opacity="0.3"/>
-              <rect x="134" y="30" width="25" height="25" fill="#C9A84C" opacity="0.6"/>
-              <rect x="171" y="30" width="25" height="25" fill="#C9A84C" opacity="0.3"/>
-              <rect x="208" y="30" width="22" height="25" fill="#C9A84C" opacity="0.5"/>
-              <rect x="60" y="70" width="25" height="25" fill="#C9A84C" opacity="0.3"/>
-              <rect x="97" y="70" width="25" height="25" fill="#C9A84C" opacity="0.5"/>
-              <rect x="134" y="70" width="25" height="25" fill="#C9A84C" opacity="0.3"/>
-              <rect x="171" y="70" width="25" height="25" fill="#C9A84C" opacity="0.6"/>
-              <rect x="208" y="70" width="22" height="25" fill="#C9A84C" opacity="0.3"/>
-              <rect x="90" y="140" width="100" height="40" fill="#2a2210"/>
-              <line x1="40" y1="190" x2="240" y2="190" stroke="#C9A84C" stroke-width="0.5" opacity="0.4"/>
-            </svg>
-            <div class="project-status">En construcción</div>
-          </div>
-          <div class="project-info">
-            <h3>Tortuga Bay Los Cabos</h3>
-            <div class="project-location">
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              San José del Cabo, BCS
-            </div>
-            <div class="project-meta">
-              <div class="meta-item"><div class="label">Tipo</div><div class="value">Residencial</div></div>
-              <div class="meta-item"><div class="label">Unidades</div><div class="value">92</div></div>
-              <div class="meta-item"><div class="label">Entrega</div><div class="value">2026</div></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img">
-            <svg viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg" width="130" style="position:relative;z-index:1">
-              <!-- Landscape / nature resort feel -->
-              <rect x="20" y="80" width="240" height="110" fill="#111" stroke="#C9A84C" stroke-width="0.5"/>
-              <rect x="40" y="40" width="60" height="110" fill="#1e1a10" stroke="#C9A84C" stroke-width="1"/>
-              <rect x="120" y="55" width="60" height="95" fill="#1e1a10" stroke="#C9A84C" stroke-width="1"/>
-              <rect x="200" y="65" width="50" height="85" fill="#1e1a10" stroke="#C9A84C" stroke-width="0.5" opacity="0.7"/>
-              <rect x="50" y="55" width="18" height="18" fill="#C9A84C" opacity="0.5"/>
-              <rect x="75" y="55" width="18" height="18" fill="#C9A84C" opacity="0.3"/>
-              <rect x="130" y="70" width="18" height="18" fill="#C9A84C" opacity="0.5"/>
-              <rect x="155" y="70" width="18" height="18" fill="#C9A84C" opacity="0.3"/>
-              <line x1="20" y1="190" x2="260" y2="190" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
-            </svg>
-            <div class="project-status">En desarrollo</div>
-          </div>
-          <div class="project-info">
-            <h3>Cabo Blanco</h3>
-            <div class="project-location">
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              East Cape, Baja California
-            </div>
-            <div class="project-meta">
-              <div class="meta-item"><div class="label">Tipo</div><div class="value">Residencial + Hotel</div></div>
-              <div class="meta-item"><div class="label">Superficie</div><div class="value">150 Ha</div></div>
-              <div class="meta-item"><div class="label">Playa</div><div class="value">700 m</div></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img">
-            <svg viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg" width="130" style="position:relative;z-index:1">
-              <!-- Lagoon / water feel -->
-              <ellipse cx="140" cy="170" rx="130" ry="30" fill="#0d2a2a" opacity="0.7"/>
-              <rect x="60" y="50" width="160" height="130" fill="#1e1a10" stroke="#C9A84C" stroke-width="1"/>
-              <rect x="75" y="65" width="30" height="30" fill="#C9A84C" opacity="0.4"/>
-              <rect x="115" y="65" width="30" height="30" fill="#C9A84C" opacity="0.6"/>
-              <rect x="155" y="65" width="30" height="30" fill="#C9A84C" opacity="0.3"/>
-              <rect x="195" y="65" width="18" height="30" fill="#C9A84C" opacity="0.5"/>
-              <rect x="75" y="105" width="30" height="30" fill="#C9A84C" opacity="0.3"/>
-              <rect x="115" y="105" width="30" height="30" fill="#C9A84C" opacity="0.5"/>
-              <rect x="155" y="105" width="30" height="30" fill="#C9A84C" opacity="0.4"/>
-              <rect x="195" y="105" width="18" height="30" fill="#C9A84C" opacity="0.3"/>
-            </svg>
-            <div class="project-status">En desarrollo</div>
-          </div>
-          <div class="project-info">
-            <h3>WAYAK Bacalar</h3>
-            <div class="project-location">
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Bacalar, Quintana Roo
-            </div>
-            <div class="project-meta">
-              <div class="meta-item"><div class="label">Tipo</div><div class="value">Residencial + Hotel</div></div>
-              <div class="meta-item"><div class="label">Superficie</div><div class="value">33 Ha</div></div>
-              <div class="meta-item"><div class="label">Laguna</div><div class="value">500 m</div></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PILLARS -->
-  <section style="background:var(--dark-2);">
-    <div class="container">
-      <div class="section-header" style="text-align:center;max-width:600px;margin:0 auto 3.5rem;">
-        <span class="section-label">Nuestros pilares</span>
-        <h2>Cuatro verticales,<br>una sola plataforma</h2>
-      </div>
-      <div class="values-grid">
-        <div class="value-card">
-          <div class="value-num">01</div>
-          <div class="value-icon">
-            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </div>
+      <div class="pillars-grid">
+        <div class="pillar-card reveal">
+          <div class="pillar-num">01</div>
           <h3>Hotels</h3>
-          <p>Desarrollo de resorts y hoteles de lujo en destinos de playa y ciudad, con marcas internacionales líderes.</p>
+          <p>Hoteles boutique y de cadena en destinos de alto potencial, desde concepto hasta operación.</p>
+          <div class="pillar-arrow">→</div>
         </div>
-        <div class="value-card">
-          <div class="value-num">02</div>
-          <div class="value-icon">
-            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          </div>
+        <div class="pillar-card reveal reveal-delay-1">
+          <div class="pillar-num">02</div>
           <h3>Offices</h3>
-          <p>+600,000 m² de espacios corporativos construidos. Torres de oficinas en las principales ciudades de México.</p>
+          <p>Espacios de trabajo que combinan diseño, funcionalidad y tecnología para las empresas del futuro.</p>
+          <div class="pillar-arrow">→</div>
         </div>
-        <div class="value-card">
-          <div class="value-num">03</div>
-          <div class="value-icon">
-            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-          </div>
+        <div class="pillar-card reveal reveal-delay-2">
+          <div class="pillar-num">03</div>
           <h3>Retail</h3>
-          <p>+400,000 m² de espacios comerciales incluyendo el primer IKEA en América Latina.</p>
+          <p>Centros comerciales y espacios retail con experiencias únicas que generan valor a largo plazo.</p>
+          <div class="pillar-arrow">→</div>
         </div>
-        <div class="value-card">
-          <div class="value-num">04</div>
-          <div class="value-icon">
-            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-          </div>
+        <div class="pillar-card reveal reveal-delay-3">
+          <div class="pillar-num">04</div>
           <h3>Residential</h3>
-          <p>Condominios y comunidades residenciales premium en Los Cabos, CDMX y Bacalar con alta plusvalía.</p>
+          <p>Residencias de lujo en los mercados más exclusivos de México, con enfoque en diseño y valor.</p>
+          <div class="pillar-arrow">→</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA BAND -->
-  <section class="cta-band">
+  <section class="section-pad">
     <div class="container">
-      <span class="section-label" style="justify-content:center;display:flex">¿Tienes un proyecto en mente?</span>
-      <h2>Hagamos algo<br>extraordinario juntos</h2>
-      <p>Conecta con nuestro equipo y exploremos las oportunidades de desarrollo e inversión.</p>
-      <div class="cta-actions">
-        <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
-        <a href="proyectos.html" class="btn btn-outline">Explorar proyectos</a>
+      <div class="legacy-layout">
+        <div class="legacy-text reveal-left">
+          <span class="section-label">Nuestra historia</span>
+          <h2>Décadas de<br>experiencia.<br>Visión nueva.</h2>
+          <p>Fundada en 2021, Quatro reúne a cuatro socios con más de dos décadas de trayectoria en bienes raíces, finanzas y desarrollo inmobiliario en México y Latinoamérica.</p>
+          <p style="margin-top:1rem;">Nuestra ventaja: conocemos los mercados, tenemos las relaciones y ejecutamos con disciplina.</p>
+          <a href="nosotros.html" class="btn btn-primary" style="margin-top:2rem;">Conoce al equipo</a>
+        </div>
+        <div class="legacy-image reveal">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80&auto=format&fit=crop" alt="Quatro Team" />
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
+  <section class="cta-section">
+    <div class="cta-watermark">QUATRO</div>
+    <div class="container" style="position:relative;z-index:2;text-align:center;">
+      <span class="section-label reveal" style="color:rgba(255,255,255,0.6)">¿Listo para invertir?</span>
+      <h2 class="reveal reveal-delay-1" style="color:#fff;font-size:clamp(2rem,5vw,4rem);margin:1rem 0 2rem;">Hablemos de tu<br>próximo proyecto.</h2>
+      <a href="contacto.html" class="btn btn-primary reveal reveal-delay-2">Iniciar conversación</a>
+    </div>
+  </section>
+
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="logo">QUA<span>+</span>RO</div>
-          <p>Real Estate Development — Hotels, Offices, Retail & Residential. Fundada en 2021 con décadas de experiencia comprobada en los mercados más dinámicos de México.</p>
+          <div class="nav-logo">QUA<span>+</span>RO</div>
+          <p>Real Estate Development — Hotels, Offices, Retail &amp; Residential.</p>
           <div class="footer-social">
-            <a href="#" class="social-btn" aria-label="Instagram">
-              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-            <a href="#" class="social-btn" aria-label="Facebook">
-              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-            </a>
-            <a href="#" class="social-btn" aria-label="LinkedIn">
-              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            </a>
+            <a href="#" class="social-btn" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
           </div>
         </div>
         <div class="footer-col">
@@ -414,14 +214,7 @@
         </div>
         <div class="footer-col">
           <h4>Contacto</h4>
-          <div class="footer-contact-item">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Ciudad de México, México</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>contacto@quatro.com.mx</span>
-          </div>
+          <p style="font-size:0.85rem;color:var(--text-2);line-height:1.8;">Ciudad de México, México<br>contacto@quatro.com.mx</p>
         </div>
       </div>
       <div class="footer-bottom">

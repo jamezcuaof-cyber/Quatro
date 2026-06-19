@@ -4,353 +4,204 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Proyectos | Quatro Real Estate Development</title>
-  <meta name="description" content="Portafolio activo y legado de Quatro — desarrollos residenciales, hoteleros, comerciales y de oficinas en los mercados más dinámicos de México." />
+  <meta name="description" content="Portafolio de proyectos activos y legacy de Quatro: Hotels, Offices, Retail y Residential en México." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div class="progress-bar"></div>
 
-  <!-- NAVBAR -->
   <nav class="navbar scrolled">
     <div class="container">
-      <a href="index.html" class="logo">QUA<span>+</span>RO</a>
+      <a href="index.html" class="nav-logo">QUA<span>+</span>RO</a>
       <ul class="nav-links">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="proyectos.html" class="active">Proyectos</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="contacto.html" class="btn btn-primary nav-cta">Contáctanos</a></li>
+        <li><a href="contacto.html" class="nav-cta">Contáctanos</a></li>
       </ul>
-      <button class="hamburger" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
-  <div class="page-hero">
+  <div class="page-hero" data-title="PROYECTOS">
     <div class="container">
       <div class="breadcrumb">
         <a href="index.html">Inicio</a>
         <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
         <span>Proyectos</span>
       </div>
-      <span class="section-label" style="justify-content:center;display:flex">Portafolio</span>
-      <h1>Nuestros proyectos</h1>
-      <p>Desarrollos activos y legado en Hotels, Residential, Retail y Offices.</p>
+      <span class="section-label" style="display:flex;justify-content:center">Portafolio</span>
+      <h1>Proyectos que<br>transforman destinos</h1>
+      <p style="max-width:520px;margin:0 auto;">Desarrollamos en los mercados más dinámicos de México con estándares internacionales y visión de largo plazo.</p>
+    </div>
+  </div>
+
+  <!-- FILTER -->
+  <div class="filter-bar">
+    <div class="container" style="display:flex;gap:0.75rem;flex-wrap:wrap;justify-content:center;">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="hotels">Hotels</button>
+      <button class="filter-btn" data-filter="offices">Offices</button>
+      <button class="filter-btn" data-filter="retail">Retail</button>
+      <button class="filter-btn" data-filter="residential">Residential</button>
     </div>
   </div>
 
   <!-- PROJECTS -->
-  <section style="background:var(--dark);">
+  <section class="section-pad">
     <div class="container">
 
-      <!-- ACTIVE PORTFOLIO -->
-      <div class="section-header" style="margin-bottom:2rem;">
-        <span class="section-label">2020 – Presente</span>
-        <h2>Portafolio Activo — Quatro</h2>
+      <!-- Row 1: Hyatt Centric Bacalar (featured) -->
+      <div class="proj-row reveal" data-category="hotels">
+        <div class="proj-row-img">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1000&q=80&auto=format&fit=crop" alt="Hyatt Centric Bacalar" />
+        </div>
+        <div class="proj-row-info">
+          <span class="proj-tag">Hotels</span>
+          <h2>Hyatt Centric Bacalar</h2>
+          <p>Hotel boutique de lujo a orillas del Lago de Bacalar. Diseño bioclimático integrado al entorno natural del Caribe mexicano. Franquicia Hyatt con posicionamiento de lujo accesible.</p>
+          <div class="proj-meta">
+            <span>Bacalar, Quintana Roo</span>
+            <span>·</span>
+            <span>En desarrollo</span>
+          </div>
+        </div>
       </div>
 
-      <div class="filters">
-        <button class="filter-btn active" data-filter="all">Todos</button>
-        <button class="filter-btn" data-filter="residencial">Residencial</button>
-        <button class="filter-btn" data-filter="hotel">Hotel</button>
-        <button class="filter-btn" data-filter="comercial">Comercial</button>
+      <!-- Row 2: East Cape -->
+      <div class="proj-row proj-row-reverse reveal" data-category="residential">
+        <div class="proj-row-img">
+          <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1000&q=80&auto=format&fit=crop" alt="East Cape Residences" />
+        </div>
+        <div class="proj-row-info">
+          <span class="proj-tag">Residential</span>
+          <h2>East Cape Residences</h2>
+          <p>Residencias de ultra lujo frente al Mar de Cortés. Arquitectura minimalista con materiales locales y vistas panorámicas al Pacífico. Diseñadas para el comprador internacional de alto poder adquisitivo.</p>
+          <div class="proj-meta">
+            <span>East Cape, Los Cabos</span>
+            <span>·</span>
+            <span>En desarrollo</span>
+          </div>
+        </div>
       </div>
 
-      <div class="projects-grid-full" style="margin-bottom:6rem;">
-
-        <!-- Casa Nima -->
-        <div class="project-card-full project-card" data-category="residencial">
-          <div class="project-img" style="height:280px;">
-            <svg viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" width="150" style="position:relative;z-index:1">
-              <rect x="30" y="20" width="240" height="170" fill="#1e1a10" stroke="#C9A84C" stroke-width="1"/>
-              <rect x="50" y="40" width="30" height="30" fill="#C9A84C" opacity="0.5"/>
-              <rect x="90" y="40" width="30" height="30" fill="#C9A84C" opacity="0.3"/>
-              <rect x="130" y="40" width="30" height="30" fill="#C9A84C" opacity="0.6"/>
-              <rect x="170" y="40" width="30" height="30" fill="#C9A84C" opacity="0.3"/>
-              <rect x="210" y="40" width="30" height="30" fill="#C9A84C" opacity="0.5"/>
-              <rect x="50" y="85" width="30" height="30" fill="#C9A84C" opacity="0.3"/>
-              <rect x="90" y="85" width="30" height="30" fill="#C9A84C" opacity="0.6"/>
-              <rect x="130" y="85" width="30" height="30" fill="#C9A84C" opacity="0.4"/>
-              <rect x="170" y="85" width="30" height="30" fill="#C9A84C" opacity="0.5"/>
-              <rect x="210" y="85" width="30" height="30" fill="#C9A84C" opacity="0.3"/>
-              <rect x="110" y="145" width="80" height="45" fill="#2a2210"/>
-            </svg>
-            <div class="project-status entrega">Entregado</div>
-          </div>
-          <div class="project-info">
-            <div class="project-price">Casa Nima</div>
-            <h3>Los Cabos · Residencial</h3>
-            <div class="project-location">
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              San José del Cabo, BCS
-            </div>
-            <p style="color:var(--gray-light);font-size:0.9rem;margin:0.75rem 0 1.25rem">147 condominios en San José del Cabo con 18,250 m² de desarrollo residencial de alto nivel.</p>
-            <div class="project-meta">
-              <div class="meta-item"><div class="label">Unidades</div><div class="value">147 condos</div></div>
-              <div class="meta-item"><div class="label">Superficie</div><div class="value">18,250 m²</div></div>
-              <div class="meta-item"><div class="label">Año</div><div class="value">2022–2026</div></div>
-            </div>
+      <!-- Row 3: Torre Corporativa -->
+      <div class="proj-row reveal" data-category="offices">
+        <div class="proj-row-img">
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1000&q=80&auto=format&fit=crop" alt="Torre Corporativa CDMX" />
+        </div>
+        <div class="proj-row-info">
+          <span class="proj-tag">Offices</span>
+          <h2>Torre Corporativa CDMX</h2>
+          <p>Espacio de trabajo de nueva generación en la Ciudad de México. Certificación LEED, tecnología smart building y amenidades de clase mundial para empresas líderes.</p>
+          <div class="proj-meta">
+            <span>Ciudad de México</span>
+            <span>·</span>
+            <span>Planeación</span>
           </div>
         </div>
-
-        <!-- Tortuga Bay -->
-        <div class="project-card-full project-card" data-category="residencial">
-          <div class="project-img" style="height:280px;">
-            <svg viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" width="150" style="position:relative;z-index:1">
-              <rect x="20" y="30" width="260" height="160" fill="#1e1a10" stroke="#C9A84C" stroke-width="1"/>
-              <rect x="40" y="50" width="35" height="35" fill="#C9A84C" opacity="0.4"/>
-              <rect x="85" y="50" width="35" height="35" fill="#C9A84C" opacity="0.6"/>
-              <rect x="130" y="50" width="35" height="35" fill="#C9A84C" opacity="0.3"/>
-              <rect x="175" y="50" width="35" height="35" fill="#C9A84C" opacity="0.5"/>
-              <rect x="220" y="50" width="35" height="35" fill="#C9A84C" opacity="0.3"/>
-              <rect x="40" y="100" width="35" height="35" fill="#C9A84C" opacity="0.5"/>
-              <rect x="85" y="100" width="35" height="35" fill="#C9A84C" opacity="0.3"/>
-              <rect x="130" y="100" width="35" height="35" fill="#C9A84C" opacity="0.6"/>
-              <rect x="175" y="100" width="35" height="35" fill="#C9A84C" opacity="0.3"/>
-              <rect x="220" y="100" width="35" height="35" fill="#C9A84C" opacity="0.5"/>
-            </svg>
-            <div class="project-status">En construcción</div>
-          </div>
-          <div class="project-info">
-            <div class="project-price">Tortuga Bay</div>
-            <h3>Los Cabos · Residencial</h3>
-            <div class="project-location">
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              San José del Cabo, BCS
-            </div>
-            <p style="color:var(--gray-light);font-size:0.9rem;margin:0.75rem 0 1.25rem">92 condominios beachfront en San José del Cabo. 27,650 m² de desarrollo residencial premium frente al Pacífico.</p>
-            <div class="project-meta">
-              <div class="meta-item"><div class="label">Unidades</div><div class="value">92 condos</div></div>
-              <div class="meta-item"><div class="label">Superficie</div><div class="value">27,650 m²</div></div>
-              <div class="meta-item"><div class="label">Entrega</div><div class="value">2026</div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Victoria San Jose -->
-        <div class="project-card-full project-card" data-category="hotel">
-          <div class="project-img" style="height:280px;">
-            <svg viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" width="150" style="position:relative;z-index:1">
-              <rect x="50" y="10" width="200" height="180" fill="#1e1a10" stroke="#C9A84C" stroke-width="1"/>
-              <rect x="70" y="30" width="20" height="20" fill="#C9A84C" opacity="0.5"/>
-              <rect x="100" y="30" width="20" height="20" fill="#C9A84C" opacity="0.3"/>
-              <rect x="130" y="30" width="20" height="20" fill="#C9A84C" opacity="0.6"/>
-              <rect x="160" y="30" width="20" height="20" fill="#C9A84C" opacity="0.3"/>
-              <rect x="190" y="30" width="20" height="20" fill="#C9A84C" opacity="0.5"/>
-              <rect x="220" y="30" width="18" height="20" fill="#C9A84C" opacity="0.3"/>
-              <rect x="70" y="62" width="20" height="20" fill="#C9A84C" opacity="0.3"/>
-              <rect x="100" y="62" width="20" height="20" fill="#C9A84C" opacity="0.5"/>
-              <rect x="130" y="62" width="20" height="20" fill="#C9A84C" opacity="0.3"/>
-              <rect x="160" y="62" width="20" height="20" fill="#C9A84C" opacity="0.6"/>
-              <rect x="190" y="62" width="20" height="20" fill="#C9A84C" opacity="0.3"/>
-              <rect x="220" y="62" width="18" height="20" fill="#C9A84C" opacity="0.5"/>
-              <rect x="70" y="94" width="20" height="20" fill="#C9A84C" opacity="0.5"/>
-              <rect x="100" y="94" width="20" height="20" fill="#C9A84C" opacity="0.3"/>
-              <rect x="130" y="94" width="20" height="20" fill="#C9A84C" opacity="0.5"/>
-              <rect x="160" y="94" width="20" height="20" fill="#C9A84C" opacity="0.3"/>
-              <rect x="120" y="150" width="60" height="40" fill="#2a2210"/>
-            </svg>
-            <div class="project-status">En construcción</div>
-          </div>
-          <div class="project-info">
-            <div class="project-price">Victoria San José</div>
-            <h3>Hotel · Commercial · Event Venue</h3>
-            <div class="project-location">
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              San José del Cabo, BCS
-            </div>
-            <p style="color:var(--gray-light);font-size:0.9rem;margin:0.75rem 0 1.25rem">Desarrollo de uso mixto en San José del Cabo que integra hotel, espacios comerciales y venue para eventos.</p>
-            <div class="project-meta">
-              <div class="meta-item"><div class="label">Tipo</div><div class="value">Hotel + Comercial</div></div>
-              <div class="meta-item"><div class="label">Inicio</div><div class="value">2022</div></div>
-              <div class="meta-item"><div class="label">Entrega</div><div class="value">2027</div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Cabo Blanco -->
-        <div class="project-card-full project-card" data-category="hotel">
-          <div class="project-img" style="height:280px;">
-            <svg viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" width="150" style="position:relative;z-index:1">
-              <rect x="0" y="120" width="300" height="80" fill="#0d1a1a" opacity="0.6"/>
-              <rect x="30" y="40" width="80" height="120" fill="#1e1a10" stroke="#C9A84C" stroke-width="1"/>
-              <rect x="130" y="60" width="80" height="100" fill="#161410" stroke="#C9A84C" stroke-width="0.5" opacity="0.8"/>
-              <rect x="220" y="75" width="60" height="85" fill="#111" stroke="#C9A84C" stroke-width="0.5" opacity="0.6"/>
-              <rect x="45" y="55" width="18" height="18" fill="#C9A84C" opacity="0.5"/>
-              <rect x="72" y="55" width="18" height="18" fill="#C9A84C" opacity="0.3"/>
-              <rect x="45" y="83" width="18" height="18" fill="#C9A84C" opacity="0.3"/>
-              <rect x="72" y="83" width="18" height="18" fill="#C9A84C" opacity="0.5"/>
-              <rect x="145" y="75" width="18" height="18" fill="#C9A84C" opacity="0.4"/>
-              <rect x="173" y="75" width="18" height="18" fill="#C9A84C" opacity="0.4"/>
-              <line x1="0" y1="120" x2="300" y2="120" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
-            </svg>
-            <div class="project-status" style="background:#e67e22;">En desarrollo</div>
-          </div>
-          <div class="project-info">
-            <div class="project-price">Cabo Blanco</div>
-            <h3>East Cape · Residencial + Hotel</h3>
-            <div class="project-location">
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              East Cape, Baja California
-            </div>
-            <p style="color:var(--gray-light);font-size:0.9rem;margin:0.75rem 0 1.25rem">Masterplan de gran escala en East Cape: 150 hectáreas con 700 metros de playa privada. Desarrollo residencial y hotelero de ultra lujo.</p>
-            <div class="project-meta">
-              <div class="meta-item"><div class="label">Superficie</div><div class="value">150 Ha</div></div>
-              <div class="meta-item"><div class="label">Playa</div><div class="value">700 m lineales</div></div>
-              <div class="meta-item"><div class="label">Horizonte</div><div class="value">2022–2030</div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- WAYAK -->
-        <div class="project-card-full project-card" data-category="hotel">
-          <div class="project-img" style="height:280px;">
-            <svg viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" width="150" style="position:relative;z-index:1">
-              <ellipse cx="150" cy="170" rx="150" ry="35" fill="#062a2a" opacity="0.8"/>
-              <rect x="50" y="30" width="200" height="140" fill="#1e1a10" stroke="#C9A84C" stroke-width="1"/>
-              <rect x="70" y="50" width="25" height="25" fill="#C9A84C" opacity="0.4"/>
-              <rect x="105" y="50" width="25" height="25" fill="#C9A84C" opacity="0.6"/>
-              <rect x="140" y="50" width="25" height="25" fill="#C9A84C" opacity="0.3"/>
-              <rect x="175" y="50" width="25" height="25" fill="#C9A84C" opacity="0.5"/>
-              <rect x="210" y="50" width="25" height="25" fill="#C9A84C" opacity="0.3"/>
-              <rect x="70" y="90" width="25" height="25" fill="#C9A84C" opacity="0.3"/>
-              <rect x="105" y="90" width="25" height="25" fill="#C9A84C" opacity="0.5"/>
-              <rect x="140" y="90" width="25" height="25" fill="#C9A84C" opacity="0.4"/>
-              <rect x="175" y="90" width="25" height="25" fill="#C9A84C" opacity="0.3"/>
-              <rect x="210" y="90" width="25" height="25" fill="#C9A84C" opacity="0.6"/>
-            </svg>
-            <div class="project-status" style="background:#e67e22;">En desarrollo</div>
-          </div>
-          <div class="project-info">
-            <div class="project-price">WAYAK Bacalar</div>
-            <h3>Bacalar · Residencial + Hotel</h3>
-            <div class="project-location">
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Bacalar, Quintana Roo
-            </div>
-            <p style="color:var(--gray-light);font-size:0.9rem;margin:0.75rem 0 1.25rem">33 hectáreas con 500 metros de frente a la Laguna de Bacalar. Desarrollo residencial y hotelero en uno de los destinos de mayor crecimiento en México.</p>
-            <div class="project-meta">
-              <div class="meta-item"><div class="label">Superficie</div><div class="value">33 Ha</div></div>
-              <div class="meta-item"><div class="label">Laguna</div><div class="value">500 m lineales</div></div>
-              <div class="meta-item"><div class="label">Horizonte</div><div class="value">2024–2028</div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Airbnb / CDMX -->
-        <div class="project-card-full project-card" data-category="residencial">
-          <div class="project-img" style="height:280px;">
-            <svg viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" width="150" style="position:relative;z-index:1">
-              <rect x="10" y="20" width="130" height="170" fill="#1e1a10" stroke="#C9A84C" stroke-width="1"/>
-              <rect x="160" y="50" width="130" height="140" fill="#161410" stroke="#C9A84C" stroke-width="0.5" opacity="0.8"/>
-              <rect x="25" y="35" width="20" height="20" fill="#C9A84C" opacity="0.5"/>
-              <rect x="55" y="35" width="20" height="20" fill="#C9A84C" opacity="0.3"/>
-              <rect x="85" y="35" width="20" height="20" fill="#C9A84C" opacity="0.5"/>
-              <rect x="115" y="35" width="20" height="20" fill="#C9A84C" opacity="0.3"/>
-              <rect x="25" y="65" width="20" height="20" fill="#C9A84C" opacity="0.3"/>
-              <rect x="55" y="65" width="20" height="20" fill="#C9A84C" opacity="0.5"/>
-              <rect x="85" y="65" width="20" height="20" fill="#C9A84C" opacity="0.3"/>
-              <rect x="115" y="65" width="20" height="20" fill="#C9A84C" opacity="0.5"/>
-              <rect x="175" y="65" width="20" height="20" fill="#C9A84C" opacity="0.4"/>
-              <rect x="205" y="65" width="20" height="20" fill="#C9A84C" opacity="0.4"/>
-              <rect x="235" y="65" width="20" height="20" fill="#C9A84C" opacity="0.4"/>
-              <rect x="265" y="65" width="18" height="20" fill="#C9A84C" opacity="0.3"/>
-            </svg>
-            <div class="project-status entrega">Entregado</div>
-          </div>
-          <div class="project-info">
-            <div class="project-price">Portafolio CDMX</div>
-            <h3>Residencial · Condesa & Roma</h3>
-            <div class="project-location">
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Condesa & Roma, CDMX
-            </div>
-            <p style="color:var(--gray-light);font-size:0.9rem;margin:0.75rem 0 1.25rem">Más de 100 apartamentos residenciales premium en Condesa y Roma — Casa Oliva, Casa Miravalle y Casa del Parque.</p>
-            <div class="project-meta">
-              <div class="meta-item"><div class="label">Unidades</div><div class="value">100+ aptos</div></div>
-              <div class="meta-item"><div class="label">Ubicación</div><div class="value">Condesa · Roma</div></div>
-              <div class="meta-item"><div class="label">Año</div><div class="value">2024</div></div>
-            </div>
-          </div>
-        </div>
-
       </div>
 
-      <!-- LEGACY PORTFOLIO -->
-      <div class="section-header" style="margin-bottom:2rem;">
-        <span class="section-label">Legado · Pulso Inmobiliario</span>
-        <h2>+15 años de entrega comprobada</h2>
+      <!-- Row 4: Centro Comercial -->
+      <div class="proj-row proj-row-reverse reveal" data-category="retail">
+        <div class="proj-row-img">
+          <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1000&q=80&auto=format&fit=crop" alt="Centro Comercial Los Cabos" />
+        </div>
+        <div class="proj-row-info">
+          <span class="proj-tag">Retail</span>
+          <h2>Centro Comercial Los Cabos</h2>
+          <p>Desarrollo retail experiencial en el corredor turístico de Los Cabos. Mix de marcas premium, gastronomía y entretenimiento para capturar el mercado de visitantes de alto valor.</p>
+          <div class="proj-meta">
+            <span>Los Cabos, BCS</span>
+            <span>·</span>
+            <span>Planeación</span>
+          </div>
+        </div>
       </div>
 
-      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;margin-bottom:4rem;" class="legacy-grid">
-
-        <div class="value-card" style="padding:2rem;">
-          <div class="value-num">01</div>
-          <div class="value-icon">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-          </div>
-          <h3 style="font-size:1.1rem;margin-bottom:0.5rem;">Hotels · 3,000+ keys</h3>
-          <p style="font-size:0.9rem;color:var(--gray-light);">Breathless Riviera Cancún, Dreams Natura (550 keys, 2019) y otros resorts de marca con AMResorts y Marriott.</p>
+      <!-- Row 5: Hotel Boutique Los Cabos -->
+      <div class="proj-row reveal" data-category="hotels">
+        <div class="proj-row-img">
+          <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1000&q=80&auto=format&fit=crop" alt="Hotel Boutique Los Cabos" />
         </div>
-
-        <div class="value-card" style="padding:2rem;">
-          <div class="value-num">02</div>
-          <div class="value-icon">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        <div class="proj-row-info">
+          <span class="proj-tag">Hotels</span>
+          <h2>Hotel Boutique Los Cabos</h2>
+          <p>Pequeño hotel de diseño con posicionamiento de lujo en el destino más codiciado de México. Experiencias curadas para el viajero sofisticado internacional.</p>
+          <div class="proj-meta">
+            <span>San José del Cabo, BCS</span>
+            <span>·</span>
+            <span>En desarrollo</span>
           </div>
-          <h3 style="font-size:1.1rem;margin-bottom:0.5rem;">Offices · 600,000 m²</h3>
-          <p style="font-size:0.9rem;color:var(--gray-light);">Torre MANACAR y otros edificios corporativos en las principales ciudades de México. 600,000 m² de espacio de oficinas construidos.</p>
         </div>
-
-        <div class="value-card" style="padding:2rem;">
-          <div class="value-num">03</div>
-          <div class="value-icon">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
-          </div>
-          <h3 style="font-size:1.1rem;margin-bottom:0.5rem;">Retail · 400,000 m²</h3>
-          <p style="font-size:0.9rem;color:var(--gray-light);">Encuentro Oceania y el primer IKEA en América Latina entre los proyectos comerciales más emblemáticos del portafolio.</p>
-        </div>
-
-        <div class="value-card" style="padding:2rem;">
-          <div class="value-num">04</div>
-          <div class="value-icon">
-            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-          </div>
-          <h3 style="font-size:1.1rem;margin-bottom:0.5rem;">Student Housing USA · 4,721 unidades</h3>
-          <p style="font-size:0.9rem;color:var(--gray-light);">Iowa, Mississippi, Georgia, Texas, Atlanta, Washington y Florida. 4,721 unidades de housing estudiantil completadas.</p>
-        </div>
-
       </div>
 
     </div>
   </section>
 
-  <!-- CTA BAND -->
-  <section class="cta-band">
+  <!-- LEGACY -->
+  <section class="section-dark section-pad">
     <div class="container">
-      <span class="section-label" style="justify-content:center;display:flex">¿Quieres invertir?</span>
-      <h2>Conversemos sobre<br>tu próximo proyecto</h2>
-      <p>Nuestro equipo está listo para explorar oportunidades contigo.</p>
-      <div class="cta-actions">
-        <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
-        <a href="nosotros.html" class="btn btn-outline">Conoce al equipo</a>
+      <div class="section-header reveal">
+        <span class="section-label" style="color:var(--gold)">Legado</span>
+        <h2 style="color:#fff">Proyectos que<br>ya transformaron mercados</h2>
+        <p style="color:rgba(255,255,255,0.6);max-width:520px;">Antes de Quatro, nuestros socios participaron en desarrollos que marcaron referentes en México.</p>
+      </div>
+      <div class="legacy-cards">
+        <div class="legacy-card reveal">
+          <div class="legacy-card-num">01</div>
+          <div class="legacy-card-info">
+            <span class="proj-tag">Hotels</span>
+            <h4>Pulso Querétaro</h4>
+            <p>Hotel de 120 habitaciones en el centro histórico de Querétaro. Restauración y adaptación de edificio patrimonial del siglo XVIII.</p>
+            <div class="proj-meta" style="margin-top:1rem;"><span>Querétaro</span><span>·</span><span>Completado 2019</span></div>
+          </div>
+        </div>
+        <div class="legacy-card reveal reveal-delay-1">
+          <div class="legacy-card-num">02</div>
+          <div class="legacy-card-info">
+            <span class="proj-tag">Residential</span>
+            <h4>Residencias Santa Fe</h4>
+            <p>Complejo residencial de lujo en Santa Fe, CDMX. 80 unidades premium con amenidades de resort.</p>
+            <div class="proj-meta" style="margin-top:1rem;"><span>CDMX</span><span>·</span><span>Completado 2020</span></div>
+          </div>
+        </div>
+        <div class="legacy-card reveal reveal-delay-2">
+          <div class="legacy-card-num">03</div>
+          <div class="legacy-card-info">
+            <span class="proj-tag">Offices</span>
+            <h4>Parque Corporativo Norte</h4>
+            <p>Campus corporativo de 25,000 m² en Monterrey. Primer edificio con certificación LEED Platinum en el norte del país.</p>
+            <div class="proj-meta" style="margin-top:1rem;"><span>Monterrey, NL</span><span>·</span><span>Completado 2018</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
+  <section class="cta-section">
+    <div class="cta-watermark">QUATRO</div>
+    <div class="container" style="position:relative;z-index:2;text-align:center;">
+      <span class="section-label reveal" style="color:rgba(255,255,255,0.6)">¿Tienes un terreno u oportunidad?</span>
+      <h2 class="reveal reveal-delay-1" style="color:#fff;font-size:clamp(2rem,5vw,4rem);margin:1rem 0 2rem;">Hablemos de tu<br>próximo proyecto.</h2>
+      <a href="contacto.html" class="btn btn-primary reveal reveal-delay-2">Iniciar conversación</a>
+    </div>
+  </section>
+
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="logo">QUA<span>+</span>RO</div>
-          <p>Real Estate Development — Hotels, Offices, Retail & Residential. Fundada en 2021 con décadas de experiencia comprobada.</p>
+          <div class="nav-logo">QUA<span>+</span>RO</div>
+          <p>Real Estate Development — Hotels, Offices, Retail &amp; Residential.</p>
           <div class="footer-social">
-            <a href="#" class="social-btn" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-            <a href="#" class="social-btn" aria-label="LinkedIn"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
           </div>
         </div>
         <div class="footer-col">
@@ -373,14 +224,7 @@
         </div>
         <div class="footer-col">
           <h4>Contacto</h4>
-          <div class="footer-contact-item">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Ciudad de México, México</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>contacto@quatro.com.mx</span>
-          </div>
+          <p style="font-size:0.85rem;color:var(--text-2);line-height:1.8;">Ciudad de México, México<br>contacto@quatro.com.mx</p>
         </div>
       </div>
       <div class="footer-bottom">
@@ -391,8 +235,5 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <style>
-    @media (max-width:768px) { .legacy-grid { grid-template-columns:1fr !important; } }
-  </style>
 </body>
 </html>

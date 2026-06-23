@@ -883,3 +883,182 @@ footer { background: var(--white); border-top: 1px solid var(--border); padding:
   .footer-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
 }
+
+/* ===== LIGHTBOX GALLERY ===== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  margin-top: 2rem;
+}
+.gallery-grid .gallery-item:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.gallery-item {
+  overflow: hidden; position: relative; cursor: none;
+  background: var(--bg-3);
+}
+.gallery-item img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.7s var(--ease), filter 0.5s;
+  filter: brightness(0.92);
+  display: block;
+  min-height: 200px;
+}
+.gallery-item:hover img { transform: scale(1.06); filter: brightness(1.04); }
+.gallery-item-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(26,25,23,0.6) 0%, transparent 50%);
+  opacity: 0; transition: opacity 0.4s var(--ease);
+  display: flex; align-items: flex-end; padding: 1.5rem;
+}
+.gallery-item:hover .gallery-item-overlay { opacity: 1; }
+.gallery-item-overlay span {
+  color: var(--white); font-size: 0.75rem; letter-spacing: 0.12em;
+  text-transform: uppercase; font-weight: 500;
+}
+.gallery-zoom-icon {
+  position: absolute; top: 1rem; right: 1rem;
+  width: 36px; height: 36px; background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(6px); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: white; opacity: 0; transition: opacity 0.3s;
+}
+.gallery-item:hover .gallery-zoom-icon { opacity: 1; }
+
+/* Lightbox */
+.lightbox {
+  position: fixed; inset: 0; z-index: 9999;
+  background: rgba(15,14,12,0.97);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.35s var(--ease);
+}
+.lightbox.open { opacity: 1; pointer-events: all; }
+.lightbox-inner {
+  position: relative; max-width: 1100px; width: 90vw;
+  display: flex; flex-direction: column; align-items: center;
+}
+.lightbox-img {
+  max-height: 72vh; max-width: 100%;
+  object-fit: contain;
+  transform: scale(0.94); transition: transform 0.4s var(--ease);
+}
+.lightbox.open .lightbox-img { transform: scale(1); }
+.lightbox-caption {
+  margin-top: 1.5rem; text-align: center;
+}
+.lightbox-caption h4 { color: var(--white); font-size: 1.1rem; margin-bottom: 0.3rem; }
+.lightbox-caption p { color: rgba(255,255,255,0.5); font-size: 0.82rem; letter-spacing: 0.05em; }
+.lightbox-close {
+  position: absolute; top: -3rem; right: 0;
+  background: none; border: none; color: rgba(255,255,255,0.6);
+  font-size: 1.8rem; cursor: pointer; padding: 0.5rem;
+  transition: color 0.2s; line-height: 1;
+}
+.lightbox-close:hover { color: var(--white); }
+.lightbox-nav {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12);
+  color: var(--white); width: 48px; height: 48px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: background 0.2s; font-size: 1.2rem;
+  backdrop-filter: blur(4px);
+}
+.lightbox-nav:hover { background: rgba(255,255,255,0.15); }
+.lightbox-prev { left: -4rem; }
+.lightbox-next { right: -4rem; }
+.lightbox-dots {
+  display: flex; gap: 0.4rem; margin-top: 1.25rem;
+}
+.lightbox-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: rgba(255,255,255,0.25); transition: background 0.2s, width 0.3s;
+  cursor: pointer;
+}
+.lightbox-dot.active { background: var(--gold); width: 20px; border-radius: 3px; }
+
+/* ===== INTERACTIVE MAP ===== */
+.map-section { background: var(--bg-2); padding: 8rem 0; }
+.map-layout {
+  display: grid; grid-template-columns: 1fr 1.4fr; gap: 6rem; align-items: start;
+}
+.map-destinations { display: flex; flex-direction: column; gap: 0; }
+.map-dest-item {
+  display: flex; gap: 1.5rem; align-items: flex-start;
+  padding: 1.75rem 0; border-bottom: 1px solid var(--border);
+  cursor: pointer; transition: background 0.2s; position: relative;
+}
+.map-dest-item:first-child { border-top: 1px solid var(--border); }
+.map-dest-item::before {
+  content: ''; position: absolute; left: -1.5rem; top: 0; bottom: 0;
+  width: 2px; background: var(--gold);
+  transform: scaleY(0); transform-origin: top;
+  transition: transform 0.35s var(--ease);
+}
+.map-dest-item.active::before { transform: scaleY(1); }
+.map-dest-item.active .map-dest-num { color: var(--gold); }
+.map-dest-item.active h4 { color: var(--text); }
+.map-dest-num {
+  font-family: var(--font-h); font-size: 2rem; font-weight: 700;
+  color: var(--border); line-height: 1; flex-shrink: 0; width: 2.5rem;
+  transition: color 0.3s;
+}
+.map-dest-info h4 { font-size: 1rem; margin-bottom: 0.3rem; color: var(--text-2); transition: color 0.3s; }
+.map-dest-info p { font-size: 0.82rem; color: var(--text-3); line-height: 1.6; }
+.map-dest-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.6rem; }
+.map-dest-tag {
+  font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase;
+  border: 1px solid var(--border); padding: 0.2rem 0.5rem; color: var(--text-3);
+}
+.map-dest-item.active .map-dest-tag { border-color: var(--gold); color: var(--gold); }
+
+.map-visual { position: relative; }
+.map-svg-wrap {
+  background: var(--white); border: 1px solid var(--border);
+  padding: 3rem; position: sticky; top: 8rem;
+  min-height: 420px;
+}
+.map-svg-wrap svg { width: 100%; height: auto; }
+/* Map land */
+.map-land { fill: var(--bg-3); stroke: var(--border); stroke-width: 0.5; }
+/* Map pin */
+.map-pin {
+  cursor: pointer; transition: all 0.3s;
+}
+.map-pin circle.outer {
+  fill: none; stroke: var(--gold); stroke-width: 1.5; opacity: 0.4;
+  animation: pinPulse 2.5s ease-in-out infinite;
+}
+.map-pin circle.inner { fill: var(--gold); }
+.map-pin.active circle.outer { opacity: 0.8; }
+.map-pin-label {
+  font-size: 8px; fill: var(--text-2); font-family: var(--font-s);
+  letter-spacing: 0.08em;
+}
+@keyframes pinPulse {
+  0%,100% { r: 10; opacity: 0.4; }
+  50% { r: 16; opacity: 0.15; }
+}
+.map-info-card {
+  margin-top: 1.5rem; padding: 1.5rem;
+  background: var(--bg); border: 1px solid var(--border);
+  display: none;
+}
+.map-info-card.visible { display: block; }
+.map-info-card .proj-tag { margin-bottom: 0.5rem; }
+.map-info-card h4 { font-size: 1rem; margin-bottom: 0.3rem; }
+.map-info-card p { font-size: 0.82rem; color: var(--text-2); line-height: 1.65; }
+
+@media (max-width: 1024px) {
+  .map-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .gallery-grid .gallery-item:first-child { grid-column: span 2; grid-row: span 1; }
+  .lightbox-prev { left: -1rem; }
+  .lightbox-next { right: -1rem; }
+}
+@media (max-width: 768px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; gap: 3px; }
+  .lightbox-nav { display: none; }
+}

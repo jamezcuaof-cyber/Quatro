@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Proyectos | Quatro Real Estate Development</title>
-  <meta name="description" content="Portafolio de proyectos: Wayak Bacalar, Casa Oliva, Casa Miravalle, East Cape, Tortuga Bay, Casa Nima, Casa Victoria y más." />
+  <meta name="description" content="Portafolio completo: Wayak Bacalar, Cabo Blanco, Tortuga Bay, Casa Nima, Victoria San José, Luis Cabrera 7, Amsterdam y más." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -15,18 +15,22 @@
   <div id="cursor-ring"></div>
   <div class="progress-bar"></div>
 
-  <!-- LIGHTBOX -->
-  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
-    <div class="lightbox-inner">
-      <button id="lb-close" class="lightbox-close">✕</button>
-      <button id="lb-prev" class="lightbox-nav lightbox-prev">‹</button>
-      <button id="lb-next" class="lightbox-nav lightbox-next">›</button>
-      <img id="lb-img" class="lightbox-img" src="" alt="" />
-      <div class="lightbox-caption">
-        <h4 id="lb-title"></h4>
-        <p id="lb-sub"></p>
+  <!-- PROJECT DETAIL MODAL -->
+  <div id="project-modal" class="project-modal" role="dialog" aria-modal="true">
+    <div class="project-modal-inner">
+      <button id="pm-close" class="pm-close" aria-label="Cerrar">✕</button>
+      <div class="pm-gallery-wrap">
+        <button id="pm-prev" class="pm-nav pm-prev">‹</button>
+        <img id="pm-img" class="pm-img" src="" alt="" />
+        <button id="pm-next" class="pm-nav pm-next">›</button>
+        <div id="pm-dots" class="pm-dots"></div>
       </div>
-      <div id="lb-dots" class="lightbox-dots"></div>
+      <div class="pm-info">
+        <span class="proj-tag" id="pm-tag"></span>
+        <h2 id="pm-title"></h2>
+        <p id="pm-desc"></p>
+        <div id="pm-specs" class="pm-specs"></div>
+      </div>
     </div>
   </div>
 
@@ -69,305 +73,10 @@
     </div>
   </div>
 
-  <!-- ═══════════════════════════════════════════
-       HOTELS
-  ═══════════════════════════════════════════ -->
-  <section class="section-pad" style="border-bottom:1px solid var(--border);" data-category="hotels">
-    <div class="container">
-      <span class="section-label">Hotels</span>
-      <div class="proj-row reveal">
-        <div class="proj-row-img">
-          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1000&q=80&auto=format&fit=crop" alt="Wayak Bacalar" />
-        </div>
-        <div class="proj-row-info">
-          <span class="proj-tag">Hotel · Bacalar, QR</span>
-          <h2>Wayak Bacalar</h2>
-          <p>Boutique resort a orillas del Lago de Bacalar — el Lago de los 7 Colores. Arquitectura que dialoga con el entorno natural caribeño, diseñada para el viajero contemporáneo que busca lujo genuino y conexión con la naturaleza.</p>
-          <div class="proj-meta"><span>En desarrollo</span></div>
-        </div>
-      </div>
-      <div class="gallery-grid reveal" style="margin-top:3rem;">
-        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1400&q=90" data-title="Wayak Bacalar" data-sub="Vista al Lago de los 7 Colores">
-          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Wayak Bacalar" />
-          <div class="gallery-item-overlay"><span>Vista lago</span></div>
-          <div class="gallery-zoom-icon"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
-        </div>
-        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1400&q=90" data-title="Wayak Bacalar" data-sub="Alberca infinita">
-          <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80" alt="Alberca" />
-          <div class="gallery-item-overlay"><span>Alberca</span></div>
-          <div class="gallery-zoom-icon"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
-        </div>
-        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1400&q=90" data-title="Wayak Bacalar" data-sub="Suite lago">
-          <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&q=80" alt="Suite" />
-          <div class="gallery-item-overlay"><span>Suite</span></div>
-          <div class="gallery-zoom-icon"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
-        </div>
-        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1400&q=90" data-title="Wayak Bacalar" data-sub="Restaurante">
-          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600&q=80" alt="Restaurante" />
-          <div class="gallery-item-overlay"><span>Restaurante</span></div>
-          <div class="gallery-zoom-icon"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
-        </div>
-        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1400&q=90" data-title="Wayak Bacalar" data-sub="Embarcadero privado">
-          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="Lago" />
-          <div class="gallery-item-overlay"><span>Lago</span></div>
-          <div class="gallery-zoom-icon"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- PROJECT LIST — populated by JS -->
+  <div id="projects-list" class="projects-list"></div>
 
-  <!-- ═══════════════════════════════════════════
-       AIRBNBS
-  ═══════════════════════════════════════════ -->
-  <section class="section-pad" style="border-bottom:1px solid var(--border);background:var(--bg-2);" data-category="airbnb">
-    <div class="container">
-      <span class="section-label">Airbnb · Propiedades</span>
-      <h2 class="reveal" style="margin-bottom:4rem;">Casas curadas<br>para vivir bien</h2>
-
-      <!-- Casa Oliva -->
-      <div class="proj-row reveal" style="border-bottom:1px solid var(--border);padding-bottom:5rem;margin-bottom:5rem;">
-        <div class="proj-row-img">
-          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&q=80" alt="Casa Oliva" />
-        </div>
-        <div class="proj-row-info">
-          <span class="proj-tag">Airbnb</span>
-          <h2>Casa Oliva</h2>
-          <p>Casa de diseño con carácter propio. Espacios amplios y luminosos que combinan materiales naturales con comodidades de primera. Una experiencia de hospedaje que va más allá del hotel convencional.</p>
-          <div class="proj-meta"><span>Activo</span></div>
-        </div>
-      </div>
-
-      <!-- Casa Miravalle -->
-      <div class="proj-row proj-row-reverse reveal">
-        <div class="proj-row-img">
-          <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1000&q=80" alt="Casa Miravalle" />
-        </div>
-        <div class="proj-row-info">
-          <span class="proj-tag">Airbnb</span>
-          <h2>Casa Miravalle</h2>
-          <p>Vista y privacidad como protagonistas. Casa aislada en lo alto con panoramas que abren la mente. Diseñada para quienes buscan desconexión sin renunciar al confort.</p>
-          <div class="proj-meta"><span>Activo</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       LOS CABOS — CASAS
-  ═══════════════════════════════════════════ -->
-  <section class="section-pad" style="border-bottom:1px solid var(--border);" data-category="residential">
-    <div class="container">
-      <span class="section-label">Residential · Los Cabos, BCS</span>
-      <h2 class="reveal" style="margin-bottom:4rem;">Casas frente al mar</h2>
-
-      <!-- Oasis -->
-      <div class="proj-row reveal" style="border-bottom:1px solid var(--border);padding-bottom:5rem;margin-bottom:5rem;">
-        <div class="proj-row-img">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&q=80" alt="Oasis Los Cabos" />
-        </div>
-        <div class="proj-row-info">
-          <span class="proj-tag">Casa · Los Cabos</span>
-          <h2>Oasis</h2>
-          <p>Casa de autor en Los Cabos con acceso privado al mar. Arquitectura que responde al paisaje desértico del Mar de Cortés: materiales locales, vistas a 180 grados y una alberca que se funde con el horizonte.</p>
-          <div class="proj-meta"><span>Los Cabos, BCS</span></div>
-        </div>
-      </div>
-
-      <!-- La Noria -->
-      <div class="proj-row proj-row-reverse reveal">
-        <div class="proj-row-img">
-          <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?w=1000&q=80" alt="La Noria" />
-        </div>
-        <div class="proj-row-info">
-          <span class="proj-tag">Casa · Los Cabos</span>
-          <h2>La Noria</h2>
-          <p>Residencia de diseño contemporáneo ubicada en Los Cabos. Espacios interiores que fluyen hacia el exterior, conectando cada ambiente con el paisaje natural circundante.</p>
-          <div class="proj-meta"><span>Los Cabos, BCS</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       LOS CABOS — DEPARTAMENTOS
-  ═══════════════════════════════════════════ -->
-  <section class="section-pad" style="border-bottom:1px solid var(--border);background:var(--bg-2);" data-category="residential">
-    <div class="container">
-      <span class="section-label">Departamentos · Los Cabos, BCS</span>
-      <h2 class="reveal" style="margin-bottom:4rem;">Vivir en Los Cabos</h2>
-
-      <div class="project-grid">
-        <!-- Tortuga Bay -->
-        <div class="project-card reveal">
-          <div class="project-card-img">
-            <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80" alt="Tortuga Bay" />
-          </div>
-          <div class="project-card-info">
-            <span class="proj-tag">Departamentos · En Construcción</span>
-            <h4>Tortuga Bay</h4>
-            <p>92 departamentos beachfront en San José del Cabo. 27,650 m² de desarrollo residencial frente al Pacífico.</p>
-            <div class="proj-meta"><span>San José del Cabo · 2023–2026</span></div>
-          </div>
-        </div>
-        <!-- Casa Nima -->
-        <div class="project-card reveal reveal-delay-1">
-          <div class="project-card-img">
-            <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800&q=80" alt="Casa Nima" />
-          </div>
-          <div class="project-card-info">
-            <span class="proj-tag">Departamentos · Entregado</span>
-            <h4>Casa Nima</h4>
-            <p>147 condominios en San José del Cabo. 18,250 m² de desarrollo residencial de alta gama en el corredor de Los Cabos.</p>
-            <div class="proj-meta"><span>San José del Cabo · 2022–2026</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       CABO BLANCO — EAST CAPE
-  ═══════════════════════════════════════════ -->
-  <section class="section-pad" style="border-bottom:1px solid var(--border);" data-category="residential">
-    <div class="container">
-      <div class="proj-row reveal">
-        <div class="proj-row-img">
-          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1000&q=80" alt="Cabo Blanco East Cape" />
-        </div>
-        <div class="proj-row-text">
-          <span class="proj-tag">Residencial &amp; Hotel · En Desarrollo</span>
-          <h2>Cabo Blanco<br><em>East Cape</em></h2>
-          <p>Desarrollo maestro de 150 hectáreas con 700 metros de frente de playa en East Cape, Baja California. Un proyecto de largo plazo que integra residencias de lujo, hotelería y experiencias de naturaleza en uno de los últimos frentes costeros vírgenes de México.</p>
-          <div class="proj-meta" style="margin-top:1.5rem;display:flex;gap:2rem;flex-wrap:wrap;">
-            <span>East Cape, BCS</span>
-            <span>150 ha · 700 m playa</span>
-            <span>2022–2030</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       RETAIL
-  ═══════════════════════════════════════════ -->
-  <section class="section-pad" style="border-bottom:1px solid var(--border);" data-category="retail">
-    <div class="container">
-      <span class="section-label">Retail · Los Cabos, BCS</span>
-      <div class="proj-row reveal">
-        <div class="proj-row-img">
-          <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1000&q=80" alt="Casa Victoria" />
-        </div>
-        <div class="proj-row-info">
-          <span class="proj-tag">Hotel · Comercial · Event Venue · En Construcción</span>
-          <h2>Victoria<br><em>San José</em></h2>
-          <p>Desarrollo de uso mixto en San José del Cabo que integra hotel boutique, plaza comercial y venue para eventos. Un proyecto ancla para el corredor turístico-residencial de Los Cabos.</p>
-          <div class="proj-meta"><span>San José del Cabo, BCS</span><span>·</span><span>2025–2027</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       CIUDAD DE MÉXICO — PROYECTOS
-  ═══════════════════════════════════════════ -->
-  <section class="section-pad" style="border-bottom:1px solid var(--border);background:var(--bg-2);" data-category="retail">
-    <div class="container">
-      <span class="section-label">Retail · Ciudad de México</span>
-      <div class="proj-row reveal">
-        <div class="proj-row-img">
-          <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1000&q=80" alt="Luis Cabrera 7" />
-        </div>
-        <div class="proj-row-info">
-          <span class="proj-tag">Plaza Comercial · Roma Norte, CDMX</span>
-          <h2>Luis Cabrera 7</h2>
-          <p>Plaza comercial de barrio en uno de los corredores más vibrantes de la Ciudad de México. Espacios diseñados para el comercio local de carácter, en una calle que ya es referente cultural de la colonia Roma.</p>
-          <div class="proj-meta"><span>Roma Norte, CDMX</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-pad" style="border-bottom:1px solid var(--border);" data-category="airbnb">
-    <div class="container">
-      <span class="section-label">Airbnb · Ciudad de México</span>
-      <div class="proj-row reveal">
-        <div class="proj-row-img">
-          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&q=80" alt="Casa del Parque" />
-        </div>
-        <div class="proj-row-info">
-          <span class="proj-tag">Airbnb · Ciudad de México</span>
-          <h2>Casa del Parque</h2>
-          <p>Casa frente a un parque en la Ciudad de México. Una propiedad que combina la vida urbana con la tranquilidad de los espacios verdes. Diseño interior cuidado, luz natural abundante y ubicación inmejorable para explorar la ciudad.</p>
-          <div class="proj-meta"><span>Ciudad de México</span><span>·</span><span>Activo</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-pad" style="border-bottom:1px solid var(--border);background:var(--bg-2);" data-category="restaurante">
-    <div class="container">
-      <span class="section-label">Restaurante · Ciudad de México</span>
-      <div class="proj-row reveal">
-        <div class="proj-row-img">
-          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000&q=80" alt="Amsterdam" />
-        </div>
-        <div class="proj-row-info">
-          <span class="proj-tag">Restaurante · Condesa, CDMX</span>
-          <h2>Amsterdam</h2>
-          <p>Restaurante en la icónica Avenida Ámsterdam de la Colonia Condesa. Un espacio gastronómico que toma su nombre y carácter del boulevard arbolado que lo rodea — íntimo, bien ejecutado, con identidad propia en uno de los rincones más queridos de la ciudad.</p>
-          <div class="proj-meta"><span>Condesa, CDMX</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       STUDENT HOUSING — EUA
-  ═══════════════════════════════════════════ -->
-  <section class="section-pad" style="border-bottom:1px solid var(--border);" data-category="inversiones">
-    <div class="container">
-      <span class="section-label">Inversiones · Estados Unidos</span>
-
-      <div class="proj-row reveal" style="align-items:start;">
-        <div class="proj-row-info" style="padding-top:0;">
-          <span class="proj-tag">Student Housing</span>
-          <h2>Portafolio<br><em>Student Housing</em><br>EUA</h2>
-          <p>Quatro participa como co-inversionista en un portafolio de proyectos de vivienda estudiantil en Estados Unidos. Una clase de activo con fundamentos sólidos: demanda estructural creciente, altas tasas de ocupación y flujos de renta estables independientes del ciclo económico general.</p>
-          <p style="margin-top:1.25rem;">Nuestra participación nos permite diversificar geográficamente el portafolio, generar exposición a dólares y acceder a retornos atractivos ajustados por riesgo en uno de los mercados inmobiliarios más profundos del mundo.</p>
-        </div>
-        <div style="display:flex;flex-direction:column;gap:3rem;">
-          <div class="proj-row-img" style="margin:0;">
-            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=900&q=80&auto=format&fit=crop" alt="Student Housing EUA" />
-          </div>
-          <!-- Conviction points — no boxes, pure type -->
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem 3rem;">
-            <div>
-              <div style="font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-3);margin-bottom:0.5rem;font-weight:300;">Total de unidades</div>
-              <div style="font-size:0.95rem;color:var(--text-2);font-weight:300;">4,721 unidades</div>
-            </div>
-            <div>
-              <div style="font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-3);margin-bottom:0.5rem;font-weight:300;">Geografía</div>
-              <div style="font-size:0.95rem;color:var(--text-2);font-weight:300;">Iowa · Mississippi · Georgia<br>Texas · Washington · Florida</div>
-            </div>
-            <div>
-              <div style="font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-3);margin-bottom:0.5rem;font-weight:300;">Rol</div>
-              <div style="font-size:0.95rem;color:var(--text-2);font-weight:300;">Co-inversionista</div>
-            </div>
-            <div>
-              <div style="font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-3);margin-bottom:0.5rem;font-weight:300;">Moneda</div>
-              <div style="font-size:0.95rem;color:var(--text-2);font-weight:300;">USD</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       LEGADO PULSO INMOBILIARIO
-  ═══════════════════════════════════════════ -->
+  <!-- LEGADO PULSO -->
   <section class="section-dark section-pad">
     <div class="container">
       <div class="legacy-layout" style="align-items:flex-start;">
@@ -378,19 +87,19 @@
         </div>
         <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem 4rem;padding-top:0.5rem;">
           <div>
-            <div class="stat-num" style="font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;">1.5M+</div>
+            <div style="font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;">1.5M+</div>
             <div style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:0.4rem;">m² totales entregados</div>
           </div>
           <div>
-            <div class="stat-num" style="font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;">3,000+</div>
+            <div style="font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;">3,000+</div>
             <div style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:0.4rem;">Llaves hoteleras — AMResorts &amp; Marriott</div>
           </div>
           <div>
-            <div class="stat-num" style="font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;">600K</div>
+            <div style="font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;">600K</div>
             <div style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:0.4rem;">m² de oficinas construidas</div>
           </div>
           <div>
-            <div class="stat-num" style="font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;">400K</div>
+            <div style="font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;">400K</div>
             <div style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:0.4rem;">m² retail — incl. 1er IKEA LATAM</div>
           </div>
         </div>
@@ -412,9 +121,7 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════
-       INTERACTIVE MAP
-  ═══════════════════════════════════════════ -->
+  <!-- INTERACTIVE MAP -->
   <section class="map-section">
     <div class="container">
       <div class="section-header reveal">
@@ -423,7 +130,6 @@
         <p>Operamos en los mercados con mayor potencial de retorno y crecimiento en México.</p>
       </div>
       <div class="map-layout">
-
         <div class="map-destinations reveal-left">
           <div class="map-dest-item" data-dest="bacalar">
             <div class="map-dest-num">01</div>
@@ -439,13 +145,14 @@
             <div class="map-dest-num">02</div>
             <div class="map-dest-info">
               <h4>Los Cabos, BCS</h4>
-              <p>Residential · Retail · Airbnb</p>
+              <p>Residential · Retail · Hotel</p>
               <div class="map-dest-tags">
                 <span class="map-dest-tag">Oasis</span>
                 <span class="map-dest-tag">La Noria</span>
                 <span class="map-dest-tag">Tortuga Bay</span>
                 <span class="map-dest-tag">Casa Nima</span>
-                <span class="map-dest-tag">Casa Victoria</span>
+                <span class="map-dest-tag">Victoria San José</span>
+                <span class="map-dest-tag">Cabo Blanco</span>
               </div>
             </div>
           </div>
@@ -464,27 +171,22 @@
             </div>
           </div>
         </div>
-
         <div class="map-visual reveal">
           <div class="map-svg-wrap">
             <svg viewBox="0 0 500 340" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="map-land" d="M60,80 L90,60 L130,55 L175,50 L210,45 L240,42 L275,44 L310,50 L340,58 L360,70 L375,90 L385,110 L380,130 L390,145 L400,160 L410,175 L415,190 L405,205 L390,215 L375,225 L360,230 L345,240 L330,255 L318,265 L308,270 L295,265 L285,258 L275,248 L265,240 L255,235 L248,228 L240,220 L232,215 L220,218 L210,225 L200,232 L188,238 L175,242 L162,245 L150,250 L140,258 L132,265 L125,270 L115,268 L108,260 L102,250 L95,238 L85,230 L78,220 L70,210 L62,195 L58,180 L55,165 L52,148 L50,130 L52,112 L55,98 Z" />
               <path class="map-land" d="M62,195 L58,180 L55,165 L52,148 L50,130 L52,112 L55,98 L60,80 L55,85 L48,95 L42,108 L38,125 L36,145 L35,165 L36,182 L38,198 L42,212 L48,222 L55,228 L62,230 L68,225 L70,210 Z" />
               <path class="map-land" d="M318,265 L308,270 L300,278 L295,288 L292,300 L295,310 L302,315 L310,312 L318,305 L325,295 L328,283 L325,272 Z" />
-
-              <!-- Pin: Bacalar -->
               <g class="map-pin" data-dest="bacalar" transform="translate(310,288)">
                 <circle class="outer" cx="0" cy="0" r="10" style="animation-delay:0s"/>
                 <circle class="inner" cx="0" cy="0" r="4" />
                 <text class="map-pin-label" x="-48" y="-11">Bacalar</text>
               </g>
-              <!-- Pin: Los Cabos -->
               <g class="map-pin" data-dest="loscabos" transform="translate(48,198)">
                 <circle class="outer" cx="0" cy="0" r="10" style="animation-delay:0.9s"/>
                 <circle class="inner" cx="0" cy="0" r="4" />
                 <text class="map-pin-label" x="11" y="4">Los Cabos</text>
               </g>
-              <!-- Pin: CDMX -->
               <g class="map-pin" data-dest="cdmx" transform="translate(195,170)">
                 <circle class="outer" cx="0" cy="0" r="10" style="animation-delay:1.7s"/>
                 <circle class="inner" cx="0" cy="0" r="4" />
@@ -494,7 +196,6 @@
             <div id="map-info-card" class="map-info-card"></div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -531,13 +232,11 @@
         <div class="footer-col">
           <h4>Proyectos</h4>
           <ul>
-            <li><a href="proyectos.html">Wayak Bacalar</a></li>
-            <li><a href="proyectos.html">Casa Oliva</a></li>
-            <li><a href="proyectos.html">Casa Miravalle</a></li>
-            <li><a href="proyectos.html">Casa Victoria · Luis Cabrera 7</a></li>
-            <li><a href="proyectos.html">Oasis · La Noria</a></li>
-            <li><a href="proyectos.html">Tortuga Bay · Casa Nima</a></li>
-            <li><a href="proyectos.html">Amsterdam · Casa del Parque</a></li>
+            <li><a href="#">Wayak Bacalar</a></li>
+            <li><a href="#">Cabo Blanco East Cape</a></li>
+            <li><a href="#">Tortuga Bay · Casa Nima</a></li>
+            <li><a href="#">Victoria San José</a></li>
+            <li><a href="#">Amsterdam · Luis Cabrera 7</a></li>
           </ul>
         </div>
         <div class="footer-col">

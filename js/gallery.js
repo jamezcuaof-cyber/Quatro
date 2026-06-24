@@ -1,52 +1,383 @@
-/* ===== LIGHTBOX ===== */
+/* ===== PROJECT DATA ===== */
+const PROJECTS = [
+  {
+    id: 'wayak',
+    category: 'hotels',
+    tag: 'Hotel · Bacalar, QR',
+    title: 'Wayak Bacalar',
+    thumb: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=80',
+    desc: 'Boutique resort a orillas del Lago de Bacalar — el Lago de los 7 Colores. Arquitectura que dialoga con el entorno natural caribeño, diseñada para el viajero contemporáneo que busca lujo genuino y conexión con la naturaleza.',
+    specs: [
+      { label: 'Superficie', value: '33 hectáreas' },
+      { label: 'Frente al lago', value: '500 metros' },
+      { label: 'Destino', value: 'Bacalar, Quintana Roo' },
+      { label: 'Estatus', value: 'En desarrollo · 2024–2028' },
+    ],
+    images: [
+      { src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1400&q=90', sub: 'Vista al Lago de los 7 Colores' },
+      { src: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1400&q=90', sub: 'Alberca infinita' },
+      { src: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1400&q=90', sub: 'Suite lago' },
+      { src: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1400&q=90', sub: 'Restaurante' },
+      { src: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1400&q=90', sub: 'Embarcadero privado' },
+    ],
+  },
+  {
+    id: 'cabo-blanco',
+    category: 'residential',
+    tag: 'Residencial & Hotel · East Cape, BCS',
+    title: 'Cabo Blanco East Cape',
+    thumb: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80',
+    desc: 'Desarrollo maestro de 150 hectáreas con 700 metros de frente de playa en East Cape, Baja California. Uno de los últimos frentes costeros vírgenes de México, integrando residencias de lujo, hotelería y experiencias de naturaleza.',
+    specs: [
+      { label: 'Superficie', value: '150 hectáreas' },
+      { label: 'Frente de playa', value: '700 metros' },
+      { label: 'Destino', value: 'East Cape, BCS' },
+      { label: 'Estatus', value: 'En desarrollo · 2022–2030' },
+    ],
+    images: [
+      { src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&q=90', sub: 'Frente de playa virgen' },
+      { src: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1400&q=90', sub: 'Vista al Mar de Cortés' },
+      { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&q=90', sub: 'Concepto residencial' },
+    ],
+  },
+  {
+    id: 'tortuga-bay',
+    category: 'residential',
+    tag: 'Departamentos · San José del Cabo',
+    title: 'Tortuga Bay',
+    thumb: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=900&q=80',
+    desc: '92 departamentos beachfront en San José del Cabo. Desarrollo residencial de 27,650 m² frente al Pacífico, con amenidades de resort y acceso directo a la playa.',
+    specs: [
+      { label: 'Unidades', value: '92 departamentos' },
+      { label: 'Superficie', value: '27,650 m²' },
+      { label: 'Destino', value: 'San José del Cabo, BCS' },
+      { label: 'Estatus', value: 'En construcción · 2023–2026' },
+    ],
+    images: [
+      { src: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1400&q=90', sub: 'Fachada beachfront' },
+      { src: 'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1400&q=90', sub: 'Interiores' },
+      { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=90', sub: 'Vista al Pacífico' },
+    ],
+  },
+  {
+    id: 'casa-nima',
+    category: 'residential',
+    tag: 'Departamentos · San José del Cabo',
+    title: 'Casa Nima',
+    thumb: 'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=900&q=80',
+    desc: '147 condominios de alta gama en San José del Cabo. Desarrollo de 18,250 m² en el corredor turístico-residencial más dinámico de Los Cabos.',
+    specs: [
+      { label: 'Unidades', value: '147 condominios' },
+      { label: 'Superficie', value: '18,250 m²' },
+      { label: 'Destino', value: 'San José del Cabo, BCS' },
+      { label: 'Estatus', value: 'Entregado · 2022–2026' },
+    ],
+    images: [
+      { src: 'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1400&q=90', sub: 'Vista exterior' },
+      { src: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=1400&q=90', sub: 'Área común' },
+      { src: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1400&q=90', sub: 'Terraza' },
+    ],
+  },
+  {
+    id: 'oasis',
+    category: 'residential',
+    tag: 'Casa · Los Cabos, BCS',
+    title: 'Oasis',
+    thumb: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80',
+    desc: 'Casa de autor en Los Cabos con acceso privado al mar. Arquitectura que responde al paisaje desértico del Mar de Cortés: materiales locales, vistas a 180 grados y una alberca que se funde con el horizonte.',
+    specs: [
+      { label: 'Tipo', value: 'Casa residencial' },
+      { label: 'Acceso', value: 'Playa privada' },
+      { label: 'Destino', value: 'Los Cabos, BCS' },
+      { label: 'Estatus', value: 'Activo' },
+    ],
+    images: [
+      { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&q=90', sub: 'Fachada principal' },
+      { src: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1400&q=90', sub: 'Piscina infinita' },
+      { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=90', sub: 'Vista al mar' },
+    ],
+  },
+  {
+    id: 'la-noria',
+    category: 'residential',
+    tag: 'Casa · Los Cabos, BCS',
+    title: 'La Noria',
+    thumb: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=900&q=80',
+    desc: 'Residencia de diseño contemporáneo en Los Cabos. Espacios interiores que fluyen hacia el exterior, conectando cada ambiente con el paisaje natural del desierto y el mar.',
+    specs: [
+      { label: 'Tipo', value: 'Casa residencial' },
+      { label: 'Estilo', value: 'Contemporáneo' },
+      { label: 'Destino', value: 'Los Cabos, BCS' },
+      { label: 'Estatus', value: 'Activo' },
+    ],
+    images: [
+      { src: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=1400&q=90', sub: 'Exterior' },
+      { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&q=90', sub: 'Jardín y alberca' },
+      { src: 'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1400&q=90', sub: 'Sala principal' },
+    ],
+  },
+  {
+    id: 'victoria-san-jose',
+    category: 'retail',
+    tag: 'Hotel · Retail · Event Venue · Los Cabos',
+    title: 'Victoria San José',
+    thumb: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=900&q=80',
+    desc: 'Desarrollo de uso mixto en San José del Cabo que integra hotel boutique, plaza comercial y venue para eventos. Un proyecto ancla para el corredor turístico-residencial de Los Cabos.',
+    specs: [
+      { label: 'Tipo', value: 'Uso mixto' },
+      { label: 'Usos', value: 'Hotel · Retail · Eventos' },
+      { label: 'Destino', value: 'San José del Cabo, BCS' },
+      { label: 'Estatus', value: 'En construcción · 2025–2027' },
+    ],
+    images: [
+      { src: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1400&q=90', sub: 'Vista exterior' },
+      { src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&q=90', sub: 'Concepto interior' },
+      { src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1400&q=90', sub: 'Área de eventos' },
+    ],
+  },
+  {
+    id: 'casa-oliva',
+    category: 'airbnb',
+    tag: 'Airbnb · Ciudad de México',
+    title: 'Casa Oliva',
+    thumb: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=80',
+    desc: 'Casa de diseño con carácter propio. Espacios amplios y luminosos que combinan materiales naturales con comodidades de primera. Una experiencia de hospedaje que va más allá del hotel convencional.',
+    specs: [
+      { label: 'Tipo', value: 'Airbnb' },
+      { label: 'Capacidad', value: 'Hasta 8 personas' },
+      { label: 'Destino', value: 'Ciudad de México' },
+      { label: 'Estatus', value: 'Activo' },
+    ],
+    images: [
+      { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=90', sub: 'Fachada' },
+      { src: 'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1400&q=90', sub: 'Sala' },
+      { src: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1400&q=90', sub: 'Terraza' },
+    ],
+  },
+  {
+    id: 'casa-miravalle',
+    category: 'airbnb',
+    tag: 'Airbnb · Ciudad de México',
+    title: 'Casa Miravalle',
+    thumb: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=900&q=80',
+    desc: 'Vista y privacidad como protagonistas. Casa aislada con panoramas que abren la mente. Diseñada para quienes buscan desconexión sin renunciar al confort urbano.',
+    specs: [
+      { label: 'Tipo', value: 'Airbnb' },
+      { label: 'Característica', value: 'Vistas panorámicas' },
+      { label: 'Destino', value: 'Ciudad de México' },
+      { label: 'Estatus', value: 'Activo' },
+    ],
+    images: [
+      { src: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1400&q=90', sub: 'Vista exterior' },
+      { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=90', sub: 'Sala con vistas' },
+      { src: 'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1400&q=90', sub: 'Recámara principal' },
+    ],
+  },
+  {
+    id: 'casa-del-parque',
+    category: 'airbnb',
+    tag: 'Airbnb · Ciudad de México',
+    title: 'Casa del Parque',
+    thumb: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80',
+    desc: 'Casa frente a un parque en la Ciudad de México. Combina la vida urbana con la tranquilidad de los espacios verdes. Diseño interior cuidado, luz natural abundante y ubicación inmejorable.',
+    specs: [
+      { label: 'Tipo', value: 'Airbnb' },
+      { label: 'Entorno', value: 'Frente a parque' },
+      { label: 'Destino', value: 'Ciudad de México' },
+      { label: 'Estatus', value: 'Activo' },
+    ],
+    images: [
+      { src: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1400&q=90', sub: 'Fachada al parque' },
+      { src: 'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1400&q=90', sub: 'Interiores' },
+      { src: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1400&q=90', sub: 'Jardín' },
+    ],
+  },
+  {
+    id: 'luis-cabrera-7',
+    category: 'retail',
+    tag: 'Plaza Comercial · Roma Norte, CDMX',
+    title: 'Luis Cabrera 7',
+    thumb: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=900&q=80',
+    desc: 'Plaza comercial de barrio en uno de los corredores más vibrantes de la Ciudad de México. Espacios diseñados para el comercio local de carácter en la Colonia Roma.',
+    specs: [
+      { label: 'Tipo', value: 'Retail' },
+      { label: 'Ubicación', value: 'Roma Norte, CDMX' },
+      { label: 'Estilo', value: 'Comercio de barrio' },
+      { label: 'Estatus', value: 'Activo' },
+    ],
+    images: [
+      { src: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1400&q=90', sub: 'Fachada Luis Cabrera 7' },
+      { src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&q=90', sub: 'Local comercial' },
+      { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=90', sub: 'Calle Roma Norte' },
+    ],
+  },
+  {
+    id: 'amsterdam',
+    category: 'restaurante',
+    tag: 'Restaurante · Condesa, CDMX',
+    title: 'Amsterdam',
+    thumb: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&q=80',
+    desc: 'Restaurante en la icónica Avenida Ámsterdam de la Colonia Condesa. Un espacio gastronómico íntimo con identidad propia en uno de los rincones más queridos de la ciudad.',
+    specs: [
+      { label: 'Tipo', value: 'Restaurante' },
+      { label: 'Ubicación', value: 'Av. Ámsterdam, Condesa' },
+      { label: 'Destino', value: 'Ciudad de México' },
+      { label: 'Estatus', value: 'Activo' },
+    ],
+    images: [
+      { src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&q=90', sub: 'Salón principal' },
+      { src: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1400&q=90', sub: 'Terraza exterior' },
+      { src: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1400&q=90', sub: 'Cocina abierta' },
+    ],
+  },
+  {
+    id: 'student-housing',
+    category: 'inversiones',
+    tag: 'Co-inversión · Estados Unidos',
+    title: 'Student Housing EUA',
+    thumb: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=900&q=80',
+    desc: 'Quatro participa como co-inversionista en un portafolio de vivienda estudiantil en Estados Unidos. 4,721 unidades en 6 estados: Iowa, Mississippi, Georgia, Texas, Washington y Florida. Clase de activo con demanda estructural, alta ocupación y flujos de renta en dólares.',
+    specs: [
+      { label: 'Total unidades', value: '4,721 unidades' },
+      { label: 'Estados', value: 'Iowa · Mississippi · Georgia · Texas · Washington · Florida' },
+      { label: 'Rol', value: 'Co-inversionista' },
+      { label: 'Moneda', value: 'USD' },
+    ],
+    images: [
+      { src: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1400&q=90', sub: 'Campus universitario' },
+      { src: 'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1400&q=90', sub: 'Unidades residenciales' },
+      { src: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1400&q=90', sub: 'Áreas comunes' },
+    ],
+  },
+];
+
+/* ===== RENDER PROJECT LIST ===== */
 (function () {
-  const lightbox = document.getElementById('lightbox');
-  const lbImg    = document.getElementById('lb-img');
-  const lbTitle  = document.getElementById('lb-title');
-  const lbSub    = document.getElementById('lb-sub');
-  const lbPrev   = document.getElementById('lb-prev');
-  const lbNext   = document.getElementById('lb-next');
-  const lbClose  = document.getElementById('lb-close');
-  const lbDots   = document.getElementById('lb-dots');
-  if (!lightbox) return;
+  const list = document.getElementById('projects-list');
+  if (!list) return;
 
-  const items = [...document.querySelectorAll('.gallery-item[data-src]')];
+  PROJECTS.forEach((p, i) => {
+    const even = i % 2 === 1;
+    const el = document.createElement('article');
+    el.className = 'project-entry reveal';
+    el.dataset.project = p.id;
+    el.dataset.category = p.category;
+    el.innerHTML = `
+      <div class="project-entry-img">
+        <span class="project-entry-num">${String(i + 1).padStart(2, '0')}</span>
+        <img src="${p.thumb}" alt="${p.title}" loading="lazy" />
+        <div class="project-entry-overlay"></div>
+      </div>
+      <div class="project-entry-info">
+        <span class="proj-tag">${p.tag}</span>
+        <h2>${p.title}</h2>
+        <p>${p.desc.slice(0, 160)}${p.desc.length > 160 ? '…' : ''}</p>
+        <div class="proj-meta" style="margin-top:0.9rem;">
+          ${p.specs[3] ? `<span>${p.specs[3].value}</span>` : ''}
+        </div>
+        <button class="project-entry-cta">Ver proyecto</button>
+      </div>
+    `;
+    el.addEventListener('click', () => openModal(p.id));
+    list.appendChild(el);
+  });
+
+  // trigger reveal for newly added elements
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.08 });
+  list.querySelectorAll('.project-entry').forEach(el => io.observe(el));
+})();
+
+/* ===== PROJECT MODAL ===== */
+(function () {
+  const modal   = document.getElementById('project-modal');
+  const pmImg   = document.getElementById('pm-img');
+  const pmTag   = document.getElementById('pm-tag');
+  const pmTitle = document.getElementById('pm-title');
+  const pmDesc  = document.getElementById('pm-desc');
+  const pmSpecs = document.getElementById('pm-specs');
+  const pmClose = document.getElementById('pm-close');
+  const pmPrev  = document.getElementById('pm-prev');
+  const pmNext  = document.getElementById('pm-next');
+  const pmDots  = document.getElementById('pm-dots');
+  if (!modal) return;
+
   let current = 0;
+  let images = [];
 
-  function open(idx) {
-    current = idx; render();
-    lightbox.classList.add('open');
+  window.openModal = function (id) {
+    const p = PROJECTS.find(x => x.id === id);
+    if (!p) return;
+    images = p.images;
+    current = 0;
+
+    pmTag.textContent   = p.tag;
+    pmTitle.textContent = p.title;
+    pmDesc.textContent  = p.desc;
+    pmSpecs.innerHTML = p.specs.map(s => `
+      <div>
+        <div class="pm-spec-label">${s.label}</div>
+        <div class="pm-spec-val">${s.value}</div>
+      </div>
+    `).join('');
+
+    renderImg();
+    modal.classList.add('open');
     document.body.style.overflow = 'hidden';
-  }
-  function close() {
-    lightbox.classList.remove('open');
+  };
+
+  function closeModal() {
+    modal.classList.remove('open');
     document.body.style.overflow = '';
   }
-  function render() {
-    const el = items[current];
-    lbImg.src = el.dataset.src;
-    lbTitle.textContent = el.dataset.title || '';
-    lbSub.textContent   = el.dataset.sub   || '';
-    lbDots.innerHTML = items.map((_, i) =>
-      `<div class="lightbox-dot${i === current ? ' active' : ''}" data-i="${i}"></div>`
-    ).join('');
-    lbDots.querySelectorAll('.lightbox-dot').forEach(d => {
-      d.addEventListener('click', () => { current = +d.dataset.i; render(); });
-    });
-  }
-  function prev() { current = (current - 1 + items.length) % items.length; render(); }
-  function next() { current = (current + 1) % items.length; render(); }
 
-  items.forEach((el, i) => el.addEventListener('click', () => open(i)));
-  if (lbPrev) lbPrev.addEventListener('click', prev);
-  if (lbNext) lbNext.addEventListener('click', next);
-  if (lbClose) lbClose.addEventListener('click', close);
-  lightbox.addEventListener('click', e => { if (e.target === lightbox) close(); });
+  function renderImg() {
+    pmImg.classList.add('fading');
+    setTimeout(() => {
+      pmImg.src = images[current].src;
+      pmImg.alt = images[current].sub || '';
+      pmImg.classList.remove('fading');
+    }, 180);
+    pmDots.innerHTML = images.map((_, i) =>
+      `<div class="pm-dot${i === current ? ' active' : ''}"></div>`
+    ).join('');
+    pmDots.querySelectorAll('.pm-dot').forEach((d, i) => {
+      d.addEventListener('click', () => { current = i; renderImg(); });
+    });
+    pmPrev.style.display = images.length > 1 ? '' : 'none';
+    pmNext.style.display = images.length > 1 ? '' : 'none';
+  }
+
+  pmClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  pmPrev.addEventListener('click', e => { e.stopPropagation(); current = (current - 1 + images.length) % images.length; renderImg(); });
+  pmNext.addEventListener('click', e => { e.stopPropagation(); current = (current + 1) % images.length; renderImg(); });
   document.addEventListener('keydown', e => {
-    if (!lightbox.classList.contains('open')) return;
-    if (e.key === 'ArrowLeft')  prev();
-    if (e.key === 'ArrowRight') next();
-    if (e.key === 'Escape')     close();
+    if (!modal.classList.contains('open')) return;
+    if (e.key === 'Escape')      closeModal();
+    if (e.key === 'ArrowLeft')  { current = (current - 1 + images.length) % images.length; renderImg(); }
+    if (e.key === 'ArrowRight') { current = (current + 1) % images.length; renderImg(); }
+  });
+})();
+
+/* ===== PROJECT FILTER ===== */
+(function () {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  if (!filterBtns.length) return;
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.project-entry').forEach(el => {
+        const show = filter === 'all' || el.dataset.category === filter;
+        el.style.display = show ? '' : 'none';
+      });
+    });
   });
 })();
 
@@ -58,21 +389,9 @@
   if (!destItems.length) return;
 
   const data = {
-    bacalar: {
-      tag: 'Hotels',
-      title: 'Bacalar, Quintana Roo',
-      desc: 'Destino emergente de alto crecimiento en el Caribe mexicano. Proyecto flagship: Wayak Bacalar, resort boutique a orillas del Lago de los 7 Colores.',
-    },
-    loscabos: {
-      tag: 'Residential · Retail',
-      title: 'Los Cabos, BCS',
-      desc: 'Mercado de lujo con demanda internacional. Proyectos activos: Oasis, La Noria, Tortuga Bay, Casa Nima y la plaza comercial Casa Victoria.',
-    },
-    cdmx: {
-      tag: 'Airbnb · Retail · Restaurante',
-      title: 'Ciudad de México',
-      desc: 'Oficina principal y hub operativo. Airbnb: Casa Oliva, Casa Miravalle, Casa del Parque. Retail: Luis Cabrera 7 (Roma Norte). Restaurante: Amsterdam (Condesa).',
-    },
+    bacalar:  { tag: 'Hotels', title: 'Bacalar, Quintana Roo', desc: 'Destino emergente de alto crecimiento. Proyecto flagship: Wayak Bacalar — 33 ha, 500 m frente al Lago de los 7 Colores.' },
+    loscabos: { tag: 'Residential · Retail · Hotel', title: 'Los Cabos, BCS', desc: 'Mercado de lujo con demanda internacional sostenida. Proyectos: Oasis, La Noria, Tortuga Bay (92 deptos), Casa Nima (147 deptos), Victoria San José y Cabo Blanco East Cape (150 ha).' },
+    cdmx:     { tag: 'Airbnb · Retail · Restaurante', title: 'Ciudad de México', desc: 'Hub operativo principal. Airbnb: Casa Oliva, Casa Miravalle, Casa del Parque. Retail: Luis Cabrera 7 (Roma Norte). Restaurante: Amsterdam (Condesa).' },
   };
 
   function activate(id) {
@@ -88,23 +407,4 @@
   destItems.forEach(el => el.addEventListener('click', () => activate(el.dataset.dest)));
   mapPins.forEach(p => p.addEventListener('click', () => activate(p.dataset.dest)));
   activate('bacalar');
-})();
-
-/* ===== PROJECT FILTER ===== */
-(function () {
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const sections   = document.querySelectorAll('[data-category]');
-  if (!filterBtns.length) return;
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filter = btn.dataset.filter;
-      sections.forEach(s => {
-        const show = filter === 'all' || s.dataset.category === filter;
-        s.style.display = show ? '' : 'none';
-      });
-    });
-  });
 })();

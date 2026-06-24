@@ -64,7 +64,7 @@ const PROJECTS = [
     category: 'residential',
     tag: 'Departamentos · San José del Cabo',
     title: 'Casa Nima',
-    thumb: 'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=900&q=80',
+    thumb: 'images/casa-nima/photo-7.webp',
     desc: '147 condominios de alta gama en San José del Cabo. Desarrollo de 18,250 m² en el corredor turístico-residencial más dinámico de Los Cabos.',
     specs: [
       { label: 'Unidades', value: '147 condominios' },
@@ -73,9 +73,10 @@ const PROJECTS = [
       { label: 'Estatus', value: 'Entregado · 2022–2026' },
     ],
     images: [
-      { src: 'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1400&q=90', sub: 'Vista exterior' },
-      { src: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=1400&q=90', sub: 'Área común' },
-      { src: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1400&q=90', sub: 'Terraza' },
+      { src: 'images/casa-nima/photo-7.webp', sub: 'Vista exterior · alberca' },
+      { src: 'images/casa-nima/photo-6.webp', sub: 'Vista aérea' },
+      { src: 'images/casa-nima/photo-5.webp', sub: 'Interior · sala' },
+      { src: 'images/casa-nima/photo-8.webp', sub: 'Terraza rooftop' },
     ],
   },
   {

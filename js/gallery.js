@@ -2,7 +2,7 @@
 const PROJECTS = [
   {
     id: 'wayak',
-    category: 'hotels',
+    category: 'hotel',
     tag: 'Hotel · Bacalar, QR',
     title: 'Wayak Bacalar',
     thumb: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=80',
@@ -23,7 +23,7 @@ const PROJECTS = [
   },
   {
     id: 'cabo-blanco',
-    category: 'residential',
+    category: 'residencial',
     tag: 'Residencial & Hotel · East Cape, BCS',
     title: 'Cabo Blanco East Cape',
     thumb: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80',
@@ -42,7 +42,7 @@ const PROJECTS = [
   },
   {
     id: 'tortuga-bay',
-    category: 'residential',
+    category: 'residencial',
     tag: 'Departamentos · San José del Cabo',
     title: 'Tortuga Bay',
     thumb: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=900&q=80',
@@ -61,7 +61,7 @@ const PROJECTS = [
   },
   {
     id: 'casa-nima',
-    category: 'residential',
+    category: 'residencial',
     tag: 'Departamentos · San José del Cabo',
     title: 'Casa Nima',
     thumb: 'images/casa-nima/photo-7.webp',
@@ -81,9 +81,9 @@ const PROJECTS = [
   },
   {
     id: 'oasis',
-    category: 'residential',
+    category: 'residencial',
     tag: 'Casa · Los Cabos, BCS',
-    title: 'Oasis',
+    title: 'Oasis 17',
     thumb: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80',
     desc: 'Casa de autor en Los Cabos con acceso privado al mar. Arquitectura que responde al paisaje desértico del Mar de Cortés: materiales locales, vistas a 180 grados y una alberca que se funde con el horizonte.',
     specs: [
@@ -99,10 +99,10 @@ const PROJECTS = [
     ],
   },
   {
-    id: 'la-noria',
-    category: 'residential',
+    id: 'la-noria-116',
+    category: 'residencial',
     tag: 'Casa · Los Cabos, BCS',
-    title: 'La Noria',
+    title: 'La Noria 116',
     thumb: 'https://images.unsplash.com/photo-1615529182904-14819c35db37?w=900&q=80',
     desc: 'Residencia de diseño contemporáneo en Los Cabos. Espacios interiores que fluyen hacia el exterior, conectando cada ambiente con el paisaje natural del desierto y el mar.',
     specs: [
@@ -118,8 +118,27 @@ const PROJECTS = [
     ],
   },
   {
+    id: 'la-noria-129',
+    category: 'residencial',
+    tag: 'Casa · Los Cabos, BCS',
+    title: 'La Noria 129',
+    thumb: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80',
+    desc: 'Segunda residencia en el mismo corredor premium de Los Cabos. Arquitectura que responde al entorno desértico con materiales naturales, patios interiores y vistas al paisaje del Mar de Cortés.',
+    specs: [
+      { label: 'Tipo', value: 'Casa residencial' },
+      { label: 'Estilo', value: 'Contemporáneo' },
+      { label: 'Destino', value: 'Los Cabos, BCS' },
+      { label: 'Estatus', value: 'Activo' },
+    ],
+    images: [
+      { src: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1400&q=90', sub: 'Exterior' },
+      { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=90', sub: 'Alberca' },
+      { src: 'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1400&q=90', sub: 'Sala principal' },
+    ],
+  },
+  {
     id: 'victoria-san-jose',
-    category: 'retail',
+    category: 'hotel',
     tag: 'Hotel · Retail · Event Venue · Los Cabos',
     title: 'Victoria San José',
     thumb: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=900&q=80',
@@ -138,8 +157,8 @@ const PROJECTS = [
   },
   {
     id: 'casa-oliva',
-    category: 'airbnb',
-    tag: 'Airbnb · Ciudad de México',
+    category: 'hotel',
+    tag: 'Hotel · Ciudad de México',
     title: 'Casa Oliva',
     thumb: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=80',
     desc: 'Casa de diseño con carácter propio. Espacios amplios y luminosos que combinan materiales naturales con comodidades de primera. Una experiencia de hospedaje que va más allá del hotel convencional.',
@@ -157,8 +176,8 @@ const PROJECTS = [
   },
   {
     id: 'casa-miravalle',
-    category: 'airbnb',
-    tag: 'Airbnb · Ciudad de México',
+    category: 'hotel',
+    tag: 'Hotel · Ciudad de México',
     title: 'Casa Miravalle',
     thumb: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=900&q=80',
     desc: 'Vista y privacidad como protagonistas. Casa aislada con panoramas que abren la mente. Diseñada para quienes buscan desconexión sin renunciar al confort urbano.',
@@ -176,8 +195,8 @@ const PROJECTS = [
   },
   {
     id: 'casa-del-parque',
-    category: 'airbnb',
-    tag: 'Airbnb · Ciudad de México',
+    category: 'hotel',
+    tag: 'Hotel · Ciudad de México',
     title: 'Casa del Parque',
     thumb: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80',
     desc: 'Casa frente a un parque en la Ciudad de México. Combina la vida urbana con la tranquilidad de los espacios verdes. Diseño interior cuidado, luz natural abundante y ubicación inmejorable.',
@@ -214,9 +233,9 @@ const PROJECTS = [
   },
   {
     id: 'amsterdam',
-    category: 'restaurante',
+    category: 'retail',
     tag: 'Restaurante · Condesa, CDMX',
-    title: 'Amsterdam',
+    title: 'Amsterdam 76',
     thumb: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&q=80',
     desc: 'Restaurante en la icónica Avenida Ámsterdam de la Colonia Condesa. Un espacio gastronómico íntimo con identidad propia en uno de los rincones más queridos de la ciudad.',
     specs: [
@@ -233,7 +252,7 @@ const PROJECTS = [
   },
   {
     id: 'student-housing',
-    category: 'inversiones',
+    category: 'residencial',
     tag: 'Co-inversión · Estados Unidos',
     title: 'Student Housing EUA',
     thumb: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=900&q=80',

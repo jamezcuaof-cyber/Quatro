@@ -3,9 +3,9 @@
 html { scroll-behavior: smooth; font-size: 16px; }
 
 :root {
-  --bg:       #F5F4F2;
-  --bg-2:     #EEEDEA;
-  --bg-3:     #E4E2DE;
+  --bg:       #F4F4F4;
+  --bg-2:     #EBEBEB;
+  --bg-3:     #E0E0E0;
   --text:     #1C1B19;
   --text-2:   #6E6C68;
   --text-3:   #AEACAA;

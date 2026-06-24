@@ -171,6 +171,8 @@ h4 { font-size: 1.1rem; }
   letter-spacing: 0.12em; color: var(--text);
 }
 .nav-logo span { font-weight: 300; }
+.logo-img { height: 22px; width: auto; display: block; }
+.logo-img--footer { filter: invert(1); height: 20px; }
 
 .nav-links { display: flex; align-items: center; gap: 3rem; }
 .nav-links a {

@@ -69,9 +69,9 @@
       desc: 'Mercado de lujo con demanda internacional. Proyectos activos: Oasis, La Noria, Tortuga Bay, Casa Nima y la plaza comercial Casa Victoria.',
     },
     cdmx: {
-      tag: 'Airbnb',
+      tag: 'Airbnb · Retail · Restaurante',
       title: 'Ciudad de México',
-      desc: 'Oficina principal y hub operativo. Propiedades Airbnb: Casa Oliva y Casa Miravalle, diseñadas para el viajero urbano contemporáneo.',
+      desc: 'Oficina principal y hub operativo. Airbnb: Casa Oliva, Casa Miravalle, Casa del Parque. Retail: Luis Cabrera 7 (Roma Norte). Restaurante: Amsterdam (Condesa).',
     },
   };
 

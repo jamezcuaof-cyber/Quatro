@@ -1,21 +1,20 @@
-/* ===== LIGHTBOX GALLERY ===== */
+/* ===== LIGHTBOX ===== */
 (function () {
-  const lightbox   = document.getElementById('lightbox');
-  const lbImg      = document.getElementById('lb-img');
-  const lbTitle    = document.getElementById('lb-title');
-  const lbSub      = document.getElementById('lb-sub');
-  const lbPrev     = document.getElementById('lb-prev');
-  const lbNext     = document.getElementById('lb-next');
-  const lbClose    = document.getElementById('lb-close');
-  const lbDots     = document.getElementById('lb-dots');
+  const lightbox = document.getElementById('lightbox');
+  const lbImg    = document.getElementById('lb-img');
+  const lbTitle  = document.getElementById('lb-title');
+  const lbSub    = document.getElementById('lb-sub');
+  const lbPrev   = document.getElementById('lb-prev');
+  const lbNext   = document.getElementById('lb-next');
+  const lbClose  = document.getElementById('lb-close');
+  const lbDots   = document.getElementById('lb-dots');
   if (!lightbox) return;
 
   const items = [...document.querySelectorAll('.gallery-item[data-src]')];
   let current = 0;
 
   function open(idx) {
-    current = idx;
-    render();
+    current = idx; render();
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
@@ -25,7 +24,7 @@
   }
   function render() {
     const el = items[current];
-    lbImg.src   = el.dataset.src;
+    lbImg.src = el.dataset.src;
     lbTitle.textContent = el.dataset.title || '';
     lbSub.textContent   = el.dataset.sub   || '';
     lbDots.innerHTML = items.map((_, i) =>
@@ -39,9 +38,9 @@
   function next() { current = (current + 1) % items.length; render(); }
 
   items.forEach((el, i) => el.addEventListener('click', () => open(i)));
-  lbPrev.addEventListener('click', prev);
-  lbNext.addEventListener('click', next);
-  lbClose.addEventListener('click', close);
+  if (lbPrev) lbPrev.addEventListener('click', prev);
+  if (lbNext) lbNext.addEventListener('click', next);
+  if (lbClose) lbClose.addEventListener('click', close);
   lightbox.addEventListener('click', e => { if (e.target === lightbox) close(); });
   document.addEventListener('keydown', e => {
     if (!lightbox.classList.contains('open')) return;
@@ -59,20 +58,20 @@
   if (!destItems.length) return;
 
   const data = {
-    cdmx: {
-      title: 'Ciudad de México',
-      tag: 'Oficina Principal',
-      desc: 'Hub de operaciones y desarrollo corporativo. Foco en proyectos de Offices y Residential premium en las zonas más dinámicas de la capital.',
+    bacalar: {
+      tag: 'Hotels',
+      title: 'Bacalar, Quintana Roo',
+      desc: 'Destino emergente de alto crecimiento en el Caribe mexicano. Proyecto flagship: Wayak Bacalar, resort boutique a orillas del Lago de los 7 Colores.',
     },
     loscabos: {
+      tag: 'Residential · Retail',
       title: 'Los Cabos, BCS',
-      tag: 'Hotels · Residential',
-      desc: 'Mercado de ultra lujo con demanda internacional sólida. Proyectos activos en East Cape Residences y Hotel Boutique San José del Cabo.',
+      desc: 'Mercado de lujo con demanda internacional. Proyectos activos: Oasis, La Noria, Tortuga Bay, Casa Nima y la plaza comercial Casa Victoria.',
     },
-    bacalar: {
-      title: 'Bacalar, Quintana Roo',
-      tag: 'Hotels',
-      desc: 'Destino emergente de alto crecimiento. Proyecto flagship: Hyatt Centric Bacalar, resort boutique frente al Lago de los 7 Colores.',
+    cdmx: {
+      tag: 'Airbnb',
+      title: 'Ciudad de México',
+      desc: 'Oficina principal y hub operativo. Propiedades Airbnb: Casa Oliva y Casa Miravalle, diseñadas para el viajero urbano contemporáneo.',
     },
   };
 
@@ -81,18 +80,31 @@
     mapPins.forEach(p => p.classList.toggle('active', p.dataset.dest === id));
     if (infoCard && data[id]) {
       const d = data[id];
-      infoCard.innerHTML = `
-        <span class="proj-tag">${d.tag}</span>
-        <h4>${d.title}</h4>
-        <p>${d.desc}</p>
-      `;
+      infoCard.innerHTML = `<span class="proj-tag">${d.tag}</span><h4>${d.title}</h4><p>${d.desc}</p>`;
       infoCard.classList.add('visible');
     }
   }
 
   destItems.forEach(el => el.addEventListener('click', () => activate(el.dataset.dest)));
   mapPins.forEach(p => p.addEventListener('click', () => activate(p.dataset.dest)));
+  activate('bacalar');
+})();
 
-  // Activate first by default
-  activate('cdmx');
+/* ===== PROJECT FILTER ===== */
+(function () {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const sections   = document.querySelectorAll('[data-category]');
+  if (!filterBtns.length) return;
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      sections.forEach(s => {
+        const show = filter === 'all' || s.dataset.category === filter;
+        s.style.display = show ? '' : 'none';
+      });
+    });
+  });
 })();

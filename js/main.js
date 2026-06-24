@@ -87,7 +87,8 @@ function animateCounter(el) {
     const p = Math.min((now - start) / duration, 1);
     const ease = 1 - Math.pow(1 - p, 4);
     const val = target * ease;
-    el.textContent = (isFloat ? val.toFixed(1) : Math.round(val)) + suffix;
+    const num = isFloat ? val.toFixed(1) : Math.round(val).toLocaleString('es-MX');
+    el.textContent = num + suffix;
     if (p < 1) requestAnimationFrame(tick);
   })(start);
 }

@@ -595,51 +595,67 @@ footer { background: var(--white); border-top: 1px solid var(--border); padding:
 .lightbox-dot.active { background: var(--white); width: 18px; border-radius: 2px; }
 
 /* ===== INTERACTIVE MAP ===== */
-.map-section { background: var(--bg-2); padding: 7rem 0; }
-.map-layout { display: grid; grid-template-columns: 1fr 1.4fr; gap: 6rem; align-items: start; }
-.map-destinations { display: flex; flex-direction: column; }
+.map-section { background: var(--bg); padding: 7rem 0; }
+.map-layout { display: grid; grid-template-columns: 1fr 1.4fr; gap: 8rem; align-items: start; }
+
+/* Destination list — no boxes, no borders, pure typography */
+.map-destinations { display: flex; flex-direction: column; gap: 0; }
 .map-dest-item {
-  display: flex; gap: 1.5rem; align-items: flex-start;
-  padding: 1.75rem 0; border-bottom: 1px solid var(--border);
-  cursor: pointer; position: relative;
+  display: flex; gap: 2rem; align-items: flex-start;
+  padding: 2rem 0; cursor: pointer; position: relative;
+  transition: opacity 0.3s;
 }
-.map-dest-item:first-child { border-top: 1px solid var(--border); }
-.map-dest-item::before {
-  content: ''; position: absolute; left: -1.5rem; top: 0; bottom: 0;
-  width: 1px; background: var(--text);
-  transform: scaleY(0); transform-origin: top; transition: transform 0.35s var(--ease);
-}
-.map-dest-item.active::before { transform: scaleY(1); }
+.map-dest-item:not(.active) { opacity: 0.38; }
+.map-dest-item:hover { opacity: 0.7; }
+.map-dest-item.active { opacity: 1; }
+
 .map-dest-num {
-  font-family: var(--font-h); font-size: 1.8rem; font-weight: 300;
-  color: var(--border); line-height: 1; flex-shrink: 0; width: 2.5rem;
+  font-family: var(--font-h); font-size: 0.72rem;
+  color: var(--text-3); line-height: 2.2; flex-shrink: 0;
+  letter-spacing: 0.1em; font-weight: 300;
   transition: color 0.3s;
 }
 .map-dest-item.active .map-dest-num { color: var(--text-2); }
-.map-dest-info h4 { font-size: 0.95rem; color: var(--text-2); transition: color 0.3s; font-weight: 400; margin-bottom: 0.2rem; }
-.map-dest-item.active h4 { color: var(--text); }
-.map-dest-info p { font-size: 0.78rem; color: var(--text-3); line-height: 1.6; font-weight: 300; }
-.map-dest-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.5rem; }
-.map-dest-tag { font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-3); border-right: 1px solid var(--border); padding-right: 0.5rem; }
-.map-dest-tag:last-child { border-right: none; }
-.map-svg-wrap { background: var(--white); border: 1px solid var(--border); padding: 2.5rem; position: sticky; top: 8rem; }
+
+.map-dest-info h4 {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  color: var(--text); font-weight: 300;
+  line-height: 1.1; margin-bottom: 0.4rem;
+  transition: all 0.3s;
+}
+.map-dest-info p { font-size: 0.82rem; color: var(--text-2); line-height: 1.65; font-weight: 300; }
+.map-dest-tags { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.6rem; }
+.map-dest-tag {
+  font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--text-3); font-weight: 300;
+}
+
+/* Map visual — image only, no wrapper box */
+.map-visual { position: sticky; top: 8rem; }
+.map-svg-wrap { padding: 0; }
 .map-svg-wrap svg { width: 100%; height: auto; }
-.map-land { fill: var(--bg-2); stroke: var(--border); stroke-width: 0.5; }
+.map-land { fill: var(--bg-3); stroke: var(--bg-3); stroke-width: 0.5; }
 .map-pin { cursor: pointer; }
-.map-pin circle.outer { fill: none; stroke: var(--text-3); stroke-width: 1; opacity: 0.5; animation: pinPulse 2.8s ease-in-out infinite; }
-.map-pin circle.inner { fill: var(--text); }
-.map-pin.active circle.outer { stroke: var(--text); opacity: 0.6; }
-.map-pin-label { font-size: 7.5px; fill: var(--text-3); font-family: var(--font-s); letter-spacing: 0.06em; }
+.map-pin circle.outer {
+  fill: none; stroke: var(--text-3); stroke-width: 1; opacity: 0.35;
+  animation: pinPulse 2.8s ease-in-out infinite;
+}
+.map-pin circle.inner { fill: var(--text-2); transition: fill 0.3s; }
+.map-pin.active circle.outer { stroke: var(--text); opacity: 0.55; }
+.map-pin.active circle.inner { fill: var(--text); }
+.map-pin-label { font-size: 7px; fill: var(--text-3); font-family: var(--font-s); letter-spacing: 0.06em; }
 .map-pin.active .map-pin-label { fill: var(--text-2); }
 @keyframes pinPulse {
-  0%,100% { r: 9; opacity: 0.4; }
-  50% { r: 15; opacity: 0.1; }
+  0%,100% { r: 9; opacity: 0.3; }
+  50% { r: 16; opacity: 0.08; }
 }
-.map-info-card { margin-top: 1.25rem; padding: 1.25rem 1.5rem; background: var(--bg); border: 1px solid var(--border); display: none; }
+
+/* Info text below map — no card, no box */
+.map-info-card { margin-top: 2.5rem; display: none; }
 .map-info-card.visible { display: block; }
-.map-info-card h4 { font-size: 0.92rem; margin-bottom: 0.3rem; font-weight: 400; }
-.map-info-card .proj-tag { display: block; margin-bottom: 0.4rem; }
-.map-info-card p { font-size: 0.8rem; color: var(--text-2); line-height: 1.65; font-weight: 300; }
+.map-info-card .proj-tag { margin-bottom: 0.3rem; }
+.map-info-card h4 { font-size: 1rem; margin-bottom: 0.4rem; font-weight: 400; }
+.map-info-card p { font-size: 0.82rem; color: var(--text-2); line-height: 1.7; font-weight: 300; max-width: 380px; }
 
 /* ===== MOBILE ===== */
 @media (max-width: 1200px) {
@@ -659,7 +675,8 @@ footer { background: var(--white); border-top: 1px solid var(--border); padding:
   .project-grid { grid-template-columns: repeat(2,1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 3rem; }
   .contact-layout { grid-template-columns: 1fr; gap: 3.5rem; }
-  .map-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .map-layout { grid-template-columns: 1fr; gap: 4rem; }
+  .map-visual { position: relative; top: 0; }
   .gallery-grid { grid-template-columns: 1fr 1fr; }
   .gallery-grid .gallery-item:first-child { grid-column: span 2; grid-row: span 1; }
   .lightbox-prev { left: -0.5rem; }

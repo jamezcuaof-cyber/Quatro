@@ -254,7 +254,6 @@ const PROJECTS = [
     ],
   },
   {
-  {
     id: 'north-enclaves',
     category: 'residencial',
     tag: 'Residencial · Puerto Los Cabos, BCS',

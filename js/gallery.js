@@ -219,7 +219,7 @@ const PROJECTS = [
     category: 'retail',
     tag: 'Plaza Comercial · Roma Norte, CDMX',
     title: 'Luis Cabrera 7',
-    thumb: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=900&q=80',
+    thumb: 'images/luis-cabrera-7/photo-1.png',
     desc: 'Plaza comercial de barrio en uno de los corredores más vibrantes de la Ciudad de México. Espacios diseñados para el comercio local de carácter en la Colonia Roma.',
     specs: [
       { label: 'Tipo', value: 'Retail' },
@@ -228,9 +228,10 @@ const PROJECTS = [
       { label: 'Estatus', value: 'Activo' },
     ],
     images: [
-      { src: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1400&q=90', sub: 'Fachada Luis Cabrera 7' },
-      { src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&q=90', sub: 'Local comercial' },
-      { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=90', sub: 'Calle Roma Norte' },
+      { src: 'images/luis-cabrera-7/photo-1.png', sub: 'Fachada' },
+      { src: 'images/luis-cabrera-7/photo-2.png', sub: 'Patio interior' },
+      { src: 'images/luis-cabrera-7/photo-3.png', sub: 'Parque México' },
+      { src: 'images/luis-cabrera-7/photo-4.png', sub: 'Terraza' },
     ],
   },
   {

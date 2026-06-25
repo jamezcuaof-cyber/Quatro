@@ -252,6 +252,25 @@ const PROJECTS = [
     ],
   },
   {
+    id: 'north-enclaves',
+    category: 'residencial',
+    tag: 'Residencial · Los Cabos, BCS',
+    title: 'North Enclaves',
+    thumb: 'images/north-enclaves/photo-3.jpeg',
+    desc: 'Desarrollo residencial de gran escala en Los Cabos con vistas al Mar de Cortés. Arquitectura contemporánea de múltiples niveles con terrazas, balcones y áreas verdes privadas.',
+    specs: [
+      { label: 'Tipo', value: 'Residencial' },
+      { label: 'Destino', value: 'Los Cabos, BCS' },
+      { label: 'Vistas', value: 'Mar de Cortés' },
+      { label: 'Estatus', value: 'En desarrollo' },
+    ],
+    images: [
+      { src: 'images/north-enclaves/photo-3.jpeg', sub: 'Vista aérea · frente al mar' },
+      { src: 'images/north-enclaves/photo-1.jpeg', sub: 'Vista frontal' },
+      { src: 'images/north-enclaves/photo-2.jpeg', sub: 'Vista lateral' },
+    ],
+  },
+  {
     id: 'student-housing',
     category: 'residencial',
     tag: 'Co-inversión · Estados Unidos',

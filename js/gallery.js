@@ -5,7 +5,7 @@ const PROJECTS = [
     category: 'hotel',
     tag: 'Hotel · Bacalar, QR',
     title: 'Wayak Bacalar',
-    thumb: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=80',
+    thumb: 'images/wayak-bacalar/photo-2.png',
     desc: 'Boutique resort a orillas del Lago de Bacalar — el Lago de los 7 Colores. Arquitectura que dialoga con el entorno natural caribeño, diseñada para el viajero contemporáneo que busca lujo genuino y conexión con la naturaleza.',
     specs: [
       { label: 'Superficie', value: '33 hectáreas' },
@@ -14,9 +14,9 @@ const PROJECTS = [
       { label: 'Estatus', value: 'En desarrollo · 2024–2028' },
     ],
     images: [
-      { src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1400&q=90', sub: 'Vista al Lago de los 7 Colores' },
-      { src: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1400&q=90', sub: 'Alberca infinita' },
-      { src: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1400&q=90', sub: 'Suite lago' },
+      { src: 'images/wayak-bacalar/photo-2.png', sub: 'Lago de los 7 Colores' },
+      { src: 'images/wayak-bacalar/photo-3.png', sub: 'Vista al lago' },
+      { src: 'images/wayak-bacalar/photo-1.png', sub: 'Zona arqueológica' },
       { src: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1400&q=90', sub: 'Restaurante' },
       { src: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1400&q=90', sub: 'Embarcadero privado' },
     ],

@@ -45,7 +45,7 @@ const PROJECTS = [
     category: 'residencial',
     tag: 'Departamentos · San José del Cabo',
     title: 'Tortuga Bay',
-    thumb: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=900&q=80',
+    thumb: 'images/tortuga-bay/photo-2.png',
     desc: '92 departamentos beachfront en San José del Cabo. Desarrollo residencial de 27,650 m² frente al Pacífico, con amenidades de resort y acceso directo a la playa.',
     specs: [
       { label: 'Unidades', value: '92 departamentos' },
@@ -54,9 +54,8 @@ const PROJECTS = [
       { label: 'Estatus', value: 'En construcción · 2023–2026' },
     ],
     images: [
-      { src: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1400&q=90', sub: 'Fachada beachfront' },
-      { src: 'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1400&q=90', sub: 'Interiores' },
-      { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=90', sub: 'Vista al Pacífico' },
+      { src: 'images/tortuga-bay/photo-1.png', sub: 'Masterplan · fases de desarrollo' },
+      { src: 'images/tortuga-bay/photo-2.png', sub: 'Construcción en proceso' },
     ],
   },
   {

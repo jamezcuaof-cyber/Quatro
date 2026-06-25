@@ -252,20 +252,21 @@ const PROJECTS = [
     ],
   },
   {
+  {
     id: 'north-enclaves',
     category: 'residencial',
-    tag: 'Residencial · Los Cabos, BCS',
+    tag: 'Residencial · Puerto Los Cabos, BCS',
     title: 'North Enclaves',
     thumb: 'images/north-enclaves/photo-3.jpeg',
-    desc: 'Desarrollo residencial de gran escala en Los Cabos con vistas al Mar de Cortés. Arquitectura contemporánea de múltiples niveles con terrazas, balcones y áreas verdes privadas.',
+    desc: 'Residencias de lujo en Puerto Los Cabos bajo la marca Ritz-Carlton. Arquitectura contemporánea de múltiples niveles con terrazas privadas y vistas directas al Mar de Cortés.',
     specs: [
-      { label: 'Tipo', value: 'Residencial' },
-      { label: 'Destino', value: 'Los Cabos, BCS' },
-      { label: 'Vistas', value: 'Mar de Cortés' },
+      { label: 'Marca', value: 'Ritz-Carlton' },
+      { label: 'Tipo', value: 'Residencial de lujo' },
+      { label: 'Destino', value: 'Puerto Los Cabos, BCS' },
       { label: 'Estatus', value: 'En desarrollo' },
     ],
     images: [
-      { src: 'images/north-enclaves/photo-3.jpeg', sub: 'Vista aérea · frente al mar' },
+      { src: 'images/north-enclaves/photo-3.jpeg', sub: 'Vista aérea · Mar de Cortés' },
       { src: 'images/north-enclaves/photo-1.jpeg', sub: 'Vista frontal' },
       { src: 'images/north-enclaves/photo-2.jpeg', sub: 'Vista lateral' },
     ],

@@ -366,12 +366,16 @@ h4 { font-size: 1.1rem; }
 .legacy-card-info p { color: rgba(255,255,255,0.45); font-size: 0.82rem; line-height: 1.7; }
 
 /* ===== PILLARS ===== */
-.pillars-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: rgba(255,255,255,0.07); }
+.pillars-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: rgba(255,255,255,0.07); }
 .pillar-card {
   padding: 2.75rem 2rem; background: var(--black);
   transition: background 0.3s;
   display: flex; flex-direction: column;
 }
+.pillar-card--img { padding: 0; overflow: hidden; }
+.pillar-card--img .pillar-img { height: 200px; overflow: hidden; flex-shrink: 0; }
+.pillar-card--img .pillar-img img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.75); display: block; }
+.pillar-card--img .pillar-body { padding: 2rem 2rem 1.5rem; display: flex; flex-direction: column; flex: 1; }
 .pillar-card:hover { background: #181715; }
 .pillar-num {
   font-family: var(--font-h); font-size: 0.72rem;
@@ -381,6 +385,7 @@ h4 { font-size: 1.1rem; }
 .pillar-card h3 { font-size: 1.1rem; margin-bottom: 0.75rem; color: var(--white); font-weight: 400; }
 .pillar-card p { color: rgba(255,255,255,0.45); font-size: 0.85rem; line-height: 1.75; }
 .pillar-arrow { color: rgba(255,255,255,0.2); font-size: 1rem; margin-top: auto; padding-top: 2rem; }
+.pillar-project-name { font-size: 0.78rem; color: rgba(255,255,255,0.4); margin-bottom: 0.5rem; letter-spacing: 0.04em; }
 
 /* ===== CTA SECTION ===== */
 .cta-section {
@@ -787,7 +792,7 @@ footer { background: var(--white); border-top: 1px solid var(--border); padding:
 
 /* ===== MOBILE ===== */
 @media (max-width: 1200px) {
-  .pillars-grid { grid-template-columns: repeat(2,1fr); }
+  .pillars-grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: repeat(2,1fr); }
   .stat-block:nth-child(2) { border-right: none; }
   .stat-block:nth-child(3) { border-top: 1px solid var(--border); }
@@ -819,7 +824,7 @@ footer { background: var(--white); border-top: 1px solid var(--border); padding:
   .nav-links a { font-size: 1rem; padding: 1.25rem 0; border-bottom: 1px solid var(--border); }
   .hamburger { display: flex; z-index: 1001; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
-  .pillars-grid { grid-template-columns: 1fr 1fr; }
+  .pillars-grid { grid-template-columns: 1fr; }
   .legacy-cards { grid-template-columns: 1fr; }
   .markets-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 2.5rem; }

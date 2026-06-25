@@ -26,8 +26,8 @@ const PROJECTS = [
     category: 'residencial',
     tag: 'Residencial & Hotel · East Cape, BCS',
     title: 'Cabo Blanco East Cape',
-    thumb: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80',
-    desc: 'Desarrollo maestro de 150 hectáreas con 700 metros de frente de playa en East Cape, Baja California. Uno de los últimos frentes costeros vírgenes de México, integrando residencias de lujo, hotelería y experiencias de naturaleza.',
+    thumb: 'images/cabo-blanco/photo-2.png',
+    desc: 'Desarrollo maestro de 150 hectáreas con 700 metros de frente de playa en East Cape, Baja California. Colindante con Six Senses, Aman y Four Seasons. Uno de los últimos frentes costeros vírgenes de México, integrando residencias de lujo, hotelería y experiencias de naturaleza.',
     specs: [
       { label: 'Superficie', value: '150 hectáreas' },
       { label: 'Frente de playa', value: '700 metros' },
@@ -35,9 +35,9 @@ const PROJECTS = [
       { label: 'Estatus', value: 'En desarrollo · 2022–2030' },
     ],
     images: [
-      { src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&q=90', sub: 'Frente de playa virgen' },
-      { src: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1400&q=90', sub: 'Vista al Mar de Cortés' },
-      { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&q=90', sub: 'Concepto residencial' },
+      { src: 'images/cabo-blanco/photo-2.png', sub: 'Concepto residencial' },
+      { src: 'images/cabo-blanco/photo-1.png', sub: 'Ubicación — East Cape' },
+      { src: 'images/cabo-blanco/photo-3.png', sub: 'Caballerizas' },
     ],
   },
   {

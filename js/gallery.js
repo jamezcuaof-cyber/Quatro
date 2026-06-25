@@ -139,8 +139,8 @@ const PROJECTS = [
   },
   {
     id: 'victoria-san-jose',
-    category: 'hotel',
-    tag: 'Hotel Boutique · San José del Cabo, BCS',
+    category: 'retail',
+    tag: 'Retail · San José del Cabo, BCS',
     title: 'Casa Victoria',
     thumb: 'images/victoria-san-jose/photo-1.jpeg',
     desc: 'Hotel boutique de arquitectura colonial en San José del Cabo. Diseñado por Gomez Crespo Arquitectos, integra residencias, retail y espacios de hospitalidad en el corazón del pueblo.',

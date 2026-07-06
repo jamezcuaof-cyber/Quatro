@@ -83,7 +83,7 @@ const PROJECTS = [
     category: 'residencial',
     tag: 'Casa · Los Cabos, BCS',
     title: 'Oasis 17',
-    thumb: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80',
+    thumb: 'images/oasis-17/photo-2.jpeg',
     desc: 'Casa de autor en Los Cabos con acceso privado al mar. Arquitectura que responde al paisaje desértico del Mar de Cortés: materiales locales, vistas a 180 grados y una alberca que se funde con el horizonte.',
     specs: [
       { label: 'Tipo', value: 'Casa residencial' },
@@ -92,9 +92,10 @@ const PROJECTS = [
       { label: 'Estatus', value: 'Activo' },
     ],
     images: [
-      { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&q=90', sub: 'Fachada principal' },
-      { src: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1400&q=90', sub: 'Piscina infinita' },
-      { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=90', sub: 'Vista al mar' },
+      { src: 'images/oasis-17/photo-2.jpeg', sub: 'Alberca y acceso' },
+      { src: 'images/oasis-17/photo-1.jpeg', sub: 'Fachada principal' },
+      { src: 'images/oasis-17/photo-3.jpeg', sub: 'Recámara principal' },
+      { src: 'images/oasis-17/photo-4.jpeg', sub: 'Sala y comedor' },
     ],
   },
   {

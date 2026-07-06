@@ -267,7 +267,7 @@ const PROJECTS = [
     category: 'residencial',
     tag: 'Co-inversión · Estados Unidos',
     title: 'Student Housing EUA',
-    thumb: 'images/student-housing/photo-1.png',
+    thumb: 'images/student-housing/photo-new-1.jpeg',
     desc: 'Quatro participa como co-inversionista en un portafolio de vivienda estudiantil en Estados Unidos. 4,721 unidades en 6 estados: Iowa, Mississippi, Georgia, Texas, Washington y Florida. Clase de activo con demanda estructural, alta ocupación y flujos de renta en dólares.',
     specs: [
       { label: 'Total unidades', value: '4,721 unidades' },
@@ -276,9 +276,9 @@ const PROJECTS = [
       { label: 'Moneda', value: 'USD' },
     ],
     images: [
-      { src: 'images/student-housing/photo-1.png', sub: 'Vista aérea del complejo' },
-      { src: 'images/student-housing/photo-2.png', sub: 'Unidades residenciales' },
-      { src: 'images/student-housing/photo-3.jpeg', sub: 'Áreas comunes y alberca' },
+      { src: 'images/student-housing/photo-new-1.jpeg', sub: 'Complejo residencial' },
+      { src: 'images/student-housing/photo-new-2.jpeg', sub: 'Vista aérea' },
+      { src: 'images/student-housing/photo-new-3.jpeg', sub: 'Edificio universitario' },
     ],
   },
 ];

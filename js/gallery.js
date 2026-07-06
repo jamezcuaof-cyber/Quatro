@@ -5,7 +5,7 @@ const PROJECTS = [
     category: 'hotel',
     tag: 'Hotel · Bacalar, QR',
     title: 'Wayak Bacalar',
-    thumb: 'images/wayak-bacalar/photo-2.png',
+    thumb: 'images/proximamente.svg',
     desc: 'Boutique resort a orillas del Lago de Bacalar — el Lago de los 7 Colores. Arquitectura que dialoga con el entorno natural caribeño, diseñada para el viajero contemporáneo que busca lujo genuino y conexión con la naturaleza.',
     specs: [
       { label: 'Superficie', value: '33 hectáreas' },
@@ -14,11 +14,7 @@ const PROJECTS = [
       { label: 'Estatus', value: 'En desarrollo · 2024–2028' },
     ],
     images: [
-      { src: 'images/wayak-bacalar/photo-2.png', sub: 'Lago de los 7 Colores' },
-      { src: 'images/wayak-bacalar/photo-3.png', sub: 'Vista al lago' },
-      { src: 'images/wayak-bacalar/photo-1.png', sub: 'Zona arqueológica' },
-      { src: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1400&q=90', sub: 'Restaurante' },
-      { src: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1400&q=90', sub: 'Embarcadero privado' },
+      { src: 'images/proximamente.svg', sub: 'Próximamente' },
     ],
   },
   {
@@ -26,7 +22,7 @@ const PROJECTS = [
     category: 'residencial',
     tag: 'Residencial & Hotel · East Cape, BCS',
     title: 'Cabo Blanco East Cape',
-    thumb: 'images/cabo-blanco/photo-2.png',
+    thumb: 'images/proximamente.svg',
     desc: 'Desarrollo maestro de 150 hectáreas con 700 metros de frente de playa en East Cape, Baja California. Colindante con Six Senses, Aman y Four Seasons. Uno de los últimos frentes costeros vírgenes de México, integrando residencias de lujo, hotelería y experiencias de naturaleza.',
     specs: [
       { label: 'Superficie', value: '150 hectáreas' },
@@ -35,9 +31,7 @@ const PROJECTS = [
       { label: 'Estatus', value: 'En desarrollo · 2022–2030' },
     ],
     images: [
-      { src: 'images/cabo-blanco/photo-2.png', sub: 'Concepto residencial' },
-      { src: 'images/cabo-blanco/photo-1.png', sub: 'Ubicación — East Cape' },
-      { src: 'images/cabo-blanco/photo-3.png', sub: 'Caballerizas' },
+      { src: 'images/proximamente.svg', sub: 'Próximamente' },
     ],
   },
   {
@@ -123,7 +117,7 @@ const PROJECTS = [
     category: 'residencial',
     tag: 'Casa · Los Cabos, BCS',
     title: 'La Noria 129',
-    thumb: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80',
+    thumb: 'images/proximamente.svg',
     desc: 'Segunda residencia en el mismo corredor premium de Los Cabos. Arquitectura que responde al entorno desértico con materiales naturales, patios interiores y vistas al paisaje del Mar de Cortés.',
     specs: [
       { label: 'Tipo', value: 'Casa residencial' },
@@ -132,9 +126,7 @@ const PROJECTS = [
       { label: 'Estatus', value: 'Activo' },
     ],
     images: [
-      { src: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1400&q=90', sub: 'Exterior' },
-      { src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=90', sub: 'Alberca' },
-      { src: 'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1400&q=90', sub: 'Sala principal' },
+      { src: 'images/proximamente.svg', sub: 'Próximamente' },
     ],
   },
   {
@@ -242,7 +234,7 @@ const PROJECTS = [
     category: 'retail',
     tag: 'Restaurante · Condesa, CDMX',
     title: 'Amsterdam 76',
-    thumb: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&q=80',
+    thumb: 'images/proximamente.svg',
     desc: 'Restaurante en la icónica Avenida Ámsterdam de la Colonia Condesa. Un espacio gastronómico íntimo con identidad propia en uno de los rincones más queridos de la ciudad.',
     specs: [
       { label: 'Tipo', value: 'Restaurante' },
@@ -251,9 +243,7 @@ const PROJECTS = [
       { label: 'Estatus', value: 'Activo' },
     ],
     images: [
-      { src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&q=90', sub: 'Salón principal' },
-      { src: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1400&q=90', sub: 'Terraza exterior' },
-      { src: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1400&q=90', sub: 'Cocina abierta' },
+      { src: 'images/proximamente.svg', sub: 'Próximamente' },
     ],
   },
   {

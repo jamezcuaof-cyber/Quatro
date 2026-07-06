@@ -200,7 +200,7 @@ const PROJECTS = [
     category: 'hotel',
     tag: 'Hotel · Ciudad de México',
     title: 'Casa del Parque',
-    thumb: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80',
+    thumb: 'images/casa-del-parque/photo-4.jpeg',
     desc: 'Casa frente a un parque en la Ciudad de México. Combina la vida urbana con la tranquilidad de los espacios verdes. Diseño interior cuidado, luz natural abundante y ubicación inmejorable.',
     specs: [
       { label: 'Tipo', value: 'Airbnb' },
@@ -209,9 +209,10 @@ const PROJECTS = [
       { label: 'Estatus', value: 'Activo' },
     ],
     images: [
-      { src: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1400&q=90', sub: 'Fachada al parque' },
-      { src: 'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1400&q=90', sub: 'Interiores' },
-      { src: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1400&q=90', sub: 'Jardín' },
+      { src: 'images/casa-del-parque/photo-4.jpeg', sub: 'Terraza' },
+      { src: 'images/casa-del-parque/photo-1.jpeg', sub: 'Recámara' },
+      { src: 'images/casa-del-parque/photo-2.jpeg', sub: 'Patio interior' },
+      { src: 'images/casa-del-parque/photo-3.jpeg', sub: 'Sala' },
     ],
   },
   {

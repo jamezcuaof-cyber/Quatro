@@ -175,23 +175,61 @@
         <div class="map-visual reveal">
           <div class="map-svg-wrap">
             <svg viewBox="0 0 500 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="map-land" d="M60,80 L90,60 L130,55 L175,50 L210,45 L240,42 L275,44 L310,50 L340,58 L360,70 L375,90 L385,110 L380,130 L390,145 L400,160 L410,175 L415,190 L405,205 L390,215 L375,225 L360,230 L345,240 L330,255 L318,265 L308,270 L295,265 L285,258 L275,248 L265,240 L255,235 L248,228 L240,220 L232,215 L220,218 L210,225 L200,232 L188,238 L175,242 L162,245 L150,250 L140,258 L132,265 L125,270 L115,268 L108,260 L102,250 L95,238 L85,230 L78,220 L70,210 L62,195 L58,180 L55,165 L52,148 L50,130 L52,112 L55,98 Z" />
-              <path class="map-land" d="M62,195 L58,180 L55,165 L52,148 L50,130 L52,112 L55,98 L60,80 L55,85 L48,95 L42,108 L38,125 L36,145 L35,165 L36,182 L38,198 L42,212 L48,222 L55,228 L62,230 L68,225 L70,210 Z" />
-              <path class="map-land" d="M318,265 L308,270 L300,278 L295,288 L292,300 L295,310 L302,315 L310,312 L318,305 L325,295 L328,283 L325,272 Z" />
-              <g class="map-pin" data-dest="bacalar" transform="translate(310,288)">
-                <circle class="outer" cx="0" cy="0" r="10" style="animation-delay:0s"/>
-                <circle class="inner" cx="0" cy="0" r="4" />
-                <text class="map-pin-label" x="-48" y="-11">Bacalar</text>
-              </g>
-              <g class="map-pin" data-dest="loscabos" transform="translate(48,198)">
+              <!--
+                Coordinate system:
+                  Lon -117.5°W (x=0) to -86.5°W (x=500)  → x = (lon+117.5)/31*500
+                  Lat  33.5°N  (y=0) to  14°N   (y=340)  → y = (33.5-lat)/19.5*340
+              -->
+
+              <!-- Mexico main body (clockwise from NW/Pacific corner) -->
+              <path class="map-land" d="
+                M 8,17
+                L 105,17 L 153,35 L 185,35 L 185,43
+                L 210,69 L 250,78 L 293,121
+                L 315,130 L 323,165 L 318,200
+                L 330,235 L 360,261 L 379,270
+                L 411,261 L 430,252 L 435,218 L 484,209
+                L 491,226
+                L 475,261 L 468,305
+                L 411,305 L 395,322
+                L 347,322 L 315,313 L 290,296
+                L 234,270 L 194,252 L 185,235 L 194,218
+                L 170,200 L 153,183 L 113,95 L 113,60 L 121,43
+                L 113,35 L 105,26 L 40,17 Z
+              " />
+
+              <!-- Baja California peninsula (clockwise: Pacific west side → tip → Gulf east side) -->
+              <path class="map-land" d="
+                M 8,17
+                L 18,26 L 24,43 L 32,60 L 48,78
+                L 56,95 L 64,112 L 72,130
+                L 89,148 L 97,165 L 113,183
+                L 121,188 L 126,188
+                L 121,178 L 105,156 L 89,130
+                L 81,112 L 72,95 L 64,78
+                L 56,60 L 48,43 L 40,26 L 40,17 Z
+              " />
+
+              <!-- Pins: positions from real coordinates -->
+              <!-- Los Cabos: 23.1°N 109.7°W → x=126, y=181 -->
+              <g class="map-pin" data-dest="loscabos" transform="translate(121,188)">
                 <circle class="outer" cx="0" cy="0" r="10" style="animation-delay:0.9s"/>
                 <circle class="inner" cx="0" cy="0" r="4" />
-                <text class="map-pin-label" x="11" y="4">Los Cabos</text>
+                <text class="map-pin-label" x="13" y="4">Los Cabos</text>
               </g>
-              <g class="map-pin" data-dest="cdmx" transform="translate(195,170)">
+
+              <!-- CDMX: 19.4°N 99.1°W → x=297, y=246 -->
+              <g class="map-pin" data-dest="cdmx" transform="translate(297,246)">
                 <circle class="outer" cx="0" cy="0" r="10" style="animation-delay:1.7s"/>
                 <circle class="inner" cx="0" cy="0" r="4" />
-                <text class="map-pin-label" x="12" y="4">Ciudad de México</text>
+                <text class="map-pin-label" x="13" y="4">CDMX</text>
+              </g>
+
+              <!-- Bacalar: 18.7°N 87.4°W → x=485, y=258 -->
+              <g class="map-pin" data-dest="bacalar" transform="translate(472,258)">
+                <circle class="outer" cx="0" cy="0" r="10" style="animation-delay:0s"/>
+                <circle class="inner" cx="0" cy="0" r="4" />
+                <text class="map-pin-label" x="-58" y="-12">Bacalar</text>
               </g>
             </svg>
             <div id="map-info-card" class="map-info-card"></div>

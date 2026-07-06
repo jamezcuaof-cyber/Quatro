@@ -80,7 +80,7 @@ const PROJECTS = [
     tag: 'Casa · Los Cabos, BCS',
     title: 'Oasis 17',
     thumb: 'images/oasis-17/photo-2.jpeg',
-    desc: 'Casa de autor en Los Cabos con acceso privado al mar. Arquitectura que responde al paisaje desértico del Mar de Cortés: materiales locales, vistas a 180 grados y una alberca que se funde con el horizonte.',
+    desc: 'Casa de autor en Los Cabos ubicada sobre uno de los hoyos de golf del campo de Palmilla. Arquitectura que responde al paisaje desértico del Mar de Cortés: materiales locales, vistas a 180 grados y una alberca que se funde con el horizonte.',
     specs: [
       { label: 'Tipo', value: 'Casa residencial' },
       { label: 'Acceso', value: 'Playa privada' },
@@ -137,7 +137,7 @@ const PROJECTS = [
     tag: 'Retail · San José del Cabo, BCS',
     title: 'Casa Victoria',
     thumb: 'images/victoria-san-jose/photo-new-1.jpeg',
-    desc: 'Plaza boutique de arquitectura colonial en San José del Cabo. Integra retail, restaurantes y espacios de hospitalidad en el corazón del pueblo mágico, con jardín central y alberca.',
+    desc: 'Plaza boutique de arquitectura colonial en San José del Cabo. Integra retail, restaurantes y espacios de hospitalidad en el corazón del pueblo mágico, con jardín central que funciona como espacio para eventos.',
     specs: [
       { label: 'Tipo', value: 'Plaza comercial' },
       { label: 'Destino', value: 'San José del Cabo, BCS' },

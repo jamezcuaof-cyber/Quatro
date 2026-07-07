@@ -299,7 +299,7 @@ const PROJECTS = [
     category: 'residencial',
     tag: 'Residencial · Madrid, España',
     title: 'Cortes Residences',
-    thumb: 'images/cortes-residences/photo-10.jpeg',
+    thumb: 'images/cortes-residences/photo-1-landscape.jpeg',
     desc: 'Edificio histórico de 1880 meticulosamente rehabilitado en el Barrio de Las Letras, corazón de Madrid. Solo cuatro residencias exclusivas —una por planta— de tres o cuatro recámaras, con acabados contemporáneos que preservan la esencia del Madrid más clásico. A pasos del Paseo del Prado, el Congreso de los Diputados y la mejor oferta cultural y gastronómica de la ciudad.',
     specs: [
       { label: 'Tipo', value: 'Edificio residencial rehabilitado' },
@@ -310,12 +310,12 @@ const PROJECTS = [
       { label: 'Estatus', value: 'En desarrollo' },
     ],
     images: [
+      { src: 'images/cortes-residences/photo-1-landscape.jpeg', sub: 'Fachada del edificio' },
       { src: 'images/cortes-residences/photo-10.jpeg', sub: 'Sala principal' },
       { src: 'images/cortes-residences/photo-11.jpeg', sub: 'Espacios interiores' },
       { src: 'images/cortes-residences/photo-14.jpeg', sub: 'Acabados y detalles' },
       { src: 'images/cortes-residences/photo-17.jpeg', sub: 'Espacios de calma' },
       { src: 'images/cortes-residences/photo-19.jpeg', sub: 'Detalle arquitectónico' },
-      { src: 'images/cortes-residences/photo-1.jpeg', sub: 'Fachada del edificio' },
     ],
   },
 ];

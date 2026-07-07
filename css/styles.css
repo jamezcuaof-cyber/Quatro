@@ -453,13 +453,13 @@ footer { background: var(--white); border-top: 1px solid var(--border); padding:
 /* ===== FILTER BAR ===== */
 .filter-bar { padding: 1.75rem 0; border-bottom: 1px solid var(--border); background: var(--white); }
 .filter-btn {
-  padding: 0.4rem 1rem; border: 1px solid var(--border);
+  padding: 0.4rem 1rem; border: none;
   background: transparent; color: var(--text-3);
   font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
   transition: all 0.3s; font-family: var(--font-s); cursor: none; font-weight: 400;
 }
-.filter-btn:hover { border-color: var(--text-2); color: var(--text-2); }
-.filter-btn.active { border-color: var(--text); color: var(--text); background: var(--text); color: var(--white); }
+.filter-btn:hover { color: var(--text-2); }
+.filter-btn.active { color: var(--text); border-bottom: 1px solid var(--text); }
 
 /* ===== PROJECT ROW (projects page) ===== */
 .proj-row {

@@ -285,6 +285,39 @@ const PROJECTS = [
       { src: 'images/student-housing/photo-new-3.jpeg', sub: 'Edificio universitario' },
     ],
   },
+  {
+    id: 'san-jose-criollo',
+    category: 'retail',
+    tag: 'Restaurante · San José del Cabo, BCS',
+    title: 'San José del Criollo',
+    thumb: 'images/proximamente.svg',
+    desc: 'Restaurante de lujo en San José del Cabo, creado en colaboración con el chef Enrique Olvera — fundador de Pujol (Ciudad de México), reconocido entre los mejores restaurantes del mundo, y Cosme (Nueva York). El concepto explora la cocina mexicana de autor en un destino de clase mundial, fusionando ingredientes locales de Baja California Sur con la visión creativa de uno de los chefs más influyentes de Latinoamérica.',
+    specs: [
+      { label: 'Tipo', value: 'Restaurante de lujo' },
+      { label: 'Chef', value: 'Enrique Olvera' },
+      { label: 'Destino', value: 'San José del Cabo, BCS' },
+      { label: 'Estatus', value: 'En desarrollo' },
+    ],
+    images: [
+      { src: 'images/proximamente.svg', sub: 'Próximamente' },
+    ],
+  },
+  {
+    id: 'zorilla-13',
+    category: 'residencial',
+    tag: 'Torre · Madrid, España',
+    title: 'Zorilla 13',
+    thumb: 'images/proximamente.svg',
+    desc: 'Torre de departamentos de lujo en el corazón de Madrid, en la calle Zorrilla 13 — una de las arterias más exclusivas del barrio del Congreso. El proyecto apuesta por la arquitectura contemporánea de alto estándar en uno de los mercados inmobiliarios más dinámicos de Europa.',
+    specs: [
+      { label: 'Tipo', value: 'Torre residencial' },
+      { label: 'Destino', value: 'Madrid, España' },
+      { label: 'Estatus', value: 'En desarrollo' },
+    ],
+    images: [
+      { src: 'images/proximamente.svg', sub: 'Próximamente' },
+    ],
+  },
 ];
 
 /* ===== RENDER PROJECT LIST ===== */

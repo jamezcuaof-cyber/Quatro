@@ -99,7 +99,7 @@ const PROJECTS = [
     category: 'residencial',
     tag: 'Casa · Los Cabos, BCS',
     title: 'La Noria 116',
-    thumb: 'images/la-noria-116/photo-new-1.png',
+    thumb: 'images/proximamente.svg',
     desc: 'Residencia de diseño contemporáneo en Los Cabos. Espacios interiores que fluyen hacia el exterior, conectando cada ambiente con el paisaje natural del desierto y el mar.',
     specs: [
       { label: 'Tipo', value: 'Casa residencial' },
@@ -108,9 +108,7 @@ const PROJECTS = [
       { label: 'Estatus', value: 'Activo' },
     ],
     images: [
-      { src: 'images/la-noria-116/photo-new-1.png', sub: 'Fachada principal' },
-      { src: 'images/la-noria-116/photo-new-2.png', sub: 'Jardín y acceso' },
-      { src: 'images/la-noria-116/photo-new-3.png', sub: 'Terraza exterior' },
+      { src: 'images/proximamente.svg', sub: 'Próximamente' },
     ],
   },
   {
@@ -118,7 +116,7 @@ const PROJECTS = [
     category: 'residencial',
     tag: 'Casa · Los Cabos, BCS',
     title: 'La Noria 129',
-    thumb: 'images/la-noria-129/photo-1.png',
+    thumb: 'images/proximamente.svg',
     desc: 'Segunda residencia en el mismo corredor premium de Los Cabos. Arquitectura que responde al entorno desértico con materiales naturales, patios interiores y vistas al paisaje del Mar de Cortés.',
     specs: [
       { label: 'Tipo', value: 'Casa residencial' },
@@ -127,10 +125,7 @@ const PROJECTS = [
       { label: 'Estatus', value: 'Activo' },
     ],
     images: [
-      { src: 'images/la-noria-129/photo-1.png', sub: 'Fachada principal' },
-      { src: 'images/la-noria-129/photo-2.png', sub: 'Vista aérea' },
-      { src: 'images/la-noria-129/photo-3.png', sub: 'Vista exterior' },
-      { src: 'images/la-noria-129/photo-4.png', sub: 'Terraza y alberca' },
+      { src: 'images/proximamente.svg', sub: 'Próximamente' },
     ],
   },
   {
@@ -215,7 +210,7 @@ const PROJECTS = [
     category: 'retail',
     tag: 'Plaza Comercial · Roma Norte, CDMX',
     title: 'Luis Cabrera 7',
-    thumb: 'images/luis-cabrera-7/photo-1.png',
+    thumb: 'images/proximamente.svg',
     desc: 'Plaza comercial de barrio en uno de los corredores más vibrantes de la Ciudad de México. Espacios diseñados para el comercio local de carácter en la Colonia Roma.',
     specs: [
       { label: 'Tipo', value: 'Retail' },
@@ -224,10 +219,7 @@ const PROJECTS = [
       { label: 'Estatus', value: 'Activo' },
     ],
     images: [
-      { src: 'images/luis-cabrera-7/photo-1.png', sub: 'Fachada' },
-      { src: 'images/luis-cabrera-7/photo-2.png', sub: 'Patio interior' },
-      { src: 'images/luis-cabrera-7/photo-3.png', sub: 'Parque México' },
-      { src: 'images/luis-cabrera-7/photo-4.png', sub: 'Terraza' },
+      { src: 'images/proximamente.svg', sub: 'Próximamente' },
     ],
   },
   {

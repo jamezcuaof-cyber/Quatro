@@ -99,7 +99,7 @@ const PROJECTS = [
     category: 'residencial',
     tag: 'Casa · Los Cabos, BCS',
     title: 'La Noria 116',
-    thumb: 'images/la-noria-116/photo-1.webp',
+    thumb: 'images/la-noria-116/photo-new-1.png',
     desc: 'Residencia de diseño contemporáneo en Los Cabos. Espacios interiores que fluyen hacia el exterior, conectando cada ambiente con el paisaje natural del desierto y el mar.',
     specs: [
       { label: 'Tipo', value: 'Casa residencial' },
@@ -108,10 +108,9 @@ const PROJECTS = [
       { label: 'Estatus', value: 'Activo' },
     ],
     images: [
-      { src: 'images/la-noria-116/photo-1.webp', sub: 'Fachada principal' },
-      { src: 'images/la-noria-116/photo-3.webp', sub: 'Vista lateral' },
-      { src: 'images/la-noria-116/photo-4.webp', sub: 'Vista al Mar de Cortés' },
-      { src: 'images/la-noria-116/photo-2.png', sub: 'Planta arquitectónica' },
+      { src: 'images/la-noria-116/photo-new-1.png', sub: 'Fachada principal' },
+      { src: 'images/la-noria-116/photo-new-2.png', sub: 'Jardín y acceso' },
+      { src: 'images/la-noria-116/photo-new-3.png', sub: 'Terraza exterior' },
     ],
   },
   {

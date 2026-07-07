@@ -394,9 +394,7 @@ h4 { font-size: 1.1rem; }
 }
 .cta-watermark {
   position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
-  font-family: var(--font-h); font-size: clamp(5rem, 18vw, 18rem);
-  font-weight: 300; color: rgba(255,255,255,0.03); white-space: nowrap;
-  pointer-events: none; letter-spacing: 0.05em;
+  pointer-events: none; display: flex; align-items: center; justify-content: center;
 }
 
 /* ===== FOOTER ===== */

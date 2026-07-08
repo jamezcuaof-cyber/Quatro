@@ -128,7 +128,7 @@ const PROJECTS = [
     category: 'hotel',
     tag: 'Hotel · Bacalar, QR',
     title: 'Wayak Bacalar',
-    thumb: 'images/proximamente.svg',
+    thumb: 'images/wayak/photo-1.jpeg',
     desc: 'Boutique resort a orillas del Lago de Bacalar — el Lago de los 7 Colores. Arquitectura que dialoga con el entorno natural caribeño, diseñada para el viajero contemporáneo que busca lujo genuino y conexión con la naturaleza.',
     specs: [
       { label: 'Superficie', value: '33 hectáreas' },
@@ -137,7 +137,8 @@ const PROJECTS = [
       { label: 'Estatus', value: 'Land Development' },
     ],
     images: [
-      { src: 'images/proximamente.svg', sub: 'Próximamente' },
+      { src: 'images/wayak/photo-1.jpeg', sub: 'Vista aérea — frente al lago' },
+      { src: 'images/wayak/photo-2.jpeg', sub: 'Lago de Bacalar al atardecer' },
     ],
   },
   {

@@ -244,7 +244,7 @@ const PROJECTS = [
     category: 'residencial',
     tag: 'Casa · Los Cabos, BCS',
     title: 'La Noria 129',
-    thumb: 'images/proximamente.svg',
+    thumb: 'images/la-noria-129/photo-4.jpeg',
     desc: 'Segunda residencia en el mismo corredor premium de Los Cabos. Arquitectura que responde al entorno desértico con materiales naturales, patios interiores y vistas al paisaje del Mar de Cortés.',
     specs: [
       { label: 'Tipo', value: 'Casa residencial' },
@@ -253,7 +253,10 @@ const PROJECTS = [
       { label: 'Estatus', value: 'En desarrollo · 2026–2028' },
     ],
     images: [
-      { src: 'images/proximamente.svg', sub: 'Próximamente' },
+      { src: 'images/la-noria-129/photo-4.jpeg', sub: 'Fachada principal' },
+      { src: 'images/la-noria-129/photo-3.jpeg', sub: 'Alberca y terraza' },
+      { src: 'images/la-noria-129/photo-2.jpeg', sub: 'Recámara principal' },
+      { src: 'images/la-noria-129/photo-1.jpeg', sub: 'Sala interior' },
     ],
   },
   /* ── RETAIL ── */

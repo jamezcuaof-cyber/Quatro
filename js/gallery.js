@@ -318,7 +318,7 @@ const PROJECTS = [
     category: 'retail',
     tag: 'Restaurante · San José del Cabo, BCS',
     title: 'San José del Criollo',
-    thumb: 'images/proximamente.svg',
+    thumb: 'images/san-jose-criollo/photo-2.jpeg',
     desc: 'Restaurante de lujo en San José del Cabo, creado en colaboración con el chef Enrique Olvera — fundador de Pujol (Ciudad de México), reconocido entre los mejores restaurantes del mundo, y Cosme (Nueva York). El concepto explora la cocina mexicana de autor en un destino de clase mundial, fusionando ingredientes locales de Baja California Sur con la visión creativa de uno de los chefs más influyentes de Latinoamérica.',
     specs: [
       { label: 'Tipo', value: 'Restaurante de lujo' },
@@ -327,7 +327,11 @@ const PROJECTS = [
       { label: 'Estatus', value: 'Activo' },
     ],
     images: [
-      { src: 'images/proximamente.svg', sub: 'Próximamente' },
+      { src: 'images/san-jose-criollo/photo-2.jpeg', sub: 'Fachada exterior' },
+      { src: 'images/san-jose-criollo/photo-1.jpeg', sub: 'Salón principal' },
+      { src: 'images/san-jose-criollo/photo-3.jpeg', sub: 'Salón privado' },
+      { src: 'images/san-jose-criollo/photo-5.jpeg', sub: 'Terraza exterior' },
+      { src: 'images/san-jose-criollo/photo-4.jpeg', sub: 'San José del Criollo' },
     ],
   },
 ];

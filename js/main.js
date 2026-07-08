@@ -5,7 +5,7 @@ const cursorRing = document.getElementById('cursor-ring');
 if (cursorDot && cursorRing) {
   let rx = 0, ry = 0;
   document.addEventListener('mousemove', e => {
-    cursorDot.style.transform  = `translate(${e.clientX}px,${e.clientY}px)`;
+    cursorDot.style.transform  = `translate(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%))`;
     rx += (e.clientX - rx) * 0.12;
     ry += (e.clientY - ry) * 0.12;
   });

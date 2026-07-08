@@ -36,10 +36,11 @@ button { cursor: none; font-family: var(--font-s); }
 /* ===== CUSTOM CURSOR ===== */
 #cursor-dot {
   position: fixed; z-index: 9999; pointer-events: none;
-  width: 6px; height: 6px; border-radius: 50%;
+  width: 16px; height: 16px; border-radius: 0;
   background: #fff;
   mix-blend-mode: difference;
   transform: translate(-50%,-50%);
+  clip-path: polygon(33% 0%, 67% 0%, 67% 33%, 100% 33%, 100% 67%, 67% 67%, 67% 100%, 33% 100%, 33% 67%, 0% 67%, 0% 33%, 33% 33%);
   transition: width 0.3s var(--ease), height 0.3s var(--ease);
 }
 #cursor-ring {

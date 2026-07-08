@@ -12,7 +12,7 @@ const PROJECTS = [
       { label: 'Marca', value: 'Ritz-Carlton' },
       { label: 'Tipo', value: 'Residencial de lujo' },
       { label: 'Destino', value: 'Puerto Los Cabos, BCS' },
-      { label: 'Estatus', value: 'En desarrollo' },
+      { label: 'Estatus', value: 'En construcción · 2022–2026' },
     ],
     images: [
       { src: 'images/north-enclaves/photo-3.jpeg', sub: 'Vista aérea · Mar de Cortés' },
@@ -31,7 +31,7 @@ const PROJECTS = [
       { label: 'Unidades', value: '92 departamentos' },
       { label: 'Superficie', value: '27,650 m²' },
       { label: 'Destino', value: 'San José del Cabo, BCS' },
-      { label: 'Estatus', value: 'En construcción · 2023–2026' },
+      { label: 'Estatus', value: 'En construcción · 2024–2027' },
     ],
     images: [
       { src: 'images/tortuga-bay/photo-v2-1.jpeg', sub: 'Alberca y amenidades' },
@@ -73,7 +73,7 @@ const PROJECTS = [
       { label: 'Recámaras', value: '3 – 4 recámaras' },
       { label: 'Amenidades', value: 'Sauna · Gimnasio · Masajes · Conserjería 24h' },
       { label: 'Destino', value: 'Madrid, España' },
-      { label: 'Estatus', value: 'En desarrollo' },
+      { label: 'Estatus', value: 'Entregado · 2023–2026' },
     ],
     images: [
       { src: 'images/cortes-residences/photo-1-landscape.jpeg', sub: 'Fachada del edificio' },
@@ -96,6 +96,7 @@ const PROJECTS = [
       { label: 'Estados', value: 'Iowa · Mississippi · Georgia · Texas · Washington · Florida' },
       { label: 'Rol', value: 'Co-inversionista' },
       { label: 'Moneda', value: 'USD' },
+      { label: 'Estatus', value: 'Activo · 2020–2026' },
     ],
     images: [
       { src: 'images/student-housing/photo-new-1.jpeg', sub: 'Complejo residencial' },
@@ -114,7 +115,7 @@ const PROJECTS = [
       { label: 'Superficie', value: '150 hectáreas' },
       { label: 'Frente de playa', value: '700 metros' },
       { label: 'Destino', value: 'East Cape, BCS' },
-      { label: 'Estatus', value: 'En desarrollo · 2022–2030' },
+      { label: 'Estatus', value: 'Land Development' },
     ],
     images: [
       { src: 'images/proximamente.svg', sub: 'Próximamente' },
@@ -132,7 +133,7 @@ const PROJECTS = [
       { label: 'Superficie', value: '33 hectáreas' },
       { label: 'Frente al lago', value: '500 metros' },
       { label: 'Destino', value: 'Bacalar, Quintana Roo' },
-      { label: 'Estatus', value: 'En desarrollo · 2024–2028' },
+      { label: 'Estatus', value: 'Land Development' },
     ],
     images: [
       { src: 'images/proximamente.svg', sub: 'Próximamente' },
@@ -209,7 +210,7 @@ const PROJECTS = [
       { label: 'Tipo', value: 'Casa residencial' },
       { label: 'Acceso', value: 'Playa privada' },
       { label: 'Destino', value: 'Los Cabos, BCS' },
-      { label: 'Estatus', value: 'Activo' },
+      { label: 'Estatus', value: 'En desarrollo · 2025–2028' },
     ],
     images: [
       { src: 'images/oasis-17/photo-2.jpeg', sub: 'Alberca y acceso' },
@@ -229,7 +230,7 @@ const PROJECTS = [
       { label: 'Tipo', value: 'Casa residencial' },
       { label: 'Estilo', value: 'Contemporáneo' },
       { label: 'Destino', value: 'Los Cabos, BCS' },
-      { label: 'Estatus', value: 'Activo' },
+      { label: 'Estatus', value: 'En construcción · 2024–2027' },
     ],
     images: [
       { src: 'images/proximamente.svg', sub: 'Próximamente' },
@@ -246,7 +247,7 @@ const PROJECTS = [
       { label: 'Tipo', value: 'Casa residencial' },
       { label: 'Estilo', value: 'Contemporáneo' },
       { label: 'Destino', value: 'Los Cabos, BCS' },
-      { label: 'Estatus', value: 'Activo' },
+      { label: 'Estatus', value: 'En desarrollo · 2026–2028' },
     ],
     images: [
       { src: 'images/proximamente.svg', sub: 'Próximamente' },
@@ -263,7 +264,7 @@ const PROJECTS = [
     specs: [
       { label: 'Tipo', value: 'Plaza comercial' },
       { label: 'Destino', value: 'San José del Cabo, BCS' },
-      { label: 'Estatus', value: 'En desarrollo' },
+      { label: 'Estatus', value: 'En construcción · 2022–2028' },
     ],
     images: [
       { src: 'images/victoria-san-jose/photo-new-1.jpeg', sub: 'Fachada principal' },
@@ -282,7 +283,7 @@ const PROJECTS = [
       { label: 'Tipo', value: 'Retail' },
       { label: 'Ubicación', value: 'Roma Norte, CDMX' },
       { label: 'Estilo', value: 'Comercio de barrio' },
-      { label: 'Estatus', value: 'Activo' },
+      { label: 'Estatus', value: 'En construcción · 2023–2026' },
     ],
     images: [
       { src: 'images/proximamente.svg', sub: 'Próximamente' },
@@ -300,7 +301,7 @@ const PROJECTS = [
       { label: 'Tipo', value: 'Restaurante' },
       { label: 'Ubicación', value: 'Av. Ámsterdam, Condesa' },
       { label: 'Destino', value: 'Ciudad de México' },
-      { label: 'Estatus', value: 'Activo' },
+      { label: 'Estatus', value: 'En construcción · 2024–2026' },
     ],
     images: [
       { src: 'images/proximamente.svg', sub: 'Próximamente' },
@@ -317,7 +318,7 @@ const PROJECTS = [
       { label: 'Tipo', value: 'Restaurante de lujo' },
       { label: 'Chef', value: 'Enrique Olvera' },
       { label: 'Destino', value: 'San José del Cabo, BCS' },
-      { label: 'Estatus', value: 'En desarrollo' },
+      { label: 'Estatus', value: 'Activo' },
     ],
     images: [
       { src: 'images/proximamente.svg', sub: 'Próximamente' },

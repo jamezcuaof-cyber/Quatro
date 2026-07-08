@@ -28,16 +28,19 @@
     </div>
   </nav>
 
-  <div class="page-hero" data-title="CONTACTO">
-    <div class="container">
+  <div class="page-hero" style="position:relative;padding:0;min-height:480px;display:flex;align-items:flex-end;background:#0a0a0a;">
+    <div style="position:absolute;inset:0;z-index:0;display:flex;align-items:center;justify-content:center;">
+      <img src="images/logo-vector.svg" alt="" style="width:clamp(18rem,55vw,72rem);height:auto;opacity:0.08;filter:invert(1);" />
+    </div>
+    <div class="container" style="position:relative;z-index:1;padding-bottom:3.5rem;">
       <div class="breadcrumb">
-        <a href="index.html">Inicio</a>
-        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-        <span>Contacto</span>
+        <a href="index.html" style="color:rgba(255,255,255,0.6)">Inicio</a>
+        <svg width="14" height="14" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        <span style="color:rgba(255,255,255,0.6)">Contacto</span>
       </div>
-      <span class="section-label" style="display:flex;justify-content:center">Hablemos</span>
-      <h1>Conecta con<br>nuestro equipo</h1>
-      <p style="max-width:500px;margin:0 auto;">¿Tienes un terreno, una oportunidad o quieres explorar una inversión? Estamos listos para escucharte.</p>
+      <span class="section-label" style="display:flex;justify-content:center;color:rgba(255,255,255,0.6)">Hablemos</span>
+      <h1 style="color:#fff;">Conecta con<br>nuestro equipo</h1>
+      <p style="max-width:500px;margin:0 auto;color:rgba(255,255,255,0.7);">¿Tienes un terreno, una oportunidad o quieres explorar una inversión? Estamos listos para escucharte.</p>
     </div>
   </div>
 
@@ -48,7 +51,7 @@
         <div class="contact-info reveal-left">
           <span class="section-label">Información de contacto</span>
           <h2>Estamos en los<br>mercados que importan</h2>
-          <p>Nuestro equipo opera en Ciudad de México y Los Cabos, con proyectos activos en Bacalar y East Cape.</p>
+          <p>Nuestro equipo opera en Ciudad de México, Los Cabos, Bacalar y Madrid.</p>
 
           <div class="contact-items">
             <div class="contact-item">
@@ -66,7 +69,7 @@
               </div>
               <div>
                 <h5>Correo electrónico</h5>
-                <p>contacto@quatro.com.mx</p>
+                <p>4tro@4tro.com.mx</p>
               </div>
             </div>
             <div class="contact-item">
@@ -82,26 +85,17 @@
 
           <div style="margin-top:3rem;">
             <p style="font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Nuestros verticales</p>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.6rem;">
-              <div style="border:1px solid var(--border);padding:1rem;font-size:0.85rem;color:var(--text-2);">
-                <div style="color:var(--gold);font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.2rem;">01</div>Hotels
-              </div>
-              <div style="border:1px solid var(--border);padding:1rem;font-size:0.85rem;color:var(--text-2);">
-                <div style="color:var(--gold);font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.2rem;">02</div>Offices
-              </div>
-              <div style="border:1px solid var(--border);padding:1rem;font-size:0.85rem;color:var(--text-2);">
-                <div style="color:var(--gold);font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.2rem;">03</div>Retail
-              </div>
-              <div style="border:1px solid var(--border);padding:1rem;font-size:0.85rem;color:var(--text-2);">
-                <div style="color:var(--gold);font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.2rem;">04</div>Residential
-              </div>
+            <div style="display:flex;flex-direction:column;gap:0.5rem;">
+              <div style="font-size:0.85rem;color:var(--text-2);padding:0.3rem 0;"><span style="color:var(--gold);font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;margin-right:0.75rem;">01</span>Hotels</div>
+              <div style="font-size:0.85rem;color:var(--text-2);padding:0.3rem 0;"><span style="color:var(--gold);font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;margin-right:0.75rem;">02</span>Retail</div>
+              <div style="font-size:0.85rem;color:var(--text-2);padding:0.3rem 0;"><span style="color:var(--gold);font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;margin-right:0.75rem;">03</span>Residential</div>
             </div>
           </div>
         </div>
 
         <div class="contact-form-wrap reveal">
           <span class="section-label">Formulario de contacto</span>
-          <h3 style="margin-bottom:2rem;">Cuéntanos tu proyecto</h3>
+          <h3 style="margin-bottom:2rem;">Cuéntanos de tu proyecto</h3>
           <form id="contactForm">
             <div class="form-grid">
               <div class="form-group">
@@ -173,14 +167,13 @@
           <h4>Verticales</h4>
           <ul>
             <li><a href="proyectos.html">Hotels</a></li>
-            <li><a href="proyectos.html">Offices</a></li>
             <li><a href="proyectos.html">Retail</a></li>
             <li><a href="proyectos.html">Residential</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Contacto</h4>
-          <p style="font-size:0.85rem;color:var(--text-2);line-height:1.8;">Ciudad de México, México<br>contacto@quatro.com.mx</p>
+          <p style="font-size:0.85rem;color:var(--text-2);line-height:1.8;">Ciudad de México, México<br>4tro@4tro.com.mx</p>
         </div>
       </div>
       <div class="footer-bottom">

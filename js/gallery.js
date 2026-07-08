@@ -109,7 +109,7 @@ const PROJECTS = [
     category: 'residencial',
     tag: 'Residencial & Hotel · East Cape, BCS',
     title: 'Cabo Blanco East Cape',
-    thumb: 'images/proximamente.svg',
+    thumb: 'images/cabo-blanco/photo-2.jpeg',
     desc: 'Desarrollo maestro de 150 hectáreas con 700 metros de frente de playa en East Cape, Baja California. Colindante con Six Senses, Aman y Four Seasons. Uno de los últimos frentes costeros vírgenes de México, integrando residencias de lujo, hotelería y experiencias de naturaleza.',
     specs: [
       { label: 'Superficie', value: '150 hectáreas' },
@@ -118,7 +118,8 @@ const PROJECTS = [
       { label: 'Estatus', value: 'Land Development' },
     ],
     images: [
-      { src: 'images/proximamente.svg', sub: 'Próximamente' },
+      { src: 'images/cabo-blanco/photo-2.jpeg', sub: 'Frente de playa — vista aérea' },
+      { src: 'images/cabo-blanco/photo-1.jpeg', sub: 'Terreno con vistas al mar' },
     ],
   },
   /* ── HOTELES ── */

@@ -35,16 +35,17 @@ button { cursor: none; font-family: var(--font-s); }
 
 /* ===== CUSTOM CURSOR ===== */
 #cursor-dot {
-  position: fixed; z-index: 9999; pointer-events: none;
-  width: 16px; height: 16px; border-radius: 0;
-  background: #fff;
+  position: fixed; z-index: 10001; pointer-events: none;
+  width: 20px; height: 20px; border-radius: 0;
+  background: transparent;
   mix-blend-mode: difference;
   transform: translate(-50%,-50%);
-  clip-path: polygon(33% 0%, 67% 0%, 67% 33%, 100% 33%, 100% 67%, 67% 67%, 67% 100%, 33% 100%, 33% 67%, 0% 67%, 0% 33%, 33% 33%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect x='8' y='0' width='4' height='7' fill='white'/%3E%3Crect x='8' y='13' width='4' height='7' fill='white'/%3E%3Crect x='0' y='8' width='7' height='4' fill='white'/%3E%3Crect x='13' y='8' width='7' height='4' fill='white'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
   transition: width 0.3s var(--ease), height 0.3s var(--ease);
 }
 #cursor-ring {
-  position: fixed; z-index: 9998; pointer-events: none;
+  position: fixed; z-index: 10000; pointer-events: none;
   width: 32px; height: 32px; border-radius: 50%;
   border: 1px solid #fff;
   mix-blend-mode: difference;

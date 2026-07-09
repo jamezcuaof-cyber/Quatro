@@ -265,10 +265,10 @@ const PROJECTS = [
   {
     id: 'victoria-san-jose',
     category: 'retail',
-    tag: 'Retail · San José del Cabo, BCS',
+    tag: 'Comercial · San José del Cabo, BCS',
     title: 'Casa Victoria',
     thumb: 'images/victoria-san-jose/photo-new-1.jpeg',
-    desc: 'Plaza boutique de arquitectura colonial en San José del Cabo. Integra retail, restaurantes y espacios de hospitalidad en el corazón del pueblo mágico, con jardín central que funciona como espacio para eventos.',
+    desc: 'Plaza boutique de arquitectura colonial en San José del Cabo. Integra comercios, restaurantes y espacios de hospitalidad en el corazón del pueblo mágico, con jardín central que funciona como espacio para eventos.',
     specs: [
       { label: 'Tipo', value: 'Plaza comercial' },
       { label: 'Destino', value: 'San José del Cabo, BCS' },
@@ -288,7 +288,7 @@ const PROJECTS = [
     thumb: 'images/proximamente.svg',
     desc: 'Plaza comercial de barrio en uno de los corredores más vibrantes de la Ciudad de México. Espacios diseñados para el comercio local de carácter en la Colonia Roma.',
     specs: [
-      { label: 'Tipo', value: 'Retail' },
+      { label: 'Tipo', value: 'Comercial' },
       { label: 'Ubicación', value: 'Roma Norte, CDMX' },
       { label: 'Estilo', value: 'Comercio de barrio' },
       { label: 'Estatus', value: 'En construcción · 2023–2026' },
@@ -477,8 +477,8 @@ const PROJECTS = [
 
   const data = {
     bacalar:  { tag: 'Hotels', title: 'Bacalar, Quintana Roo', desc: 'Destino emergente de alto crecimiento. Proyecto flagship: Wayak Bacalar — 33 ha, 500 m frente al Lago de los 7 Colores.' },
-    loscabos: { tag: 'Residential · Retail · Hotel', title: 'Los Cabos, BCS', desc: 'Mercado de lujo con demanda internacional sostenida. Proyectos: Oasis, La Noria, Tortuga Bay (92 deptos), Casa Nima (147 deptos), Victoria San José y Cabo Blanco East Cape (150 ha).' },
-    cdmx:     { tag: 'Airbnb · Retail · Restaurante', title: 'Ciudad de México', desc: 'Hub operativo principal. Airbnb: Casa Oliva, Casa Miravalle, Casa del Parque. Retail: Luis Cabrera 7 (Roma Norte). Restaurante: Amsterdam (Condesa).' },
+    loscabos: { tag: 'Residential · Comercial · Hotel', title: 'Los Cabos, BCS', desc: 'Mercado de lujo con demanda internacional sostenida. Proyectos: Oasis, La Noria, Tortuga Bay (92 deptos), Casa Nima (147 deptos), Victoria San José y Cabo Blanco East Cape (150 ha).' },
+    cdmx:     { tag: 'Airbnb · Comercial · Restaurante', title: 'Ciudad de México', desc: 'Hub operativo principal. Airbnb: Casa Oliva, Casa Miravalle, Casa del Parque. Comercial: Luis Cabrera 7 (Roma Norte). Restaurante: Amsterdam (Condesa).' },
     madrid:   { tag: 'Residencial · España', title: 'Madrid, España', desc: 'Expansión internacional. Cortes Residences — edificio histórico de 1880 rehabilitado en el Barrio de Las Letras, a pasos del Paseo del Prado.' },
   };
 

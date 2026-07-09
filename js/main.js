@@ -14,6 +14,7 @@ if (cursorDot && cursorRing) {
     requestAnimationFrame(loop);
   })();
   document.querySelectorAll('a,button,[data-cursor]').forEach(el => {
+    if (el.classList.contains('nav-logo')) return;
     el.addEventListener('mouseenter', () => { cursorRing.classList.add('expand'); });
     el.addEventListener('mouseleave', () => { cursorRing.classList.remove('expand'); });
   });

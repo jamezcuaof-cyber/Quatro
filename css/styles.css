@@ -193,14 +193,6 @@ h4 { font-size: 1.1rem; }
 .nav-links a:hover, .nav-links a.active { color: var(--text); }
 .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
 
-.nav-cta {
-  font-size: 0.7rem; font-weight: 400; letter-spacing: 0.14em;
-  text-transform: uppercase; color: var(--text);
-  border: 1px solid var(--border); padding: 0.55rem 1.3rem;
-  transition: all 0.3s var(--ease);
-}
-.nav-cta:hover { background: var(--text); color: var(--white); border-color: var(--text); }
-.nav-cta::after { display: none; }
 
 .lang-toggle { display: flex; align-items: center; gap: 0.3rem; margin-left: 1.5rem; }
 .lang-btn {

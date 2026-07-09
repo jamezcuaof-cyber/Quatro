@@ -824,7 +824,7 @@ footer { background: var(--white); border-top: 1px solid var(--border); padding:
   .section-pad { padding: 5rem 0; }
   .nav-links { display: none; flex-direction: column; gap: 0; position: fixed; top: 0; left: 0; right: 0; height: 100vh; background: var(--white); padding: 8rem 2rem 3rem; z-index: 999; overflow-y: auto; }
   .nav-links.open { display: flex; }
-  .nav-links a { font-size: 1rem; padding: 1.25rem 0; border-bottom: 1px solid var(--border); }
+  .nav-links a { font-size: 1rem; padding: 1.9rem 0; border-bottom: 1px solid var(--border); display: block; }
   .hamburger { display: flex; z-index: 1001; }
   .lang-toggle { margin-left: 0.75rem; }
   .stats-grid { grid-template-columns: 1fr 1fr; }

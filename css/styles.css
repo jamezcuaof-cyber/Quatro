@@ -202,6 +202,15 @@ h4 { font-size: 1.1rem; }
 .nav-cta:hover { background: var(--text); color: var(--white); border-color: var(--text); }
 .nav-cta::after { display: none; }
 
+.lang-toggle { display: flex; align-items: center; gap: 0.3rem; margin-left: 1.5rem; }
+.lang-btn {
+  font-family: var(--font-s); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em;
+  color: var(--text-2); background: none; border: 1px solid var(--border);
+  padding: 0.3rem 0.6rem; cursor: none; transition: all 0.25s var(--ease);
+}
+.lang-btn:hover { color: var(--text); border-color: var(--text); }
+.lang-btn.active { background: var(--text); color: var(--white); border-color: var(--text); }
+
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: none; padding: 4px; background: none; border: none; }
 .hamburger span { display: block; width: 22px; height: 1px; background: var(--text); transition: 0.3s; }
 .hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
@@ -641,7 +650,7 @@ footer { background: var(--white); border-top: 1px solid var(--border); padding:
 }
 .contact-item h5 { font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-2); margin-bottom: 0.3rem; font-weight: 500; }
 .contact-item p { color: var(--text-3); font-size: 0.85rem; font-weight: 300; }
-.contact-form-wrap { background: var(--white); border: 1px solid var(--border); padding: 3.5rem; }
+.contact-form-wrap { background: none; border: none; padding: 0; }
 .contact-form-wrap h3 { font-size: 1.6rem; margin-bottom: 2rem; font-weight: 400; }
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; }
 .form-group { display: flex; flex-direction: column; gap: 0.45rem; }
@@ -830,6 +839,7 @@ footer { background: var(--white); border-top: 1px solid var(--border); padding:
   .nav-links.open { display: flex; }
   .nav-links a { font-size: 1rem; padding: 1.25rem 0; border-bottom: 1px solid var(--border); }
   .hamburger { display: flex; z-index: 1001; }
+  .lang-toggle { margin-left: 0.75rem; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
   .pillars-grid { grid-template-columns: 1fr; }
   .legacy-cards { grid-template-columns: 1fr; }

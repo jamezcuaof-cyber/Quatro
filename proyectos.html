@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Proyectos | Quatro Real Estate Development</title>
-  <meta name="description" content="Portafolio completo: Wayak Bacalar, Cabo Blanco, Tortuga Bay, Casa Nima, Victoria San José, Luis Cabrera 7, Amsterdam y más." />
+  <meta name="description" content="Portafolio completo: Wayak Bacalar, Cabo Blanco, Tortuga Bay, Casa Nima, Victoria San José, Luis Cabrera 7, Amsterdam y más." data-i18n-content="meta.proyectos" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -38,11 +38,15 @@
     <div class="container">
       <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Quatro" class="logo-img" /></a>
       <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="proyectos.html" class="active">Proyectos</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="contacto.html" class="nav-cta">Contáctanos</a></li>
+        <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="proyectos.html" class="active" data-i18n="nav.proyectos">Proyectos</a></li>
+        <li><a href="nosotros.html" data-i18n="nav.nosotros">Nosotros</a></li>
+        <li><a href="contacto.html" class="nav-cta" data-i18n="nav.contacto">Contáctanos</a></li>
       </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
       <button class="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
     </div>
   </nav>
@@ -54,23 +58,23 @@
     </div>
     <div class="container" style="position:relative;z-index:2;padding-bottom:4rem;">
       <div class="breadcrumb" style="color:rgba(255,255,255,0.6);">
-        <a href="index.html" style="color:rgba(255,255,255,0.6);">Inicio</a>
+        <a href="index.html" style="color:rgba(255,255,255,0.6);" data-i18n="nav.inicio">Inicio</a>
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-        <span>Proyectos</span>
+        <span data-i18n="nav.proyectos">Proyectos</span>
       </div>
-      <span class="section-label" style="color:rgba(255,255,255,0.6);">Portafolio activo</span>
-      <h1 style="color:#fff;">Proyectos que<br>transforman destinos</h1>
-      <p style="color:rgba(255,255,255,0.75);">Desarrollamos en los mercados con mayor potencial de crecimiento y retorno en México.</p>
+      <span class="section-label" style="color:rgba(255,255,255,0.6);" data-i18n="proyectos.hero.label">Portafolio activo</span>
+      <h1 style="color:#fff;" data-i18n="proyectos.hero.title">Proyectos que<br>transforman destinos</h1>
+      <p style="color:rgba(255,255,255,0.75);" data-i18n="proyectos.hero.desc">Desarrollamos en los mercados con mayor potencial de crecimiento y retorno en México.</p>
     </div>
   </div>
 
   <!-- FILTER -->
   <div class="filter-bar">
     <div class="container" style="display:flex;gap:0.6rem;flex-wrap:wrap;">
-      <button class="filter-btn active" data-filter="all">Todos</button>
-      <button class="filter-btn" data-filter="hotel">Hotel</button>
-      <button class="filter-btn" data-filter="residencial">Residencial</button>
-<button class="filter-btn" data-filter="retail">Comercial</button>
+      <button class="filter-btn active" data-filter="all" data-i18n="proyectos.filter.todos">Todos</button>
+      <button class="filter-btn" data-filter="hotel" data-i18n="proyectos.filter.hotel">Hotel</button>
+      <button class="filter-btn" data-filter="residencial" data-i18n="proyectos.filter.residencial">Residencial</button>
+      <button class="filter-btn" data-filter="retail" data-i18n="proyectos.filter.comercial">Comercial</button>
     </div>
   </div>
 
@@ -82,41 +86,41 @@
     <div class="container">
       <div class="legacy-layout" style="align-items:flex-start;">
         <div class="legacy-text reveal-left" style="max-width:520px;">
-          <span class="section-label" style="color:rgba(255,255,255,0.45)">Antes de Quatro</span>
-          <h2 style="color:#fff">PI:<br>30+ años construyendo<br>México.</h2>
-          <p style="color:rgba(255,255,255,0.65);margin-top:1.2rem;">Los cuatro socios fundadores de Quatro lideraron <em>PI</em> durante más de 15 años, consolidándola como una de las principales desarrolladoras inmobiliarias de México. Ese legado comprobado de ejecución a gran escala es la base sobre la que se construye Quatro.</p>
+          <span class="section-label" style="color:rgba(255,255,255,0.45)" data-i18n="proyectos.legacy.label">Antes de Quatro</span>
+          <h2 style="color:#fff" data-i18n="proyectos.legacy.title">PI:<br>30+ años construyendo<br>México.</h2>
+          <p style="color:rgba(255,255,255,0.65);margin-top:1.2rem;" data-i18n="proyectos.legacy.p1">Los cuatro socios fundadores de Quatro lideraron <em>PI</em> durante más de 15 años, consolidándola como una de las principales desarrolladoras inmobiliarias de México. Ese legado comprobado de ejecución a gran escala es la base sobre la que se construye Quatro.</p>
         </div>
         <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem 4rem;padding-top:0.5rem;">
           <div>
             <div style="font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;">1.5M+</div>
-            <div style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:0.4rem;">m² totales entregados</div>
+            <div style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:0.4rem;" data-i18n="proyectos.legacy.stat1">m² totales entregados</div>
           </div>
           <div>
             <div style="font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;">3,000+</div>
-            <div style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:0.4rem;">Llaves hoteleras — AMResorts &amp; Marriott</div>
+            <div style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:0.4rem;" data-i18n="proyectos.legacy.stat2">Llaves hoteleras — AMResorts &amp; Marriott</div>
           </div>
           <div>
             <div style="font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;">600K</div>
-            <div style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:0.4rem;">m² de oficinas construidas</div>
+            <div style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:0.4rem;" data-i18n="proyectos.legacy.stat3">m² de oficinas construidas</div>
           </div>
           <div>
             <div style="font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;">400K</div>
-            <div style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:0.4rem;">m² comercial — incl. 1er IKEA LATAM</div>
+            <div style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:0.4rem;" data-i18n="proyectos.legacy.stat4">m² comercial — incl. 1er IKEA LATAM</div>
           </div>
         </div>
       </div>
       <div class="reveal" style="margin-top:3.5rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:2rem;">
         <div>
-          <div style="font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:0.5rem;">Hoteles</div>
-          <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;line-height:1.5;">Breathless Riviera Cancún<br>Dreams Natura — 550 llaves</p>
+          <div style="font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:0.5rem;" data-i18n="vert.hoteles">Hoteles</div>
+          <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;line-height:1.5;" data-i18n="proyectos.legacy.hoteles_projects">Breathless Riviera Cancún<br>Dreams Natura — 550 llaves</p>
         </div>
         <div>
-          <div style="font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:0.5rem;">Oficinas</div>
-          <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;line-height:1.5;">Torre MANACAR<br>UNO Polanco</p>
+          <div style="font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:0.5rem;" data-i18n="vert.oficinas">Oficinas</div>
+          <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;line-height:1.5;" data-i18n="proyectos.legacy.oficinas_projects">Torre MANACAR<br>UNO Polanco</p>
         </div>
         <div>
-          <div style="font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:0.5rem;">Comercial</div>
-          <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;line-height:1.5;">Encuentro Oceanía<br>1er IKEA en Latinoamérica</p>
+          <div style="font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:0.5rem;" data-i18n="vert.comercial">Comercial</div>
+          <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;line-height:1.5;" data-i18n="proyectos.legacy.comercial_projects">Encuentro Oceanía<br>1er IKEA en Latinoamérica</p>
         </div>
       </div>
     </div>
@@ -126,9 +130,9 @@
   <section class="map-section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">Presencia</span>
-        <h2>Nuestros destinos</h2>
-        <p>Operamos en los mercados con mayor potencial de crecimiento y retorno. Sin perder la esencia del destino.</p>
+        <span class="section-label" data-i18n="proyectos.map.label">Presencia</span>
+        <h2 data-i18n="proyectos.map.title">Nuestros destinos</h2>
+        <p data-i18n="proyectos.map.desc">Operamos en los mercados con mayor potencial de crecimiento y retorno. Sin perder la esencia del destino.</p>
       </div>
       <div class="map-layout">
         <div class="map-destinations reveal-left">
@@ -136,7 +140,7 @@
             <div class="map-dest-num">01</div>
             <div class="map-dest-info">
               <h4>Bacalar, Quintana Roo</h4>
-              <p>Destino emergente · Hoteles</p>
+              <p data-i18n="proyectos.map.bacalar.tagline">Destino emergente · Hoteles</p>
               <div class="map-dest-tags">
                 <span class="map-dest-tag">Wayak Bacalar</span>
               </div>
@@ -146,7 +150,7 @@
             <div class="map-dest-num">02</div>
             <div class="map-dest-info">
               <h4>Los Cabos, BCS</h4>
-              <p>Residencial · Comercial · Hotel</p>
+              <p data-i18n="proyectos.map.loscabos.tagline">Residencial · Comercial · Hotel</p>
               <div class="map-dest-tags">
                 <span class="map-dest-tag">Oasis</span>
                 <span class="map-dest-tag">La Noria</span>
@@ -160,8 +164,8 @@
           <div class="map-dest-item" data-dest="cdmx">
             <div class="map-dest-num">03</div>
             <div class="map-dest-info">
-              <h4>Ciudad de México</h4>
-              <p>Airbnb · Comercial · Restaurante</p>
+              <h4 data-i18n="proyectos.map.cdmx.title">Ciudad de México</h4>
+              <p data-i18n="proyectos.map.cdmx.tagline">Airbnb · Comercial · Restaurante</p>
               <div class="map-dest-tags">
                 <span class="map-dest-tag">Casa Oliva</span>
                 <span class="map-dest-tag">Casa Miravalle</span>
@@ -174,8 +178,8 @@
           <div class="map-dest-item" data-dest="madrid">
             <div class="map-dest-num">04</div>
             <div class="map-dest-info">
-              <h4>Madrid, España</h4>
-              <p>Residencial · Europa</p>
+              <h4 data-i18n="proyectos.map.madrid.title">Madrid, España</h4>
+              <p data-i18n="proyectos.map.madrid.tagline">Residencial · Europa</p>
               <div class="map-dest-tags">
                 <span class="map-dest-tag">Cortes Residences</span>
               </div>
@@ -247,7 +251,7 @@
                 <line x1="0" y1="0" x2="-30" y2="18" stroke="rgba(200,170,110,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
                 <circle class="outer" cx="0" cy="0" r="9" style="animation-delay:2.4s"/>
                 <circle class="inner" cx="0" cy="0" r="3.5" />
-                <text class="map-pin-label" x="-68" y="4" style="font-size:7px;letter-spacing:0.06em;">Madrid, España</text>
+                <text class="map-pin-label" x="-68" y="4" style="font-size:7px;letter-spacing:0.06em;" data-i18n="proyectos.map.madrid.title">Madrid, España</text>
               </g>
             </svg>
             <div id="map-info-card" class="map-info-card"></div>
@@ -260,9 +264,9 @@
   <section class="cta-section">
     <div class="cta-watermark"><img src="images/logo-vector.svg" alt="" /></div>
     <div class="container" style="position:relative;z-index:2;text-align:center;">
-      <span class="section-label reveal" style="color:rgba(255,255,255,0.35)">¿Tienes un terreno u oportunidad?</span>
-      <h2 class="reveal reveal-delay-1" style="color:#fff;font-size:clamp(1.8rem,4.5vw,3.8rem);margin:0.75rem 0 2rem;">Hablemos de tu<br>próximo proyecto.</h2>
-      <a href="contacto.html" class="btn btn-white reveal reveal-delay-2">Iniciar conversación</a>
+      <span class="section-label reveal" style="color:rgba(255,255,255,0.35)" data-i18n="proyectos.cta.label">¿Tienes un terreno u oportunidad?</span>
+      <h2 class="reveal reveal-delay-1" style="color:#fff;font-size:clamp(1.8rem,4.5vw,3.8rem);margin:0.75rem 0 2rem;" data-i18n="proyectos.cta.title">Hablemos de tu<br>próximo proyecto.</h2>
+      <a href="contacto.html" class="btn btn-white reveal reveal-delay-2" data-i18n="proyectos.cta.btn">Iniciar conversación</a>
     </div>
   </section>
 
@@ -271,43 +275,44 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="nav-logo"><img src="images/logo.png" alt="Quatro" class="logo-img logo-img--footer" /></div>
-          <p>Desarrolladora Inmobiliaria - Hoteles, Residencial, Comercial.</p>
+          <p data-i18n="footer.tagline">Desarrolladora Inmobiliaria - Hoteles, Residencial, Comercial.</p>
           <div class="footer-social">
             <a href="#" class="social-btn" aria-label="Instagram"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
             <a href="#" class="social-btn" aria-label="LinkedIn"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
           </div>
         </div>
         <div class="footer-col">
-          <h4>Navegación</h4>
+          <h4 data-i18n="footer.nav_title">Navegación</h4>
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+            <li><a href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a></li>
+            <li><a href="nosotros.html" data-i18n="nav.nosotros">Nosotros</a></li>
+            <li><a href="contacto.html" data-i18n="footer.contacto_title">Contacto</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Proyectos</h4>
+          <h4 data-i18n="footer.proyectos_title">Proyectos</h4>
           <ul>
-            <li><a href="#">Wayak Bacalar</a></li>
-            <li><a href="#">Cabo Blanco East Cape</a></li>
-            <li><a href="#">Tortuga Bay · Casa Nima</a></li>
-            <li><a href="#">Victoria San José</a></li>
-            <li><a href="#">Amsterdam · Luis Cabrera 7</a></li>
+            <li><a href="#" data-i18n="proyectos.footer.p1">Wayak Bacalar</a></li>
+            <li><a href="#" data-i18n="proyectos.footer.p2">Cabo Blanco East Cape</a></li>
+            <li><a href="#" data-i18n="proyectos.footer.p3">Tortuga Bay · Casa Nima</a></li>
+            <li><a href="#" data-i18n="proyectos.footer.p4">Victoria San José</a></li>
+            <li><a href="#" data-i18n="proyectos.footer.p5">Amsterdam · Luis Cabrera 7</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Contacto</h4>
-          <p style="font-size:0.83rem;color:var(--text-3);line-height:1.8;font-weight:300;">Paseo de la Reforma 2620, Lomas Altas<br>Ciudad de México 11950<br>jlopez@4tro.com.mx</p>
+          <h4 data-i18n="footer.contacto_title">Contacto</h4>
+          <p style="font-size:0.83rem;color:var(--text-3);line-height:1.8;font-weight:300;" data-i18n="footer.address">Paseo de la Reforma 2620, Lomas Altas<br>Ciudad de México 11950<br>jlopez@4tro.com.mx</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2021 Quatro.</span>
-        <span>Visión · Ejecución · Inteligencia</span>
+        <span data-i18n="footer.rights_short">© 2021 Quatro.</span>
+        <span data-i18n="footer.slogan">Visión · Ejecución · Inteligencia</span>
       </div>
     </div>
   </footer>
 
+  <script src="js/i18n.js?v=1782406433"></script>
   <script src="js/main.js?v=1782406433"></script>
   <script src="js/gallery.js?v=1782406433"></script>
 </body>

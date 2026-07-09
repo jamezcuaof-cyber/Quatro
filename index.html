@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quatro Real Estate Development</title>
-  <meta name="description" content="Desarrolladora inmobiliaria en Hoteles, Comercial, Oficinas y Residencial. Ciudad de México · Los Cabos · Bacalar." />
+  <meta name="description" content="Desarrolladora inmobiliaria en Hoteles, Comercial, Oficinas y Residencial. Ciudad de México · Los Cabos · Bacalar." data-i18n-content="meta.home" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -19,11 +19,15 @@
     <div class="container">
       <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Quatro" class="logo-img" /></a>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Inicio</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="contacto.html" class="nav-cta">Contáctanos</a></li>
+        <li><a href="index.html" class="active" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a></li>
+        <li><a href="nosotros.html" data-i18n="nav.nosotros">Nosotros</a></li>
+        <li><a href="contacto.html" class="nav-cta" data-i18n="nav.contacto">Contáctanos</a></li>
       </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
       <button class="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
     </div>
   </nav>
@@ -34,12 +38,12 @@
     </div>
     <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <div class="hero-label reveal">Desarrolladora · 2021</div>
-      <h1 class="hero-title reveal reveal-delay-1">Desarrollamos<br><em>espacios que</em><br>perduran.</h1>
-      <p class="hero-sub reveal reveal-delay-2">Hotel · Residencial · Comercial<br>Ciudad de México · Los Cabos · Bacalar</p>
+      <div class="hero-label reveal" data-i18n="home.hero.label">Desarrolladora · 2021</div>
+      <h1 class="hero-title reveal reveal-delay-1" data-i18n="home.hero.title">Desarrollamos<br><em>espacios que</em><br>perduran.</h1>
+      <p class="hero-sub reveal reveal-delay-2" data-i18n="home.hero.sub">Hotel · Residencial · Comercial<br>Ciudad de México · Los Cabos · Bacalar</p>
       <div class="hero-actions reveal reveal-delay-3">
-        <a href="proyectos.html" class="btn btn-primary">Ver proyectos</a>
-        <a href="contacto.html" class="btn btn-ghost">Contáctanos</a>
+        <a href="proyectos.html" class="btn btn-primary" data-i18n="home.hero.btn1">Ver proyectos</a>
+        <a href="contacto.html" class="btn btn-ghost" data-i18n="home.hero.btn2">Contáctanos</a>
       </div>
     </div>
     <div class="hero-scroll-hint"><div class="scroll-line"></div><span>Scroll</span></div>
@@ -48,8 +52,8 @@
   <section class="section-pad">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">Proyectos destacados</span>
-        <h2>Donde la visión<br>se hace realidad</h2>
+        <span class="section-label" data-i18n="home.projects.label">Proyectos destacados</span>
+        <h2 data-i18n="home.projects.title">Donde la visión<br>se hace realidad</h2>
       </div>
       <div class="project-grid">
         <div class="project-card reveal" data-category="hotel">
@@ -57,9 +61,9 @@
             <img src="images/casa-oliva/photo-2.jpeg" alt="Casa Oliva" />
           </div>
           <div class="project-card-info">
-            <span class="proj-tag">Hotel</span>
+            <span class="proj-tag" data-i18n="home.projects.oliva.tag">Hotel</span>
             <h4>Casa Oliva</h4>
-            <p>Hotel boutique Art Déco en la Ciudad de México.</p>
+            <p data-i18n="home.projects.oliva.desc">Hotel boutique Art Déco en la Ciudad de México.</p>
           </div>
         </div>
         <div class="project-card reveal reveal-delay-1" data-category="residencial">
@@ -67,9 +71,9 @@
             <img src="images/north-enclaves/photo-1.jpeg" alt="North Enclaves" />
           </div>
           <div class="project-card-info">
-            <span class="proj-tag">Residencial</span>
+            <span class="proj-tag" data-i18n="home.projects.northenclaves.tag">Residencial</span>
             <h4>North Enclaves</h4>
-            <p>Residencias Ritz-Carlton frente al Mar de Cortés.</p>
+            <p data-i18n="home.projects.northenclaves.desc">Residencias Ritz-Carlton frente al Mar de Cortés.</p>
           </div>
         </div>
         <div class="project-card reveal reveal-delay-2" data-category="retail">
@@ -77,14 +81,14 @@
             <img src="images/victoria-san-jose/photo-new-1.jpeg" alt="Casa Victoria" />
           </div>
           <div class="project-card-info">
-            <span class="proj-tag">Comercial</span>
+            <span class="proj-tag" data-i18n="home.projects.victoria.tag">Comercial</span>
             <h4>Casa Victoria</h4>
-            <p>Plaza boutique de arquitectura colonial en San José del Cabo.</p>
+            <p data-i18n="home.projects.victoria.desc">Plaza boutique de arquitectura colonial en San José del Cabo.</p>
           </div>
         </div>
       </div>
       <div style="text-align:center;margin-top:3rem;" class="reveal">
-        <a href="proyectos.html" class="btn btn-outline">Ver todos los proyectos</a>
+        <a href="proyectos.html" class="btn btn-outline" data-i18n="home.projects.viewall">Ver todos los proyectos</a>
       </div>
     </div>
   </section>
@@ -93,11 +97,11 @@
     <div class="container">
       <div class="legacy-layout">
         <div class="legacy-text reveal-left">
-          <span class="section-label">Nuestra historia</span>
-          <h2>Décadas de<br>experiencia.<br>Visión nueva.</h2>
-          <p>Fundada en 2021, Quatro reúne a cuatro socios con más de dos décadas de trayectoria en bienes raíces, finanzas y desarrollo inmobiliario en México y Latinoamérica.</p>
-          <p style="margin-top:1rem;">Nuestra ventaja: conocemos los mercados, tenemos las relaciones y ejecutamos con disciplina.</p>
-          <a href="nosotros.html" class="btn btn-primary" style="margin-top:2rem;">Conoce al equipo</a>
+          <span class="section-label" data-i18n="home.historia.label">Nuestra historia</span>
+          <h2 data-i18n="home.historia.title">Décadas de<br>experiencia.<br>Visión nueva.</h2>
+          <p data-i18n="home.historia.p1">Fundada en 2021, Quatro reúne a cuatro socios con más de dos décadas de trayectoria en bienes raíces, finanzas y desarrollo inmobiliario en México y Latinoamérica.</p>
+          <p style="margin-top:1rem;" data-i18n="home.historia.p2">Nuestra ventaja: conocemos los mercados, tenemos las relaciones y ejecutamos con disciplina.</p>
+          <a href="nosotros.html" class="btn btn-primary" style="margin-top:2rem;" data-i18n="home.historia.btn">Conoce al equipo</a>
         </div>
         <div class="legacy-image reveal">
           <img src="images/encuentro-oceania.png" alt="Encuentro Oceanía" />
@@ -109,9 +113,9 @@
   <section class="cta-section">
     <div class="cta-watermark"><img src="images/logo-vector.svg" alt="" /></div>
     <div class="container" style="position:relative;z-index:2;text-align:center;">
-      <span class="section-label reveal" style="color:rgba(255,255,255,0.6)">¿Listo para invertir?</span>
-      <h2 class="reveal reveal-delay-1" style="color:#fff;font-size:clamp(2rem,5vw,4rem);margin:1rem 0 2rem;">Hablemos de tu<br>próximo proyecto.</h2>
-      <a href="contacto.html" class="btn btn-primary reveal reveal-delay-2">Iniciar conversación</a>
+      <span class="section-label reveal" style="color:rgba(255,255,255,0.6)" data-i18n="home.cta.label">¿Listo para invertir?</span>
+      <h2 class="reveal reveal-delay-1" style="color:#fff;font-size:clamp(2rem,5vw,4rem);margin:1rem 0 2rem;" data-i18n="home.cta.title">Hablemos de tu<br>próximo proyecto.</h2>
+      <a href="contacto.html" class="btn btn-primary reveal reveal-delay-2" data-i18n="home.cta.btn">Iniciar conversación</a>
     </div>
   </section>
 
@@ -120,42 +124,43 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="nav-logo"><img src="images/logo.png" alt="Quatro" class="logo-img logo-img--footer" /></div>
-          <p>Desarrolladora Inmobiliaria - Hoteles, Residencial, Comercial.</p>
+          <p data-i18n="footer.tagline">Desarrolladora Inmobiliaria - Hoteles, Residencial, Comercial.</p>
           <div class="footer-social">
             <a href="#" class="social-btn" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
             <a href="#" class="social-btn" aria-label="LinkedIn"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
           </div>
         </div>
         <div class="footer-col">
-          <h4>Navegación</h4>
+          <h4 data-i18n="footer.nav_title">Navegación</h4>
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+            <li><a href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a></li>
+            <li><a href="nosotros.html" data-i18n="nav.nosotros">Nosotros</a></li>
+            <li><a href="contacto.html" data-i18n="footer.contacto_title">Contacto</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Verticales</h4>
+          <h4 data-i18n="footer.verticales_title">Verticales</h4>
           <ul>
-            <li><a href="proyectos.html">Hoteles</a></li>
-            <li><a href="proyectos.html">Comercial</a></li>
-            <li><a href="proyectos.html">Oficinas</a></li>
-            <li><a href="proyectos.html">Residencial</a></li>
+            <li><a href="proyectos.html" data-i18n="vert.hoteles">Hoteles</a></li>
+            <li><a href="proyectos.html" data-i18n="vert.comercial">Comercial</a></li>
+            <li><a href="proyectos.html" data-i18n="vert.oficinas">Oficinas</a></li>
+            <li><a href="proyectos.html" data-i18n="vert.residencial">Residencial</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Contacto</h4>
-          <p style="font-size:0.85rem;color:var(--text-2);line-height:1.8;">Paseo de la Reforma 2620, Lomas Altas<br>Ciudad de México 11950<br>jlopez@4tro.com.mx</p>
+          <h4 data-i18n="footer.contacto_title">Contacto</h4>
+          <p style="font-size:0.85rem;color:var(--text-2);line-height:1.8;" data-i18n="footer.address">Paseo de la Reforma 2620, Lomas Altas<br>Ciudad de México 11950<br>jlopez@4tro.com.mx</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2021 Quatro. Todos los derechos reservados.</span>
-        <span>Visión · Ejecución · Inteligencia</span>
+        <span data-i18n="footer.rights">© 2021 Quatro. Todos los derechos reservados.</span>
+        <span data-i18n="footer.slogan">Visión · Ejecución · Inteligencia</span>
       </div>
     </div>
   </footer>
 
+  <script src="js/i18n.js?v=1782406433"></script>
   <script src="js/main.js?v=1782406433"></script>
 </body>
 </html>

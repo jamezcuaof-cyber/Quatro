@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nosotros | Quatro Real Estate Development</title>
-  <meta name="description" content="Conoce al equipo fundador de Quatro: cuatro socios con décadas de experiencia en bienes raíces, finanzas y desarrollo inmobiliario." />
+  <meta name="description" content="Conoce al equipo fundador de Quatro: cuatro socios con décadas de experiencia en bienes raíces, finanzas y desarrollo inmobiliario." data-i18n-content="meta.nosotros" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -19,11 +19,15 @@
     <div class="container">
       <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Quatro" class="logo-img" /></a>
       <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="nosotros.html" class="active">Nosotros</a></li>
-        <li><a href="contacto.html" class="nav-cta">Contáctanos</a></li>
+        <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a></li>
+        <li><a href="nosotros.html" class="active" data-i18n="nav.nosotros">Nosotros</a></li>
+        <li><a href="contacto.html" class="nav-cta" data-i18n="nav.contacto">Contáctanos</a></li>
       </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
       <button class="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
     </div>
   </nav>
@@ -35,13 +39,13 @@
     </div>
     <div class="container" style="position:relative;z-index:1;padding-bottom:3.5rem;">
       <div class="breadcrumb">
-        <a href="index.html" style="color:rgba(255,255,255,0.6)">Inicio</a>
+        <a href="index.html" style="color:rgba(255,255,255,0.6)" data-i18n="nav.inicio">Inicio</a>
         <svg width="14" height="14" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-        <span style="color:rgba(255,255,255,0.6)">Nosotros</span>
+        <span style="color:rgba(255,255,255,0.6)" data-i18n="nav.nosotros">Nosotros</span>
       </div>
-      <span class="section-label" style="display:flex;justify-content:center;color:rgba(255,255,255,0.6)">El equipo</span>
-      <h1 style="color:#fff;">Cuatro socios.<br>Una visión.</h1>
-      <p style="max-width:520px;margin:0 auto;color:rgba(255,255,255,0.7)">Décadas de experiencia comprobada en bienes raíces, finanzas estructuradas y desarrollo inmobiliario en México y Latinoamérica.</p>
+      <span class="section-label" style="display:flex;justify-content:center;color:rgba(255,255,255,0.6)" data-i18n="nosotros.hero.label">El equipo</span>
+      <h1 style="color:#fff;" data-i18n="nosotros.hero.title">Cuatro socios.<br>Una visión.</h1>
+      <p style="max-width:520px;margin:0 auto;color:rgba(255,255,255,0.7)" data-i18n="nosotros.hero.desc">Décadas de experiencia comprobada en bienes raíces, finanzas estructuradas y desarrollo inmobiliario en México y Latinoamérica.</p>
     </div>
   </div>
 
@@ -50,10 +54,10 @@
     <div class="container">
       <div class="legacy-layout">
         <div class="legacy-text reveal-left">
-          <span class="section-label">Nuestra historia</span>
-          <h2>Quatro nació de<br>30+ años de experiencia<br>en la industria.</h2>
-          <p>Antes de fundar Quatro en 2021, los principales socios dirigieron una de las empresas inmobiliarias líderes en el desarrollo inmobiliario en México. Junto con su equipo desarrollaron más de 1.5M m<sup>2</sup>, de los cuales: 600,000 m<sup>2</sup> representan oficinas en edificios icónicos como son la Torre Manacar y la Torre New York Life; 400,000 m<sup>2</sup> representan centros comerciales, resaltando el primer IKEA en LATAM; y 3,000+ llaves hoteleras en marcas reconocidas como AMResorts y Marriott, al igual que una variedad de proyectos residenciales.</p>
-          <p style="margin-top:1rem;">Con ese historial comprobado, y continuando con la visión de desarrollar proyectos que mejoren el entorno, se fundó Quatro.</p>
+          <span class="section-label" data-i18n="nosotros.historia.label">Nuestra historia</span>
+          <h2 data-i18n="nosotros.historia.title">Quatro nació de<br>30+ años de experiencia<br>en la industria.</h2>
+          <p data-i18n="nosotros.historia.p1">Antes de fundar Quatro en 2021, los principales socios dirigieron una de las empresas inmobiliarias líderes en el desarrollo inmobiliario en México. Junto con su equipo desarrollaron más de 1.5M m<sup>2</sup>, de los cuales: 600,000 m<sup>2</sup> representan oficinas en edificios icónicos como son la Torre Manacar y la Torre New York Life; 400,000 m<sup>2</sup> representan centros comerciales, resaltando el primer IKEA en LATAM; y 3,000+ llaves hoteleras en marcas reconocidas como AMResorts y Marriott, al igual que una variedad de proyectos residenciales.</p>
+          <p style="margin-top:1rem;" data-i18n="nosotros.historia.p2">Con ese historial comprobado, y continuando con la visión de desarrollar proyectos que mejoren el entorno, se fundó Quatro.</p>
         </div>
         <div class="legacy-image reveal">
           <img src="images/nosotros/historia.png" alt="Quatro — Historia" />
@@ -67,19 +71,19 @@
     <div class="container stats-grid">
       <div class="stat-block reveal">
         <div class="stat-num" data-target="1.5" data-suffix="M+ m²">0 m²</div>
-        <div class="stat-label">Espacio total entregado</div>
+        <div class="stat-label" data-i18n="nosotros.stats.s1">Espacio total entregado</div>
       </div>
       <div class="stat-block reveal reveal-delay-1">
         <div class="stat-num" data-target="3000" data-suffix="+">0+</div>
-        <div class="stat-label">Llaves hoteleras — AMResorts &amp; Marriott</div>
+        <div class="stat-label" data-i18n="nosotros.stats.s2">Llaves hoteleras — AMResorts &amp; Marriott</div>
       </div>
       <div class="stat-block reveal reveal-delay-2">
         <div class="stat-num" data-target="600" data-suffix="K m²">0 m²</div>
-        <div class="stat-label">Oficinas construidas</div>
+        <div class="stat-label" data-i18n="nosotros.stats.s3">Oficinas construidas</div>
       </div>
       <div class="stat-block reveal reveal-delay-3">
         <div class="stat-num" data-target="400" data-suffix="K m²">0 m²</div>
-        <div class="stat-label">Comercial construido</div>
+        <div class="stat-label" data-i18n="nosotros.stats.s4">Comercial construido</div>
       </div>
     </div>
   </div>
@@ -88,35 +92,35 @@
   <section class="section-pad" style="background:var(--bg-2);">
     <div class="container">
       <div class="section-header reveal">
-        <h2>Socios Fundadores</h2>
+        <h2 data-i18n="nosotros.founders.title">Socios Fundadores</h2>
       </div>
       <div class="founders-grid">
         <div class="founder-card reveal">
           <div class="founder-info">
             <h3>Álvaro Amezcua</h3>
-            <span class="founder-role">Socio Fundador</span>
-            <p>CEO de Pulso Inmobiliario por más de 15 años. Una de las desarrolladoras más reconocidas de México. 30+ años de experiencia.</p>
+            <span class="founder-role" data-i18n="nosotros.founders.role">Socio Fundador</span>
+            <p data-i18n="nosotros.founders.alvaro.bio">CEO de Pulso Inmobiliario por más de 15 años. Una de las desarrolladoras más reconocidas de México. 30+ años de experiencia.</p>
           </div>
         </div>
         <div class="founder-card reveal reveal-delay-1">
           <div class="founder-info">
             <h3>Alejandro Alamillo</h3>
-            <span class="founder-role">Socio Fundador</span>
-            <p>Experiencia en finanzas en bancos como BNP y BBVA. CFO de Pulso Inmobiliario por más de 15 años. 30+ años de experiencia.</p>
+            <span class="founder-role" data-i18n="nosotros.founders.role">Socio Fundador</span>
+            <p data-i18n="nosotros.founders.alejandro.bio">Experiencia en finanzas en bancos como BNP y BBVA. CFO de Pulso Inmobiliario por más de 15 años. 30+ años de experiencia.</p>
           </div>
         </div>
         <div class="founder-card reveal reveal-delay-2">
           <div class="founder-info">
             <h3>Galo Roselló</h3>
-            <span class="founder-role">Socio Fundador</span>
-            <p>Director de desarrollo y nuevos negocios en Pulso Inmobiliario por más de 10 años. 20+ años de experiencia.</p>
+            <span class="founder-role" data-i18n="nosotros.founders.role">Socio Fundador</span>
+            <p data-i18n="nosotros.founders.galo.bio">Director de desarrollo y nuevos negocios en Pulso Inmobiliario por más de 10 años. 20+ años de experiencia.</p>
           </div>
         </div>
         <div class="founder-card reveal reveal-delay-3">
           <div class="founder-info">
             <h3>Juan Carlos Rodero</h3>
-            <span class="founder-role">Socio Fundador</span>
-            <p>Director de construcción en Pulso Inmobiliario por más de 15 años. 35+ años de experiencia.</p>
+            <span class="founder-role" data-i18n="nosotros.founders.role">Socio Fundador</span>
+            <p data-i18n="nosotros.founders.jc.bio">Director de construcción en Pulso Inmobiliario por más de 15 años. 35+ años de experiencia.</p>
           </div>
         </div>
       </div>
@@ -127,32 +131,32 @@
   <section class="section-dark section-pad">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label" style="color:rgba(255,255,255,0.55)">Nuestra filosofía</span>
-        <h2 style="color:#fff">Los principios que<br>guían cada decisión.</h2>
+        <span class="section-label" style="color:rgba(255,255,255,0.55)" data-i18n="nosotros.values.label">Nuestra filosofía</span>
+        <h2 style="color:#fff" data-i18n="nosotros.values.title">Los principios que<br>guían cada decisión.</h2>
       </div>
       <div class="pillars-grid">
         <div class="pillar-card reveal">
           <div class="pillar-num">01</div>
-          <h3>Visión</h3>
-          <p>Identificamos oportunidades antes de que el mercado las vea. Estudiamos tendencias, leemos destinos y nos posicionamos con anticipación.</p>
+          <h3 data-i18n="nosotros.pillar1.title">Visión</h3>
+          <p data-i18n="nosotros.pillar1.desc">Identificamos oportunidades antes de que el mercado las vea. Estudiamos tendencias, leemos destinos y nos posicionamos con anticipación.</p>
           <div class="pillar-arrow">→</div>
         </div>
         <div class="pillar-card reveal reveal-delay-1">
           <div class="pillar-num">02</div>
-          <h3>Ejecución</h3>
-          <p>Prometemos lo que podemos cumplir y cumplimos lo que prometemos. Disciplina financiera y operativa en cada proyecto.</p>
+          <h3 data-i18n="nosotros.pillar2.title">Ejecución</h3>
+          <p data-i18n="nosotros.pillar2.desc">Prometemos lo que podemos cumplir y cumplimos lo que prometemos. Disciplina financiera y operativa en cada proyecto.</p>
           <div class="pillar-arrow">→</div>
         </div>
         <div class="pillar-card reveal reveal-delay-2">
           <div class="pillar-num">03</div>
-          <h3>Inteligencia</h3>
-          <p>Tomamos decisiones basadas en datos, análisis de mercado y due diligence riguroso. No especulamos: invertimos con convicción fundamentada.</p>
+          <h3 data-i18n="nosotros.pillar3.title">Inteligencia</h3>
+          <p data-i18n="nosotros.pillar3.desc">Tomamos decisiones basadas en datos, análisis de mercado y due diligence riguroso. No especulamos: invertimos con convicción fundamentada.</p>
           <div class="pillar-arrow">→</div>
         </div>
         <div class="pillar-card reveal reveal-delay-3">
           <div class="pillar-num">04</div>
-          <h3>Relaciones</h3>
-          <p>Construimos alianzas de largo plazo con inversionistas, operadores, autoridades y comunidades. El negocio inmobiliario es, ante todo, un negocio de personas.</p>
+          <h3 data-i18n="nosotros.pillar4.title">Relaciones</h3>
+          <p data-i18n="nosotros.pillar4.desc">Construimos alianzas de largo plazo con inversionistas, operadores, autoridades y comunidades. El negocio inmobiliario es, ante todo, un negocio de personas.</p>
           <div class="pillar-arrow">→</div>
         </div>
       </div>
@@ -163,30 +167,30 @@
   <section class="section-pad">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">Presencia</span>
-        <h2>Los mercados<br>que importan</h2>
+        <span class="section-label" data-i18n="nosotros.markets.label">Presencia</span>
+        <h2 data-i18n="nosotros.markets.title">Los mercados<br>que importan</h2>
       </div>
       <div class="markets-grid">
         <div class="market-card reveal">
           <div class="market-img">
             <img src="https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=600&q=80&auto=format&fit=crop" alt="Ciudad de México" />
           </div>
-          <h4>Ciudad de México</h4>
-          <p>Oficina principal y hub de operaciones. Foco en proyectos corporativos y residenciales premium.</p>
+          <h4 data-i18n="nosotros.markets.cdmx.title">Ciudad de México</h4>
+          <p data-i18n="nosotros.markets.cdmx.desc">Oficina principal y hub de operaciones. Foco en proyectos corporativos y residenciales premium.</p>
         </div>
         <div class="market-card reveal reveal-delay-1">
           <div class="market-img">
             <img src="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=600&q=80&auto=format&fit=crop" alt="Los Cabos" />
           </div>
-          <h4>Los Cabos</h4>
-          <p>Mercado hotelero y residencial de ultra lujo. Demanda internacional sólida y precios de los más altos del país.</p>
+          <h4 data-i18n="nosotros.markets.loscabos.title">Los Cabos</h4>
+          <p data-i18n="nosotros.markets.loscabos.desc">Mercado hotelero y residencial de ultra lujo. Demanda internacional sólida y precios de los más altos del país.</p>
         </div>
         <div class="market-card reveal reveal-delay-2">
           <div class="market-img">
             <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80&auto=format&fit=crop" alt="Bacalar" />
           </div>
-          <h4>Bacalar</h4>
-          <p>Destino emergente con crecimiento exponencial. Posicionados en el mercado desde etapas tempranas de desarrollo.</p>
+          <h4 data-i18n="nosotros.markets.bacalar.title">Bacalar</h4>
+          <p data-i18n="nosotros.markets.bacalar.desc">Destino emergente con crecimiento exponencial. Posicionados en el mercado desde etapas tempranas de desarrollo.</p>
         </div>
       </div>
     </div>
@@ -195,8 +199,8 @@
   <section class="cta-section">
     <div class="cta-watermark"><img src="images/logo-vector.svg" alt="" /></div>
     <div class="container" style="position:relative;z-index:2;text-align:center;">
-      <h2 class="reveal" style="color:#fff;font-size:clamp(2rem,5vw,4rem);margin:0 0 2rem;">Contáctanos</h2>
-      <a href="contacto.html" class="btn btn-primary reveal reveal-delay-1">Iniciar conversación</a>
+      <h2 class="reveal" style="color:#fff;font-size:clamp(2rem,5vw,4rem);margin:0 0 2rem;" data-i18n="nosotros.cta.title">Contáctanos</h2>
+      <a href="contacto.html" class="btn btn-primary reveal reveal-delay-1" data-i18n="nosotros.cta.btn">Iniciar conversación</a>
     </div>
   </section>
 
@@ -205,42 +209,43 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="nav-logo"><img src="images/logo.png" alt="Quatro" class="logo-img logo-img--footer" /></div>
-          <p>Desarrolladora Inmobiliaria - Hoteles, Residencial, Comercial.</p>
+          <p data-i18n="footer.tagline">Desarrolladora Inmobiliaria - Hoteles, Residencial, Comercial.</p>
           <div class="footer-social">
             <a href="#" class="social-btn" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
             <a href="#" class="social-btn" aria-label="LinkedIn"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
           </div>
         </div>
         <div class="footer-col">
-          <h4>Navegación</h4>
+          <h4 data-i18n="footer.nav_title">Navegación</h4>
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+            <li><a href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a></li>
+            <li><a href="nosotros.html" data-i18n="nav.nosotros">Nosotros</a></li>
+            <li><a href="contacto.html" data-i18n="footer.contacto_title">Contacto</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Verticales</h4>
+          <h4 data-i18n="footer.verticales_title">Verticales</h4>
           <ul>
-            <li><a href="proyectos.html">Hoteles</a></li>
-            <li><a href="proyectos.html">Comercial</a></li>
-            <li><a href="proyectos.html">Oficinas</a></li>
-            <li><a href="proyectos.html">Residencial</a></li>
+            <li><a href="proyectos.html" data-i18n="vert.hoteles">Hoteles</a></li>
+            <li><a href="proyectos.html" data-i18n="vert.comercial">Comercial</a></li>
+            <li><a href="proyectos.html" data-i18n="vert.oficinas">Oficinas</a></li>
+            <li><a href="proyectos.html" data-i18n="vert.residencial">Residencial</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Contacto</h4>
-          <p style="font-size:0.85rem;color:var(--text-2);line-height:1.8;">Paseo de la Reforma 2620, Lomas Altas<br>Ciudad de México 11950<br>jlopez@4tro.com.mx</p>
+          <h4 data-i18n="footer.contacto_title">Contacto</h4>
+          <p style="font-size:0.85rem;color:var(--text-2);line-height:1.8;" data-i18n="footer.address">Paseo de la Reforma 2620, Lomas Altas<br>Ciudad de México 11950<br>jlopez@4tro.com.mx</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2021 Quatro. Todos los derechos reservados.</span>
-        <span>Visión · Ejecución · Inteligencia</span>
+        <span data-i18n="footer.rights">© 2021 Quatro. Todos los derechos reservados.</span>
+        <span data-i18n="footer.slogan">Visión · Ejecución · Inteligencia</span>
       </div>
     </div>
   </footer>
 
+  <script src="js/i18n.js?v=1782406433"></script>
   <script src="js/main.js?v=1782406433"></script>
 </body>
 </html>

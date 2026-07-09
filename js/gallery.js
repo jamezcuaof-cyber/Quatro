@@ -370,12 +370,12 @@ const PROJECTS = [
     title: 'San José del Criollo',
     thumb: 'images/san-jose-criollo/photo-2.jpeg',
     desc: {
-      es: 'Restaurante de lujo en San José del Cabo, creado en colaboración con el chef Enrique Olvera — fundador de Pujol (Ciudad de México), reconocido entre los mejores restaurantes del mundo, y Cosme (Nueva York). El concepto explora la cocina mexicana de autor en un destino de clase mundial, fusionando ingredientes locales de Baja California Sur con la visión creativa de uno de los chefs más influyentes de Latinoamérica.',
-      en: "A luxury restaurant in San José del Cabo, created in collaboration with chef Enrique Olvera — founder of Pujol (Mexico City), recognized among the world's best restaurants, and Cosme (New York). The concept explores signature Mexican cuisine in a world-class destination, blending local ingredients from Baja California Sur with the creative vision of one of Latin America's most influential chefs.",
+      es: 'Restaurante de lujo en San José del Cabo, creado en colaboración con el chef Enrique Olvera — fundador de Pujol (Ciudad de México), reconocido entre los mejores restaurantes del mundo, y Cosme (Nueva York) — junto con el chef Luis Arellano, quien se desempeñó como head chef en Criollo antes de sumarse a este proyecto. El concepto explora la cocina mexicana de autor en un destino de clase mundial, fusionando ingredientes locales de Baja California Sur con la visión creativa de dos de los chefs más influyentes de México.',
+      en: "A luxury restaurant in San José del Cabo, created in collaboration with chef Enrique Olvera — founder of Pujol (Mexico City), recognized among the world's best restaurants, and Cosme (New York) — together with chef Luis Arellano, who served as head chef at Criollo before joining this project. The concept explores signature Mexican cuisine in a world-class destination, blending local ingredients from Baja California Sur with the creative vision of two of Mexico's most influential chefs.",
     },
     specs: [
       { label: 'Tipo', value: { es: 'Restaurante de lujo', en: 'Luxury restaurant' } },
-      { label: 'Chef', value: { es: 'Enrique Olvera', en: 'Enrique Olvera' } },
+      { label: 'Chef', value: { es: 'Enrique Olvera · Luis Arellano', en: 'Enrique Olvera · Luis Arellano' } },
       { label: 'Destino', value: { es: 'San José del Cabo, BCS', en: 'San José del Cabo, BCS' } },
       { label: 'Estatus', value: { es: 'Activo', en: 'Active' } },
     ],
@@ -577,6 +577,11 @@ function t(key) {
       tag: { es: 'Residencial · España', en: 'Residential · Spain' },
       title: { es: 'Madrid, España', en: 'Madrid, Spain' },
       desc: { es: 'Expansión internacional. Cortes Residences — edificio histórico de 1880 rehabilitado en el Barrio de Las Letras, a pasos del Paseo del Prado.', en: 'International expansion. Cortes Residences — a restored 1880 historic building in the Barrio de Las Letras, steps from Paseo del Prado.' },
+    },
+    usa:      {
+      tag: { es: 'Co-inversión · Residencial', en: 'Co-investment · Residential' },
+      title: { es: 'Estados Unidos', en: 'United States' },
+      desc: { es: 'Co-inversión en vivienda estudiantil. Student Housing EUA — 4,721 unidades en 6 estados, con demanda estructural y flujos de renta en dólares.', en: 'Co-investment in student housing. Student Housing USA — 4,721 units across 6 states, with structural demand and USD-denominated rental income.' },
     },
   };
 

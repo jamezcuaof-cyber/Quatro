@@ -81,51 +81,6 @@
   <!-- PROJECT LIST — populated by JS -->
   <div id="projects-list" class="projects-list"></div>
 
-  <!-- LEGADO PULSO -->
-  <section class="section-dark section-pad">
-    <div class="container">
-      <div class="legacy-layout" style="align-items:flex-start;">
-        <div class="legacy-text reveal-left" style="max-width:520px;">
-          <span class="section-label" style="color:rgba(255,255,255,0.45)" data-i18n="proyectos.legacy.label">Antes de Quatro</span>
-          <h2 style="color:#fff" data-i18n="proyectos.legacy.title">PI:<br>30+ años construyendo<br>México.</h2>
-          <p style="color:rgba(255,255,255,0.65);margin-top:1.2rem;" data-i18n="proyectos.legacy.p1">Los cuatro socios fundadores de Quatro lideraron <em>PI</em> durante más de 15 años, consolidándola como una de las principales desarrolladoras inmobiliarias de México. Ese legado comprobado de ejecución a gran escala es la base sobre la que se construye Quatro.</p>
-        </div>
-        <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem 4rem;padding-top:0.5rem;">
-          <div>
-            <div style="font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;">1.5M+</div>
-            <div style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:0.4rem;" data-i18n="proyectos.legacy.stat1">m² totales entregados</div>
-          </div>
-          <div>
-            <div style="font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;">3,000+</div>
-            <div style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:0.4rem;" data-i18n="proyectos.legacy.stat2">Llaves hoteleras — AMResorts &amp; Marriott</div>
-          </div>
-          <div>
-            <div style="font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;">600K</div>
-            <div style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:0.4rem;" data-i18n="proyectos.legacy.stat3">m² de oficinas construidas</div>
-          </div>
-          <div>
-            <div style="font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;">400K</div>
-            <div style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:0.4rem;" data-i18n="proyectos.legacy.stat4">m² comercial — incl. 1er IKEA LATAM</div>
-          </div>
-        </div>
-      </div>
-      <div class="reveal" style="margin-top:3.5rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:2rem;">
-        <div>
-          <div style="font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:0.5rem;" data-i18n="vert.hoteles">Hoteles</div>
-          <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;line-height:1.5;" data-i18n="proyectos.legacy.hoteles_projects">Breathless Riviera Cancún<br>Dreams Natura — 550 llaves</p>
-        </div>
-        <div>
-          <div style="font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:0.5rem;" data-i18n="vert.oficinas">Oficinas</div>
-          <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;line-height:1.5;" data-i18n="proyectos.legacy.oficinas_projects">Torre MANACAR<br>UNO Polanco</p>
-        </div>
-        <div>
-          <div style="font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:0.5rem;" data-i18n="vert.comercial">Comercial</div>
-          <p style="color:rgba(255,255,255,0.7);font-size:0.9rem;line-height:1.5;" data-i18n="proyectos.legacy.comercial_projects">Encuentro Oceanía<br>1er IKEA en Latinoamérica</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- INTERACTIVE MAP -->
   <section class="map-section">
     <div class="container">
@@ -182,6 +137,16 @@
               <p data-i18n="proyectos.map.madrid.tagline">Residencial · Europa</p>
               <div class="map-dest-tags">
                 <span class="map-dest-tag">Cortes Residences</span>
+              </div>
+            </div>
+          </div>
+          <div class="map-dest-item" data-dest="usa">
+            <div class="map-dest-num">05</div>
+            <div class="map-dest-info">
+              <h4 data-i18n="proyectos.map.usa.title">Estados Unidos</h4>
+              <p data-i18n="proyectos.map.usa.tagline">Co-inversión · Residencial</p>
+              <div class="map-dest-tags">
+                <span class="map-dest-tag">Student Housing EUA</span>
               </div>
             </div>
           </div>
@@ -252,6 +217,14 @@
                 <circle class="outer" cx="0" cy="0" r="9" style="animation-delay:2.4s"/>
                 <circle class="inner" cx="0" cy="0" r="3.5" />
                 <text class="map-pin-label" x="-68" y="4" style="font-size:7px;letter-spacing:0.06em;" data-i18n="proyectos.map.madrid.title">Madrid, España</text>
+              </g>
+
+              <!-- United States — external point in top-left corner -->
+              <g class="map-pin" data-dest="usa" transform="translate(30,10)">
+                <line x1="0" y1="0" x2="35" y2="20" stroke="rgba(200,170,110,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+                <circle class="outer" cx="0" cy="0" r="9" style="animation-delay:3.1s"/>
+                <circle class="inner" cx="0" cy="0" r="3.5" />
+                <text class="map-pin-label" x="10" y="-8" style="font-size:7px;letter-spacing:0.06em;" data-i18n="proyectos.map.usa.title">Estados Unidos</text>
               </g>
             </svg>
             <div id="map-info-card" class="map-info-card"></div>

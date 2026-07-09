@@ -31,8 +31,9 @@ if (progressBar) {
 /* ── Navbar ── */
 const navbar = document.querySelector('.navbar');
 if (navbar) {
+  const alwaysScrolled = navbar.classList.contains('scrolled');
   const onScroll = () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 40);
+    navbar.classList.toggle('scrolled', alwaysScrolled || window.scrollY > 40);
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();

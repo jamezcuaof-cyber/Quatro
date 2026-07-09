@@ -476,8 +476,8 @@ const PROJECTS = [
   if (!destItems.length) return;
 
   const data = {
-    bacalar:  { tag: 'Hotels', title: 'Bacalar, Quintana Roo', desc: 'Destino emergente de alto crecimiento. Proyecto flagship: Wayak Bacalar — 33 ha, 500 m frente al Lago de los 7 Colores.' },
-    loscabos: { tag: 'Residential · Comercial · Hotel', title: 'Los Cabos, BCS', desc: 'Mercado de lujo con demanda internacional sostenida. Proyectos: Oasis, La Noria, Tortuga Bay (92 deptos), Casa Nima (147 deptos), Victoria San José y Cabo Blanco East Cape (150 ha).' },
+    bacalar:  { tag: 'Hoteles', title: 'Bacalar, Quintana Roo', desc: 'Destino emergente de alto crecimiento. Proyecto flagship: Wayak Bacalar — 33 ha, 500 m frente al Lago de los 7 Colores.' },
+    loscabos: { tag: 'Residencial · Comercial · Hotel', title: 'Los Cabos, BCS', desc: 'Mercado de lujo con demanda internacional sostenida. Proyectos: Oasis, La Noria, Tortuga Bay (92 deptos), Casa Nima (147 deptos), Victoria San José y Cabo Blanco East Cape (150 ha).' },
     cdmx:     { tag: 'Airbnb · Comercial · Restaurante', title: 'Ciudad de México', desc: 'Hub operativo principal. Airbnb: Casa Oliva, Casa Miravalle, Casa del Parque. Comercial: Luis Cabrera 7 (Roma Norte). Restaurante: Amsterdam (Condesa).' },
     madrid:   { tag: 'Residencial · España', title: 'Madrid, España', desc: 'Expansión internacional. Cortes Residences — edificio histórico de 1880 rehabilitado en el Barrio de Las Letras, a pasos del Paseo del Prado.' },
   };

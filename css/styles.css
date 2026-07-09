@@ -31,6 +31,7 @@ body {
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; object-fit: cover; }
 ul { list-style: none; }
+p { text-align: justify; text-justify: inter-word; }
 button { cursor: none; font-family: var(--font-s); }
 
 /* ===== CUSTOM CURSOR ===== */

@@ -45,14 +45,7 @@ button { cursor: none; font-family: var(--font-s); }
   background-size: 100% 100%;
   transition: width 0.3s var(--ease), height 0.3s var(--ease);
 }
-#cursor-ring {
-  position: fixed; z-index: 10000; pointer-events: none;
-  width: 32px; height: 32px; border-radius: 50%;
-  border: 1px solid #fff;
-  mix-blend-mode: difference;
-  transform: translate(-50%,-50%);
-  transition: width 0.4s var(--ease), height 0.4s var(--ease), opacity 0.3s;
-}
+#cursor-ring { display: none; }
 #cursor-ring.expand { width: 52px; height: 52px; opacity: 0.5; }
 
 /* ===== TYPOGRAPHY ===== */
